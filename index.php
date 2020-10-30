@@ -1,8 +1,8 @@
 <?php
-echo("<h1>zad 1 - SELECT * FROM pracownicy where imie like '%a' </h1>");
+echo("<h1>ZAD 1 - SELECT * FROM pracownicy</h1>");
 
 $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-$result = $conn->query('SELECT * FROM pracownicy where imie like "%a"');
+$result = $conn->query('SELECT * FROM pracownicy');
             echo("<table border = 1>");
             echo("<th>id</th>");
             echo("<th>imie</th>");
