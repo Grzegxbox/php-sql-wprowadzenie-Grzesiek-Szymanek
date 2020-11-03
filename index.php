@@ -4,7 +4,7 @@
 body {
   background-color: lightblue;
 }
-<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="style.css">
 <?php echo("<h1> GRZEGORZ SZYMANEK Nr28</h1>");
 echo("<h3>ZADANIE 1</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
