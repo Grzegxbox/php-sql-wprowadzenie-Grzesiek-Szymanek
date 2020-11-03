@@ -11,3 +11,6 @@ th {
   background-color: rgb(60, 179, 113);
   color: white;
 }
+table {
+  border-collapse: collapse;
+}
