@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+body {
+  background-color: lightblue;
+}
 <link rel="stylesheet" href="mystyle.css">
 <?php echo("<h1> GRZEGORZ SZYMANEK Nr28</h1>");
 echo("<h3>ZADANIE 1</h3>");
