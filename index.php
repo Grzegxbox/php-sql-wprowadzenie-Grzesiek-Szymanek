@@ -106,33 +106,33 @@ echo("<h3>ZADANIE 7</h3>");
             }
         echo("</table>");
 
-echo("<h3>ZADANIE 8</h3>");
-    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT Dzial, Avg(zarobki) AS AVG FROM pracownicy GROUP BY dzial HAVING Avg(zarobki)<36');
-        echo("<table border=1>");
-        echo("<th>Dzial</th>");
-        echo("<th>AVG</th>");
-            while($row = $result -> fetch_assoc()){                                                                                                    
-                echo("<tr>");
-                    echo("<td>" .$row["Dzial"]. "</td><td>" .$row["AVG"]. "</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
+// echo("<h3>ZADANIE 8</h3>");
+//     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+//     $result = $conn -> query('SELECT Dzial, Avg(zarobki) AS AVG FROM pracownicy GROUP BY dzial HAVING Avg(zarobki)<36');
+//         echo("<table border=1>");
+//         echo("<th>Dzial</th>");
+//         echo("<th>AVG</th>");
+//             while($row = $result -> fetch_assoc()){                                                                                                    
+//                 echo("<tr>");
+//                     echo("<td>" .$row["Dzial"]. "</td><td>" .$row["AVG"]. "</td>");
+//                 echo("</tr>");
+//             }
+//         echo("</table>");
 
-echo("<h3>ZADANIE 9</h3>");
-    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT * FROM pracownicy WHERE (imie like "%a") HAVING zarobki<41');
-            echo("<table border=1>");
-            echo("<th>ID</th>");
-            echo("<th>Imie</th>");
-            echo("<th>Dzial</th>");
-            echo("<th>Zarobki</th>");
-                while($row = $result -> fetch_assoc()){
-                    echo("<tr>");
-                        echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td>");
-                    echo("</tr>");
-                }
-            echo("</table>");
+// echo("<h3>ZADANIE 9</h3>");
+//     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+//     $result = $conn -> query('SELECT * FROM pracownicy WHERE (imie like "%a") HAVING zarobki<41');
+//             echo("<table border=1>");
+//             echo("<th>ID</th>");
+//             echo("<th>Imie</th>");
+//             echo("<th>Dzial</th>");
+//             echo("<th>Zarobki</th>");
+//                 while($row = $result -> fetch_assoc()){
+//                     echo("<tr>");
+//                         echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td>");
+//                     echo("</tr>");
+//                 }
+//             echo("</table>");
         
 // echo("<h3>ZADANIE 10</h3>");
 //     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
