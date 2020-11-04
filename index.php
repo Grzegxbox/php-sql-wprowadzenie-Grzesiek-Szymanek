@@ -34,7 +34,7 @@ echo("<h3>ZADANIE 2 - SELECT * FROM pracownicy WHERE imie like '%a'</h3>");
             }
         echo("</table>");
 
-echo("<h3>ZADANIE 3 - SELECT * FROM pracownicy WHERE (imie like "%a") AND (dzial=1 or dzial=2 or dzial=3) AND (zarobki>10)</h3>");
+echo("<h3>ZADANIE 3 - SELECT * FROM pracownicy WHERE (imie like '%a') AND (dzial=1 or dzial=2 or dzial=3) AND (zarobki>10)</h3>");
     $conn = new mysqli ("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT * FROM pracownicy WHERE (imie like "%a") AND (dzial=1 or dzial=2 or dzial=3) AND (zarobki>10)');
             echo("<table border=1>");
@@ -49,7 +49,7 @@ echo("<h3>ZADANIE 3 - SELECT * FROM pracownicy WHERE (imie like "%a") AND (dzial
                 }
             echo("</table>");
 
-echo("<h3>ZADANIE 4 - SELECT * FROM pracownicy WHERE (imie not like "%a") AND (zarobki>30)</h3>");
+echo("<h3>ZADANIE 4 - SELECT * FROM pracownicy WHERE (imie not like '%a') AND (zarobki>30)</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT * FROM pracownicy WHERE (imie not like "%a") AND (zarobki>30)');
         echo("<table border=1>");
