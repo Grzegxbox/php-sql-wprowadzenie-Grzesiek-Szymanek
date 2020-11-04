@@ -2,7 +2,7 @@
   background-color: #FFDAB9;
 } */
 #grad {
-  background-image: linear-gradient(#ffff43, #FFDAB9);
+  background-image: linear-gradient(red, yellow);
 }
 table, th, td {
   border: 4px solid rgb(60, 60, 60);
