@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="style.css">
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
 <?php echo("<h1> GRZEGORZ SZYMANEK Nr28</h1>");
-echo("<h3>ZADANIE 1</h3>");
+echo("<h3>ZADANIE 1 - SELECT * FROM pracownicy</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy');
         echo("<table border=1>");
@@ -19,7 +19,7 @@ echo("<h3>ZADANIE 1</h3>");
             }
         echo("</table>");
 
-echo("<h3>ZADANIE 2</h3>");
+echo("<h3>ZADANIE 2 - SELECT * FROM pracownicy WHERE imie like '%a'</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT * FROM pracownicy WHERE imie like "%a"');
         echo("<table border=1>");
@@ -34,7 +34,7 @@ echo("<h3>ZADANIE 2</h3>");
             }
         echo("</table>");
 
-echo("<h3>ZADANIE 3</h3>");
+echo("<h3>ZADANIE 3 - SELECT * FROM pracownicy WHERE (imie like "%a") AND (dzial=1 or dzial=2 or dzial=3) AND (zarobki>10)</h3>");
     $conn = new mysqli ("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT * FROM pracownicy WHERE (imie like "%a") AND (dzial=1 or dzial=2 or dzial=3) AND (zarobki>10)');
             echo("<table border=1>");
@@ -49,7 +49,7 @@ echo("<h3>ZADANIE 3</h3>");
                 }
             echo("</table>");
 
-echo("<h3>ZADANIE 4</h3>");
+echo("<h3>ZADANIE 4 - SELECT * FROM pracownicy WHERE (imie not like "%a") AND (zarobki>30)</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT * FROM pracownicy WHERE (imie not like "%a") AND (zarobki>30)');
         echo("<table border=1>");
@@ -64,7 +64,7 @@ echo("<h3>ZADANIE 4</h3>");
             }
         echo("</table>");
 
-echo("<h3>ZADANIE 5</h3>");
+echo("<h3>ZADANIE 5 - SELECT dzial, max(zarobki) AS Maksimum FROM pracownicy GROUP BY dzial</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT dzial, max(zarobki) AS Maksimum FROM pracownicy GROUP BY dzial');
         echo("<table border=1>");
@@ -77,7 +77,7 @@ echo("<h3>ZADANIE 5</h3>");
             }
         echo("</table>");
 
-echo("<h3>ZADANIE 6</h3>");
+echo("<h3>ZADANIE 6 - SELECT Dzial, sum(zarobki) AS Całość, avg(zarobki) AS Średnia FROM pracownicy GROUP BY dzial</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT Dzial, sum(zarobki) AS Całość, avg(zarobki) AS Średnia FROM pracownicy GROUP BY dzial');
         echo("<table border=1>");
@@ -91,7 +91,7 @@ echo("<h3>ZADANIE 6</h3>");
             }
         echo("</table>");
 
-echo("<h3>ZADANIE 7</h3>");
+echo("<h3>ZADANIE 7 - SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Sum(zarobki) AS Calosc, Avg(zarobki) AS Srednia FROM pracownicy GROUP BY dzial</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Sum(zarobki) AS Calosc, Avg(zarobki) AS Srednia FROM pracownicy GROUP BY dzial');
         echo("<table border=1>");
