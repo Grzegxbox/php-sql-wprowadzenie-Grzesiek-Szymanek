@@ -11,9 +11,9 @@ body {
 }
 <div>GRZEGORZ SZYMANEK Nr28</div> */
 
-p.dotted {border-style: dotted;}
+/* p.dotted {border-style: dotted;}
 <p class="dotted">Zadanie 1</p>
-
+ */
 table, th, td {
   border: 4px solid rgb(60, 60, 60);
 }
