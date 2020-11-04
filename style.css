@@ -1,6 +1,6 @@
-/* body {
+body {
   background-color: #FFDAB9;
-} */
+}
 #grad {
   background-image: linear-gradient(red, yellow);
 }
