@@ -3,19 +3,7 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
-<style>
-div {
-  border: 1px solid black;
-  background-color: lightblue;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
-}
-<div>GRZEGORZ SZYMANEK Nr28</div>
-
-    
-    
+  
 <?php echo("<h1> GRZEGORZ SZYMANEK Nr28</h1>");
 echo("<h3>ZADANIE 1 - SELECT * FROM pracownicy</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
