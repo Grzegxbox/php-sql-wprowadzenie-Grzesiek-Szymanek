@@ -3,8 +3,6 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
-p.dotted {border-style: dotted;}
-<p class="dotted">A dotted border.</p>
   
 <?php echo("<h1> GRZEGORZ SZYMANEK Nr28</h1>");
 echo("<h3>ZADANIE 1 - SELECT * FROM pracownicy</h3>");
