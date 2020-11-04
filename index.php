@@ -67,8 +67,8 @@ echo("<h3>ZADANIE 5</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT dzial, max(zarobki) AS Maksimum FROM pracownicy GROUP BY dzial');
         echo("<table border=1>");
-        echo("<th>Dzial</th>");
-        echo("<th>Maksimum</th>");
+        echo("<th>DZIAŁ</th>");
+        echo("<th>MAKSIMUM</th>");
             while($row = $result -> fetch_assoc()){
                 echo("<tr>");
                     echo("<td>" .$row["dzial"]. "</td><td>" .$row["Maksimum"]. "</td>");
@@ -80,9 +80,9 @@ echo("<h3>ZADANIE 6</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT Dzial, sum(zarobki) AS Całość, avg(zarobki) AS Średnia FROM pracownicy GROUP BY dzial');
         echo("<table border=1>");
-        echo("<th>Dział</th>");
-        echo("<th>Całość</th>");
-        echo("<th>Średnia</th>");
+        echo("<th>DZIAŁ</th>");
+        echo("<th>CAŁOŚĆ</th>");
+        echo("<th>ŚREDNIA</th>");
             while($row = $result -> fetch_assoc()){
                 echo("<tr>");
                     echo("<td>" .$row["Dzial"]. "</td><td>" .$row["Całość"]. "</td><td>" .$row["Średnia"]. "</td>");
