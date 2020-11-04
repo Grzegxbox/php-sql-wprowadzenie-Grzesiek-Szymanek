@@ -1,4 +1,4 @@
 # PHP-sql-wprowadzenie-Grzesiek-Szymanek
 https://nieumiem.herokuapp.com/
 
-ostatnia lekcja:O
+i jusz koniec lekcji
