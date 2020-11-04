@@ -1,8 +1,13 @@
 body {
   background-color: #FFDAB9;
 }
-#grad {
-  background-image: linear-gradient(red, yellow);
+div {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
 }
 table, th, td {
   border: 4px solid rgb(60, 60, 60);
