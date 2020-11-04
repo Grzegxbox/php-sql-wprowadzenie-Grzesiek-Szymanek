@@ -94,11 +94,11 @@ echo("<h3>ZADANIE 7</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Sum(zarobki) AS Calosc, Avg(zarobki) AS Srednia FROM pracownicy GROUP BY dzial');
         echo("<table border=1>");
-        echo("<th>Dzial</th>");
-        echo("<th>Maksimum</th>");
-        echo("<th>Minimum</th>");
-        echo("<th>Calosc</th>");
-        echo("<th>Srednia</th>");
+        echo("<th>DZIAŁ</th>");
+        echo("<th>MAKSIMUM</th>");
+        echo("<th>MINIMUM</th>");
+        echo("<th>CAŁOŚĆ</th>");
+        echo("<th>ŚREDNIA</th>");
             while($row = $result -> fetch_assoc()){
                 echo("<tr>");
                     echo("<td>" .$row["Dzial"]. "</td><td>" .$row["Maksimum"]. "</td><td>" .$row["Minimum"]. "</td><td>" .$row["Calosc"]. "</td><td>" .$row["Srednia"]. "</td>");
