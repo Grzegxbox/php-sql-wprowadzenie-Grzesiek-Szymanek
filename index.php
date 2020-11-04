@@ -7,15 +7,16 @@
 <?php echo("<h1> GRZEGORZ SZYMANEK Nr28</h1>");
 echo("<h3>ZADANIE 1 - SELECT * FROM pracownicy</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT * FROM pracownicy');
+    $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE dzial=id_org');
         echo("<table border=1>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIAŁ</th>");
         echo("<th>ZAROBKI</th>");
+        echo("<th>NAZWA DZIAŁU</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td>");
+                    echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td><td>" .$row["nazwa_dzial"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
