@@ -76,7 +76,7 @@
             }
         echo("</table>");
   
-  echo("<h3>Mężczyźni Posortowani Rosnąco Po Nazwie Działu A Następnie Po Wysokości Zarobków</h3>");
+  echo("<h3>Mężczyźni Posortowani Rosnąco Po Nazwie Działu A Następnie Po Wysokości Zarobków I Nazwy Działów</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie not like "%a") ORDER BY nazwa_dzial asc, zarobki asc');
         echo("<table border=1>");
