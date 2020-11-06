@@ -11,7 +11,7 @@
   <a class="navigation_link2" href="funkcjeAgregujace.php">Funkcję Agregujące</a>
 </div>
   
-<h1>GRZEGORZ SZYMANEK Nr28</h1>
+<h1>STRONA GŁÓWNA</h1>
   
   
 <?php
