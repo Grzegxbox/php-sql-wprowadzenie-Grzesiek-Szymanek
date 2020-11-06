@@ -8,7 +8,7 @@
 <div class="nav">
   <a class="navigation_link" href="pracownicy.php">Pracownicy</a>
   <a class="navigation_link" href="funkcjeAgregujace.php">Funkcję Agregujące</a>
-  </div>
+</div>
   
 <h1>GRZEGORZ SZYMANEK Nr28</h1>
   
