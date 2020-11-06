@@ -29,7 +29,36 @@
                 echo("</tr>");
             }
         echo("</table>");
+  
+  echo("<h3>Pracownicy Tylko z Działu 2</h3>");
+  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result=$conn->query('SELECT * FROM pracownicy WHERE dzial=2');
+        echo("<table border=2>");
+        echo("<th>ID</th>");
+        echo("<th>IMIĘ</th>");
+        echo("<th>DZIAŁ</th>");
+        echo("<th>ZAROBKI</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
  
+    echo("<h3>Pracownicy Tylko z Działu 2 I Z Działu 3</h3>");
+  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result=$conn->query('SELECT * FROM pracownicy WHERE (dzial=2 or dzial=3)');
+        echo("<table border=2>");
+        echo("<th>ID</th>");
+        echo("<th>IMIĘ</th>");
+        echo("<th>DZIAŁ</th>");
+        echo("<th>ZAROBKI</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
   
 
 ?>
