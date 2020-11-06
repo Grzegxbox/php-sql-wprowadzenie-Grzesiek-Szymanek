@@ -12,6 +12,8 @@
   
 <h1>GRZEGORZ SZYMANEK Nr28</h1>
   <h2>Funkcję Agregujące</h2>
+<div class="navigation">
+  <a class="navigation_link3" href="https://nieumiem.herokuapp.com/">Mój GitHub</a>
   
   
 <?php
