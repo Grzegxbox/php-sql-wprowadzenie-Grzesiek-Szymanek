@@ -72,3 +72,7 @@ echo("<h3>ZADANIE 3 - SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Mi
                 echo("</tr>");
             }
         echo("</table>");
+?>
+  
+  </head>
+</html>
