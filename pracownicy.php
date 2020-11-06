@@ -11,7 +11,7 @@
   <a class="navigation_link2" href="funkcjeAgregujace.php">Funkcję Agregujące</a>
 </div>
   
-<h1>GRZEGORZ SZYMANEK Nr28</h1>
+<h1>STRONA Z PRACOWNIKAMI</h1>
  
 <?php
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
