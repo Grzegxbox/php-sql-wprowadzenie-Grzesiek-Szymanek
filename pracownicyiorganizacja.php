@@ -80,6 +80,24 @@
                 echo("</tr>");
             }
         echo("</table>");
+  
+  
+  
   echo("<h2>WYKORZYSTANIE FUNKCJI 'ORDER BY'</h2>");
+  echo("<h3>Pracownicy Posortowani Malejąco</h3>");
+    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result = $conn -> query('SELECT * FROM pracownicy WHERE dzial=id_org ORDER BY imie desc');
+        echo("<table border=1>");
+        echo("<th>ID</th>");
+        echo("<th>Imie</th>");
+        echo("<th>Dzial</th>");
+        echo("<th>Zarobki</th>");
+        echo("<th>Nazwa Działu</th>");
+            while($row = $result -> fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
   
 ?>
