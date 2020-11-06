@@ -59,3 +59,16 @@ echo("<h3>ZADANIE 3 - SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Mi
                 echo("</tr>");
             }
         echo("</table>");
+  
+  echo("<h3>ZADANIE 4 - SELECT Dzial, Avg(zarobki) AS AVG FROM pracownicy GROUP BY dzial HAVING Avg(zarobki)<36</h3>");
+    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result = $conn -> query('SELECT Dzial, Avg(zarobki) AS AVG FROM pracownicy GROUP BY dzial HAVING Avg(zarobki)<36');
+        echo("<table border=1>");
+        echo("<th>Dzial</th>");
+        echo("<th>AVG</th>");
+            while($row = $result -> fetch_assoc()){                                                                                                    
+                echo("<tr>");
+                    echo("<td>" .$row["Dzial"]. "</td><td>" .$row["AVG"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
