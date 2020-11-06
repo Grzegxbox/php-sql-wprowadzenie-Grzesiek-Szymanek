@@ -7,7 +7,7 @@
   
 <div class="nav">
   <a class="navigation_link1" href="pracownicy.php">Pracownicy</a>
-  <a class="navigation_link2" href="funkcjeAgregujace.php">Funkcję Agregujące</a>
+  <a class="navigation_link2" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
 </div>
   
 <h1>GRZEGORZ SZYMANEK Nr28</h1>
