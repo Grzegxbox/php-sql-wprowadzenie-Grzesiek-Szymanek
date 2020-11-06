@@ -11,8 +11,7 @@
 </div>
   
 <h1>GRZEGORZ SZYMANEK Nr28</h1>
-  <div class="navigation">
-  <a class="navigation_link3" href="https://nieumiem.herokuapp.com/">Funkcję Agregujące</a>
+  <h2>Funkcje Agregujące</h2>
   
 <?php
  
