@@ -1,4 +1,5 @@
-body {
+b
+ody {
   background-color: #FFDAB9;
 }
 /* div {
@@ -32,4 +33,10 @@ h1 {
 }
 h3 {
   color: #B22222;
+}
+.nav {
+  background-color: hsl(147, 50%, 47%);
+}
+.navigation_link {
+  color: hsla(60, 100%, 50%, 1);
 }
