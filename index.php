@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
 <link rel="stylesheet" href="style.css">
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
   
-<?php echo("<h1>GRZEGORZ SZYMANEK Nr28</h1>");
+<div class="nav">
+  <a href="pracownicy.php">Pracownicy - wstęp</a>
+  <a href="funkcjeAgregujące.php">Funkcję Agregujące</a>
+  </div>
   
-echo("<h3>ZADANIE 1 - SELECT * FROM pracownicy, organizacja WHERE dzial=id_org</h3>");
+<h1>GRZEGORZ SZYMANEK Nr28</h1>
+  
+  
+<?php
+  echo("<h3>ZADANIE 1 - SELECT * FROM pracownicy, organizacja WHERE dzial=id_org</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE dzial=id_org');
         echo("<table border=2>");
