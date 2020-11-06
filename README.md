@@ -1,5 +1,5 @@
 # PHP-sql-wprowadzenie-Grzesiek-Szymanek
 https://nieumiem.herokuapp.com/
 
-No i przed ostatnia lekcja
-aktualna godzina 12:30
+No i ostatnia lekcja to idę po obiad tylko jak przerwa
+aktualna godzina 13:15
