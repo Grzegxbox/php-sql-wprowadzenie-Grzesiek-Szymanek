@@ -14,6 +14,17 @@
 
 
 <?php
+  echo("<h3>Suma Zarobków Wszystkich Pracowników</h3>");
+    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result = $conn -> query('SELECT SUM(zarobki) FROM pracownicy');
+        echo("<table border=1>");
+        echo("<th>SUMA</th>");
+            while($row = $result -> fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["SUMA"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
 
 
 
