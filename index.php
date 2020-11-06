@@ -3,11 +3,11 @@
 <head>
   
 <link rel="stylesheet" href="style.css">
-<a href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
+<a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
   
 <div class="nav">
-  <a class="navigation_link" href="pracownicy.php">Pracownicy</a>
-  <a class="navigation_link" href="funkcjeAgregujace.php">Funkcję Agregujące</a>
+  <a class="navigation_link1" href="pracownicy.php">Pracownicy</a>
+  <a class="navigation_link2" href="funkcjeAgregujace.php">Funkcję Agregujące</a>
 </div>
   
 <h1>GRZEGORZ SZYMANEK Nr28</h1>
