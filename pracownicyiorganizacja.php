@@ -80,6 +80,6 @@
                 echo("</tr>");
             }
         echo("</table>");
-  echo("<h1>
+  echo("<h2>WYKORZYSTANIE FUNKCJI 'ORDER BY'</h2>");
   
 ?>
