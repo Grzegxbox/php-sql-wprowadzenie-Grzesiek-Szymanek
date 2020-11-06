@@ -1,4 +1,5 @@
 <?php
+// jak by co to nie mam takich haseł
 $servername = "remotemysql.com";
 $username = "Rp4CxP6YkY";
 $password = "V0BMRFi2V3";
