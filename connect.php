@@ -1,5 +1,4 @@
 <?php
-
 $servername = "remotemysql.com";
 $username = "Rp4CxP6YkY";
 $password = "V0BMRFi2V3";
