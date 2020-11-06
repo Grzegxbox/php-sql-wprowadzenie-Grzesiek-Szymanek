@@ -12,10 +12,7 @@
   
 <h1>GRZEGORZ SZYMANEK Nr28</h1>
   <div class="navigation">
-  <a class="navigation_link3" href="https://nieumiem.herokuapp.com/">Powrót na stronę główną</a>
-  
-  <h2>Funkcję Agregujące</h2>
-
+  <a class="navigation_link3" href="https://nieumiem.herokuapp.com/">Funkcję Agregujące</a>
   
 <?php
  
