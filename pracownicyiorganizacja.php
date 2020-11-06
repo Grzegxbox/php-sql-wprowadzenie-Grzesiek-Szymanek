@@ -13,3 +13,23 @@
 </div>
   
 <h1>PRACOWNICY I ORGANIZACJA</h1>
+
+  
+<?php
+  
+  echo("<h3>Wszyscy Pracownicy I Ich Organizacje</h3>");
+  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE dzial=id_org');
+        echo("<table border=2>");
+        echo("<th>ID</th>");
+        echo("<th>IMIĘ</th>");
+        echo("<th>DZIAŁ</th>");
+        echo("<th>ZAROBKI</th>");
+        echo("<th>NAZWA DZIAŁU</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+  
