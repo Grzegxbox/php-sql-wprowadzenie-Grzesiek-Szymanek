@@ -32,4 +32,36 @@
                 echo("</tr>");
             }
         echo("</table>");
+  
+  echo("<h3>Pracownicy Z 1 I 4 Działu Wraz Z Nazwami Działów</h3>");
+  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=1 or dzial=4) AND (dzial=id_org)');
+        echo("<table border=2>");
+        echo("<th>ID</th>");
+        echo("<th>IMIĘ</th>");
+        echo("<th>DZIAŁ</th>");
+        echo("<th>ZAROBKI</th>");
+        echo("<th>NAZWA DZIAŁU</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td><td>" .$row["nazwa_dzial"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+  
+  echo("<h3>Same Kobiety Wraz Z Nazwami Działów</h3>");
+  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (imie like "%a") AND (dzial=id_org)');
+        echo("<table border=2>");
+        echo("<th>ID</th>");
+        echo("<th>IMIĘ</th>");
+        echo("<th>DZIAŁ</th>");
+        echo("<th>ZAROBKI</th>");
+        echo("<th>NAZWA DZIAŁU</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td><td>" .$row["nazwa_dzial"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
 ?>
