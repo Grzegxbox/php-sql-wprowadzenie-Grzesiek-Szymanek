@@ -12,7 +12,6 @@
 </div>
   
 <h1>FUNKCJE AGREGUJĄCE</h1>
-  <h2>Funkcje Agregujące</h2>
   
 <?php
  
