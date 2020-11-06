@@ -1,7 +1,7 @@
-b
-ody {
+body {
   background-color: #FFDAB9;
 }
+
 /* div {
   border: 1px solid black;
   background-color: lightblue;
@@ -15,28 +15,36 @@ ody {
 /* p.dotted {border-style: dotted;}
 <p class="dotted">Zadanie 1</p>
  */
+
 table, th, td {
   border: 8px solid rgb(61, 61, 61);
 }
+
 td {
   text-align: center;
 }
+
 th {
   background-color: rgb(60, 179, 113);
   color: white;
 }
+
 table {
   border-collapse: collapse;
 }
+
 h1 {
   color: #800080;
 }
+
 h3 {
   color: #B22222;
 }
+
 .nav {
   background-color: hsl(147, 50%, 47%);
 }
+
 .navigation_link {
   color: hsla(60, 100%, 50%, 1);
 }
