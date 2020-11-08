@@ -14,15 +14,14 @@
 
 
 <?php
-echo("<h3>SUMA</h3>");
+echo("<h3>1. Suma Wszystkich Pracowników</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT dzial, SUM(zarobki) AS SUMA FROM pracownicy GROUP BY dzial');
+    $result = $conn -> query('SELECT SUM(zarobki) AS SUMA FROM pracownicy ');
         echo("<table border=1>");
-        echo("<th>Dzial</th>");
-        echo("<th>Ilosc</th>");
+        echo("<th>SUMA</th>");
             while($row = $result -> fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["dzial"]. "</td><td>" .$row["SUMA"]. "</td>");
+                    echo("<td>" .$row["SUMA"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
