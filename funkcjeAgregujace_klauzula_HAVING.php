@@ -13,21 +13,44 @@
 <h1>Funkcja Agregująca - HAVING</h1>
 
 <?php
-  echo("<h3>1. Suma Zarobków W Poszczególnych Działach Mniejsza Od 28</h3>");
+  echo("<h3>1. Średnia Zarobków W Poszczególnych Działach Mniejsza Od 28</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-      $result = $conn -> query('SELECT dzial, SUM(zarobki) AS suma FROM pracownicy, organizacja WHERE (dzial=id_org) GROUP BY dzial');
+      $result = $conn -> query('SELECT dzial, AVG(zarobki) AS srednia FROM pracownicy, organizacja WHERE (dzial=id_org) GROUP BY dzial HAVING AVG(zarobki)<28');
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
-          echo("<th>SUMA</th>");
+          echo("<th>ŚREDNIA</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
-                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["suma"]. "</td>");
+                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["srednia"]. "</td>");
                   echo("</tr>");
               }
           echo("</table>");
   
-
-    
+  echo("<h3>2. Średnia Zarobków Mężczyzn W Poszczególnych Działach Większa Od 30</h3>");
+      $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+      $result = $conn -> query('SELECT dzial, AVG(zarobki) AS srednia FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie noy like "%a") GROUP BY dzial HAVING AVG(zarobki)<28');
+          echo("<table border=1>");
+          echo("<th>DZIAŁ</th>");
+          echo("<th>ŚREDNIA</th>");
+              while($row = $result -> fetch_assoc()){
+                  echo("<tr>");
+                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["srednia"]. "</td>");
+                  echo("</tr>");
+              }
+          echo("</table>");
+  
+  echo("<h3>3. Ilość Pracowników W Poszczególnych Działach Większa Od 3</h3>");
+      $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+      $result = $conn -> query('SELECT dzial, COUNT(imie) AS ilosc FROM pracownicy, organizacja WHERE (dzial=id_org) GROUP BY dzial HAVING COUNT(imie)<3');
+          echo("<table border=1>");
+          echo("<th>DZIAŁ</th>");
+          echo("<th>ILOŚĆ</th>");
+              while($row = $result -> fetch_assoc()){
+                  echo("<tr>");
+                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["ilosc"]. "</td>");
+                  echo("</tr>");
+              }
+          echo("</table>");
 ?>
 
     </head>
