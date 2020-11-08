@@ -79,7 +79,7 @@
   
     echo("<h3>6. Średnia Zarobków Mężczyzn Z Działów 1 I 2</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE (imie not like "%a") AND (dzial=2 OR dzial=4) ');
+    $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE (imie not like "%a") AND (dzial=2 OR dzial=4) GROUP BY dzial');
         echo("<table border=1>");
         echo("<th>ŚREDNIA</th>");
             while($row = $result -> fetch_assoc()){
