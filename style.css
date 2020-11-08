@@ -46,11 +46,9 @@ h3 {
 }
 
 .mojlink0 {
-  background-color:rgb(60, 60, 60);
-  color:#ff0000;
   font-family: helvetica;
-  background-color: white;
-  color: black;
+  background-color: rgb(60, 60, 60);
+  color: #ff0000;
   border: 2px solid #4CAF50;
   padding: 10px 20px;
   text-align: center;
