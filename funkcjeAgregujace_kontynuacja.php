@@ -64,7 +64,7 @@
             }
         echo("</table>");
   
-    echo("<h3>5. Średnia Zarobków Pracowników W 4 Dziale</h3>");
+    echo("<h3>5. Średnia Zarobków Pracowników Z Działu 4</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE dzial=4 ');
         echo("<table border=1>");
@@ -77,7 +77,7 @@
             }
         echo("</table>");
   
-    echo("<h3>6. Średnia Zarobków Wszystkich Mężczyzn</h3>");
+    echo("<h3>6. Średnia Zarobków Mężczyzn Z Działów 1 I 2</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE (imie not like "%a") AND (dzial=2 OR dzial=4) ');
         echo("<table border=1>");
