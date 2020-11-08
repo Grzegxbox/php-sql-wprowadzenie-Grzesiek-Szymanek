@@ -2,20 +2,6 @@ body {
   background-color: #FFDAB9;
 }
 
-/* div {
-  border: 1px solid black;
-  background-color: lightblue;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
-}
-<div>GRZEGORZ SZYMANEK Nr28</div> */
-
-/* p.dotted {border-style: dotted;}
-<p class="dotted">Zadanie 1</p>
- */
-
 table, th, td {
   border: 6px solid rgb(61, 61, 61);
 }
@@ -44,19 +30,10 @@ h2 {
 h3 {
   color: #B22222;
 }
-
-/* .mojlink0 {
-  font-family: helvetica;
-  background-color: rgb(60, 60, 60);
-  color: #ff0000;
-  border: 2px solid #4CAF50;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin-left: 30px;
-} */
+ .mojlink0 {
+   background-color:rgb(60, 60, 60);
+   color:#ff0000;
+}
 
 .navigation_link0 {
   background-color:#ffffff;
