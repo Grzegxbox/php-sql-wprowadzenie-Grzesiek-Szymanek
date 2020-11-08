@@ -83,7 +83,31 @@
         echo("<th>ŚREDNIA</th>");
             while($row = $result -> fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["dzial"]. "</td><td>" .$row["srednia"]. "</td>");
+                    echo("<td>" .$row["srednia"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+  
+     echo("<h3>7. Ilość Wszystkich Pracowników</h3>");
+    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result = $conn -> query('SELECT COUNT(imie) AS ilosc FROM pracownicy');
+        echo("<table border=1>");
+        echo("<th>ILOŚĆ</th>");
+            while($row = $result -> fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["ilosc"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+  
+     echo("<h3>8. Łączna Ilość Kobiet W Działach 1 I 3</h3>");
+    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result = $conn -> query('SELECT COUNT(imie) AS ilosc FROM pracownicy WHERE (imie like "%a") AND (dzial=1 OR dzial=3)');
+        echo("<table border=1>");
+        echo("<th>ILOŚĆ</th>");
+            while($row = $result -> fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["ilosc"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
