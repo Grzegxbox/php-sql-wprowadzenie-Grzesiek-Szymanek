@@ -84,7 +84,7 @@
   
 ?>
 
-<a class="navigation_link4" href="pracownicyiorganizacja_sortowanie.php">WYKORZYSTANIE FUNKCJI 'ORDER BY'</a>
+<a class="navigation_link4" href="pracownicyiorganizacja_sortowanie.php">Sortowanie Pracowników</a>
   
   </head>
 </html>
