@@ -31,7 +31,7 @@
             }
         echo("</table>");
   
-  echo("<h3>Pracownicy Tylko z Działu 2</h3>");
+  echo("<h3>1. Pracownicy Tylko z Działu 2</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy WHERE dzial=2');
         echo("<table border=2>");
@@ -46,7 +46,7 @@
             }
         echo("</table>");
  
-    echo("<h3>Pracownicy Tylko z Działu 2 I Z Działu 3</h3>");
+    echo("<h3>2. Pracownicy Tylko z Działu 2 I Z Działu 3</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy WHERE (dzial=2 or dzial=3)');
         echo("<table border=2>");
@@ -61,7 +61,7 @@
             }
         echo("</table>");
   
-    echo("<h3>Pracownicy Z Zarobkami Mniejszymi Od 30</h3>");
+    echo("<h3>3. Pracownicy Z Zarobkami Mniejszymi Od 30</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy WHERE (zarobki<30)');
         echo("<table border=2>");
