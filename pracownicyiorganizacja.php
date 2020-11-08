@@ -84,8 +84,8 @@
   
 ?>
 
-<a class="navigation_link5" href="pracownicyiorganizacja_sortowanie.php">Sortowanie Pracowników</a>
-<a class="navigation_link6" href="pracownicyiorganizacja_ograniczanie.php">Ograniczanie Ilości Pracowników</a>
+<a class="nav_to_order" href="pracownicyiorganizacja_sortowanie.php">Sortowanie Pracowników</a>
+<a class="nav_to_limit" href="pracownicyiorganizacja_ograniczanie.php">Ograniczanie Ilości Pracowników</a>
   
   </head>
 </html>
