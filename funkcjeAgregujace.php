@@ -76,6 +76,7 @@ echo("<h3>ZADANIE 3 - SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Mi
   
 <a class="navigation_link1" href="funkcjeAgregujace_kontynuacja.php">KONTYNUACJA FUNCKJI AGREGUJĄCYCH</a>
 <a class="navigation_link1" href="funkcjeAgregujace_grupowanie.php">FUNKCJA AGREGUJĄCA - GRUPOWANIE</a>
+<a class="navigation_link1" href="funkcjeAgregujace_klauzula_HAVING.php">FUNKCJA AGREGUJĄCA - HAVING</a>
   
   </head>
 </html>
