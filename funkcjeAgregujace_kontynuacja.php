@@ -50,7 +50,6 @@
             }
         echo("</table>");
   
-         echo("</table>");
   
    echo("<h3>4. Średnia Zarobków Wszystkich Mężczyzn</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
@@ -66,7 +65,7 @@
   
     echo("<h3>5. Średnia Zarobków Pracowników Z Działu 4</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE dzial=4 ');
+    $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE (dzial=4)');
         echo("<table border=1>");
         echo("<th>DZIAŁ</th>");
         echo("<th>ŚREDNIA</th>");
@@ -79,7 +78,7 @@
   
     echo("<h3>6. Średnia Zarobków Mężczyzn Z Działów 1 I 2</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE (imie not like "%a") AND (dzial=2 OR dzial=4) GROUP BY dzial');
+    $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE (imie not like "%a") AND (dzial=1 OR dzial=2) GROUP BY dzial LIMIT 1');
         echo("<table border=1>");
         echo("<th>ŚREDNIA</th>");
             while($row = $result -> fetch_assoc()){
