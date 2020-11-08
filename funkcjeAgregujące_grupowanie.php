@@ -63,9 +63,7 @@
                 echo("</tr>");
             }
         echo("</table>");
-  
-
 ?>
 
-</head>
-</html>
+    </head>
+  </html>
