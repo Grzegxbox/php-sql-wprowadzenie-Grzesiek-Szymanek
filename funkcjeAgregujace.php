@@ -6,7 +6,7 @@
 <a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
   
 <div class="nav">
-  <a class="navigation_link0" href="https://nieumiem.herokuapp.com/">Strona Główna</a>
+  <a class="navigation_link1" href="https://nieumiem.herokuapp.com/">Strona Główna</a>
   <a class="navigation_link1" href="pracownicy.php">Pracownicy</a>
   <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
   <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
@@ -74,8 +74,8 @@ echo("<h3>ZADANIE 3 - SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Mi
         echo("</table>");
 ?>
   
-<a class="navigation_link2" href="funkcjeAgregujace_kontynuacja.php">KONTYNUACJA FUNCKJI AGREGUJĄCYCH</a>
-<a class="navigation_link3" href="funkcjeAgregujace_grupowanie.php">FUNKCJA AGREGUJĄCA - GRUPOWANIE</a>
+<a class="navigation_link1" href="funkcjeAgregujace_kontynuacja.php">KONTYNUACJA FUNCKJI AGREGUJĄCYCH</a>
+<a class="navigation_link1" href="funkcjeAgregujace_grupowanie.php">FUNKCJA AGREGUJĄCA - GRUPOWANIE</a>
   
   </head>
 </html>
