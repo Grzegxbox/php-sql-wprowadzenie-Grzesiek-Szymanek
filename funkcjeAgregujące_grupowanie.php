@@ -11,3 +11,61 @@
   
 
 <h1>Funkcja Agregująca - GRUPOWANIE</h1>
+
+<?php
+  echo("<h3>1. Suma Zarobków W Poszczególnych Działach</h3>");
+      $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+      $result = $conn -> query('SELECT dzial, SUM(zarobki) AS suma FROM pracownicy GROUP BY dzial');
+          echo("<table border=1>");
+          echo("<th>DZIAŁ</th>");
+          echo("<th>SUMA</th>");
+              while($row = $result -> fetch_assoc()){
+                  echo("<tr>");
+                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["suma"]. "</td>");
+                  echo("</tr>");
+              }
+          echo("</table>");
+  
+  echo("<h3>2. Ilość Pracowników W Poszczególnych Działach</h3>");
+    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result = $conn -> query('SELECT dzial, COUNT(imie) AS ilosc FROM pracownicy GROUP BY dzial ');
+        echo("<table border=1>");
+        echo("<th>DZIAŁ</th>");
+        echo("<th>ILOŚĆ OSÓB</th>");
+            while($row = $result -> fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["dzial"]. "</td><td>" .$row["ilosc"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+  
+   echo("<h3>3. Średnie Zarobki W Poszczególncyh Działach</h3>");
+    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result = $conn -> query('SELECT dzial, AVG(zarobki) AS srednia FROM pracownicy GROUP BY dzial');
+        echo("<table border=1>");
+        echo("<th>DZIAŁ</th>");
+        echo("<th>ŚREDNIA</th>");
+            while($row = $result -> fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["dzial"]. "</td><td>" .$row["srednia"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+  
+    echo("<h3>4.Suma Zarobków Kobiet I Mężczyzn</h3>");
+    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE (imie like "%a" AND imie not like"%a");
+        echo("<table border=1>");
+        echo("<th>ŚREDNIA</th>");
+            while($row = $result -> fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["srednia"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+  
+
+?>
+
+</head>
+</html>
