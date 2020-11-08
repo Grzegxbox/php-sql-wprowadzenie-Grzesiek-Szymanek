@@ -52,9 +52,9 @@
             }
         echo("</table>");
   
-    echo("<h3>4.Suma Zarobków Kobiet I Mężczyzn</h3>");
+    echo("<h3>4. Suma Zarobków Kobiet I Mężczyzn</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE (imie like "%a" AND imie not like"%a");
+    $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE (imie like "%a" AND imie not like"%a")');
         echo("<table border=1>");
         echo("<th>ŚREDNIA</th>");
             while($row = $result -> fetch_assoc()){
