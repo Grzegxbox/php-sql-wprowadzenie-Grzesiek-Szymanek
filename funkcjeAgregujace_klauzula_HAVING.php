@@ -18,10 +18,11 @@
       $result = $conn -> query('SELECT dzial, AVG(zarobki) AS srednia FROM pracownicy, organizacja WHERE (dzial=id_org) GROUP BY dzial HAVING AVG(zarobki)<28');
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
+          echo("<td>NAZWA DZIAŁU</td>");
           echo("<th>ŚREDNIA</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
-                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["srednia"]. "</td>");
+                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["srednia"]. "</td>");
                   echo("</tr>");
               }
           echo("</table>");
@@ -31,10 +32,11 @@
       $result = $conn -> query('SELECT dzial, AVG(zarobki) AS srednia FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie noy like "%a") GROUP BY dzial HAVING AVG(zarobki)<28');
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
+          echo("<td>NAZWA DZIAŁU</td>");
           echo("<th>ŚREDNIA</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
-                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["srednia"]. "</td>");
+                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["srednia"]. "</td>");
                   echo("</tr>");
               }
           echo("</table>");
@@ -44,10 +46,11 @@
       $result = $conn -> query('SELECT dzial, COUNT(imie) AS ilosc FROM pracownicy, organizacja WHERE (dzial=id_org) GROUP BY dzial HAVING COUNT(imie)<3');
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
+          echo("<td>NAZWA DZIAŁU</td>");
           echo("<th>ILOŚĆ</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
-                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["ilosc"]. "</td>");
+                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["srednia"]. "</td>");
                   echo("</tr>");
               }
           echo("</table>");
