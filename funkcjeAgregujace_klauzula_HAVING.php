@@ -18,11 +18,11 @@
       $result = $conn -> query('SELECT dzial, nazwa_dzialu, AVG(zarobki) AS srednia FROM pracownicy, organizacja WHERE (dzial=id_org) GROUP BY dzial HAVING AVG(zarobki)<28');
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
-          echo("<th>ŚREDNIA</th>");
           echo("<td>NAZWA DZIAŁU</td>");
+          echo("<th>ŚREDNIA</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
-                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["srednia"]. "</td><td>" .$row["nazwa_dzialu"]. "</td>");
+                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzialu"]. "</td><td>" .$row["srednia"]. "</td>");
                   echo("</tr>");
               }
           echo("</table>");
