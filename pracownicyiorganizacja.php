@@ -49,7 +49,7 @@
             }
         echo("</table>");
   
-  echo("<h3>2. SELECT * FROM pracownicy, organizacja WHERE (imie like "%a") AND (dzial=id_org)</h3>");
+  echo("<h3>2. SELECT * FROM pracownicy, organizacja WHERE (imie like '%a') AND (dzial=id_org)</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (imie like "%a") AND (dzial=id_org)');
         echo("<table border=2>");
@@ -65,7 +65,7 @@
             }
         echo("</table>");
   
-    echo("<h3>3. SELECT * FROM pracownicy, organizacja WHERE (imie not like "%a") AND (dzial=id_org)</h3>");
+    echo("<h3>3. SELECT * FROM pracownicy, organizacja WHERE (imie not like '%a') AND (dzial=id_org)</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (imie not like "%a") AND (dzial=id_org)');
         echo("<table border=2>");
