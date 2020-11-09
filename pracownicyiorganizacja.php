@@ -17,9 +17,9 @@
   
 <?php
   
-  echo("<h3>Wszyscy Pracownicy I Ich Organizacje</h3>");
+  echo("<h3>0. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE dzial=id_org');
+    $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)');
         echo("<table border=2>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
@@ -33,7 +33,7 @@
             }
         echo("</table>");
   
-  echo("<h3>1. Pracownicy Z 1 I 4 Działu Wraz Z Nazwami Działów</h3>");
+  echo("<h3>1. SELECT * FROM pracownicy, organizacja WHERE (dzial=1 or dzial=4) AND (dzial=id_org)</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=1 or dzial=4) AND (dzial=id_org)');
         echo("<table border=2>");
@@ -49,7 +49,7 @@
             }
         echo("</table>");
   
-  echo("<h3>2. Same Kobiety Wraz Z Nazwami Działów</h3>");
+  echo("<h3>2. SELECT * FROM pracownicy, organizacja WHERE (imie like "%a") AND (dzial=id_org)</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (imie like "%a") AND (dzial=id_org)');
         echo("<table border=2>");
@@ -65,7 +65,7 @@
             }
         echo("</table>");
   
-    echo("<h3>3. Sami Mężczyźni Wraz Z Nazwami Działów</h3>");
+    echo("<h3>3. SELECT * FROM pracownicy, organizacja WHERE (imie not like "%a") AND (dzial=id_org)</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (imie not like "%a") AND (dzial=id_org)');
         echo("<table border=2>");
