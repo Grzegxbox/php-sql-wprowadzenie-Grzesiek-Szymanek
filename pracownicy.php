@@ -15,9 +15,9 @@
 <h1>PRACOWNICY</h1>
  
 <?php
-  echo("<h3>Wszyscy Pracownicy</h3>");
+  echo("<h3>0. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE dzial=id_org');
+    $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)');
         echo("<table border=2>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
@@ -31,7 +31,7 @@
             }
         echo("</table>");
   
-  echo("<h3>1. Pracownicy Tylko z Działu 2</h3>");
+  echo("<h3>1. SELECT * FROM pracownicy WHERE dzial=2</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy WHERE dzial=2');
         echo("<table border=2>");
@@ -46,7 +46,7 @@
             }
         echo("</table>");
  
-    echo("<h3>2. Pracownicy Tylko z Działu 2 I Z Działu 3</h3>");
+    echo("<h3>2. SELECT * FROM pracownicy WHERE (dzial=2 or dzial=3)</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy WHERE (dzial=2 or dzial=3)');
         echo("<table border=2>");
