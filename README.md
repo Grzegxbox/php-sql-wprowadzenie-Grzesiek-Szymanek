@@ -1,5 +1,5 @@
 # PHP-sql-wprowadzenie-Grzesiek-Szymanek
 
-https://nieumiem.herokuapp.
+https://nieumiem.herokua
 
 18:37
