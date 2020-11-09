@@ -52,7 +52,7 @@
             }
         echo("</table>");
   
-    echo("<h3>4. Suma Zarobków Kobiet I Mężczyzn</h3>");
+    echo("<h3>4. SELECT SUM(zarobki) AS suma FROM pracownicy</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT SUM(zarobki) AS suma FROM pracownicy');
         echo("<table border=1>");
@@ -64,7 +64,7 @@
             }
         echo("</table>");
   
-    echo("<h3>4. Średnia Zarobków Kobiet I Mężczyzn</h3>");
+    echo("<h3>4. SELECT AVG(zarobki) AS srednia FROM pracownicy</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy');
         echo("<table border=1>");
