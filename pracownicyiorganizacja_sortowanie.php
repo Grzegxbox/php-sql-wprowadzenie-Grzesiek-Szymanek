@@ -60,7 +60,7 @@
             }
         echo("</table>");
   
-  echo("<h3>4. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like "%a") ORDER BY zarobki asc</h3>");
+  echo("<h3>4. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like '%a') ORDER BY zarobki asc</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like "%a") ORDER BY zarobki asc');
         echo("<table border=1>");
