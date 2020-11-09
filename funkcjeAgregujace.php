@@ -15,7 +15,6 @@
 <h1>FUNKCJE AGREGUJĄCE</h1>
   
 <?php
- 
 
 echo("<h3>ZADANIE 1 - SELECT dzial, max(zarobki) AS Maksimum FROM pracownicy GROUP BY dzial</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
