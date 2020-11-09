@@ -61,7 +61,7 @@
             }
         echo("</table>");
   
-    echo("<h3>3. Pracownicy Z Zarobkami Mniejszymi Od 30</h3>");
+    echo("<h3>3. SELECT * FROM pracownicy WHERE (zarobki<30)</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy WHERE (zarobki<30)');
         echo("<table border=2>");
