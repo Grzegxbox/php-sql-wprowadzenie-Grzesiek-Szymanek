@@ -14,9 +14,9 @@
 
 
 <?php
-  echo("<h3>1. Suma Zarobków Wszystkich Pracowników</h3>");
+  echo("<h3>1. SELECT SUM(zarobki) AS SUMA FROM pracownicy</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-      $result = $conn -> query('SELECT SUM(zarobki) AS SUMA FROM pracownicy ');
+      $result = $conn -> query('SELECT SUM(zarobki) AS SUMA FROM pracownicy');
           echo("<table border=1>");
           echo("<th>SUMA</th>");
               while($row = $result -> fetch_assoc()){
@@ -26,9 +26,9 @@
               }
           echo("</table>");
   
-  echo("<h3>2. Suma Zarobków Wszystkich Kobiet</h3>");
+  echo("<h3>2. SELECT SUM(zarobki) AS SUMA FROM pracownicy WHERE (imie like '%a')</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT SUM(zarobki) AS SUMA FROM pracownicy WHERE (imie like "%a") ');
+    $result = $conn -> query('SELECT SUM(zarobki) AS SUMA FROM pracownicy WHERE (imie like "%a")');
         echo("<table border=1>");
         echo("<th>SUMA</th>");
             while($row = $result -> fetch_assoc()){
@@ -38,9 +38,9 @@
             }
         echo("</table>");
   
-   echo("<h3>3. Suma Zarobków Mężczyzn Z Działów 2 I 3</h3>");
+   echo("<h3>3. SELECT SUM(zarobki) AS SUMA FROM pracownicy WHERE (imie not like "%a") AND (dzial=2 OR dzial=3)</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT SUM(zarobki) AS SUMA FROM pracownicy WHERE (imie not like "%a") AND (dzial=2 OR dzial=3) ');
+    $result = $conn -> query('SELECT SUM(zarobki) AS SUMA FROM pracownicy WHERE (imie not like "%a") AND (dzial=2 OR dzial=3)');
         echo("<table border=1>");
         echo("<th>SUMA</th>");
             while($row = $result -> fetch_assoc()){
@@ -51,9 +51,9 @@
         echo("</table>");
   
   
-   echo("<h3>4. Średnia Zarobków Wszystkich Mężczyzn</h3>");
+   echo("<h3>4. SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE (imie not like '%a') </h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE (imie not like "%a") ');
+    $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE (imie not like "%a")');
         echo("<table border=1>");
         echo("<th>ŚREDNIA</th>");
             while($row = $result -> fetch_assoc()){
@@ -63,7 +63,7 @@
             }
         echo("</table>");
   
-    echo("<h3>5. Średnia Zarobków Pracowników Z Działu 4</h3>");
+    echo("<h3>5. SELECT dzial, AVG(zarobki) AS srednia FROM pracownicy WHERE (dzial=4) GROUP BY dzial LIMIT 1</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT dzial, AVG(zarobki) AS srednia FROM pracownicy WHERE (dzial=4) GROUP BY dzial LIMIT 1');
         echo("<table border=1>");
@@ -76,7 +76,7 @@
             }
         echo("</table>");
   
-    echo("<h3>6. Średnia Zarobków Mężczyzn Z Działów 1 I 2</h3>");
+    echo("<h3>6. SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE (imie not like "%a") AND (dzial=1 OR dzial=2)</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy WHERE (imie not like "%a") AND (dzial=1 OR dzial=2)');
         echo("<table border=1>");
@@ -88,7 +88,7 @@
             }
         echo("</table>");
   
-     echo("<h3>7. Ilość Wszystkich Pracowników</h3>");
+     echo("<h3>7. SELECT COUNT(imie) AS ilosc FROM pracownicy</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT COUNT(imie) AS ilosc FROM pracownicy');
         echo("<table border=1>");
@@ -100,7 +100,7 @@
             }
         echo("</table>");
   
-     echo("<h3>8. Łączna Ilość Kobiet W Działach 1 I 3</h3>");
+     echo("<h3>8. SELECT COUNT(imie) AS ilosc FROM pracownicy WHERE (imie like "%a") AND (dzial=1 OR dzial=3)</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT COUNT(imie) AS ilosc FROM pracownicy WHERE (imie like "%a") AND (dzial=1 OR dzial=3)');
         echo("<table border=1>");
