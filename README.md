@@ -1,5 +1,5 @@
 # PHP-sql-wprowadzenie-Grzesiek-Szymanek
 
-https://n
+http
 
 18:37
