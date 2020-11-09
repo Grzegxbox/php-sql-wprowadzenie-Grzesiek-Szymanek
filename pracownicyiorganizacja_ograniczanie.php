@@ -13,7 +13,7 @@
  
 <?php
   
-echo("<h3>1. Dwóch Najlepiej Zarabiających Pracowników Z Działu 4</h3>");
+echo("<h3>1. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (dzial=4) ORDER BY zarobki desc LIMIT 2</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (dzial=4) ORDER BY zarobki desc LIMIT 2');
         echo("<table border=2>");
@@ -29,7 +29,7 @@ echo("<h3>1. Dwóch Najlepiej Zarabiających Pracowników Z Działu 4</h3>");
             }
         echo("</table>");
 
-echo("<h3>2. Trzy Najlepsze Zarabiające Kobiety Z Działów 2 I 4</h3>");
+echo("<h3>2. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like "%a") AND (dzial=2 OR dzial=4) ORDER BY zarobki desc LIMIT 3</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like "%a") AND (dzial=2 OR dzial=4) ORDER BY zarobki desc LIMIT 3');
         echo("<table border=1>");
@@ -45,7 +45,7 @@ echo("<h3>2. Trzy Najlepsze Zarabiające Kobiety Z Działów 2 I 4</h3>");
             }
         echo("</table>");
 
-echo("<h3>3. Jeden Najstarszy Pracownik</h3>");
+echo("<h3>3. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) ORDER BY data_urodzenia LIMIT 1</h3>");
     $conn = new mysqli ("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) ORDER BY data_urodzenia LIMIT 1');
             echo("<table border=1>");
