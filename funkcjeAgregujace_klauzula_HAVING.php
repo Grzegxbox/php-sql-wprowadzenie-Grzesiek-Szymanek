@@ -27,7 +27,7 @@
               }
           echo("</table>");
   
-  echo("<h3>2. SELECT dzial, AVG(zarobki) AS srednia, nazwa_dzialu FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie noy like "%a") GROUP BY dzial HAVING AVG(zarobki)<28</h3>");
+  echo("<h3>2. SELECT dzial, AVG(zarobki) AS srednia, nazwa_dzialu FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie noy like '%a') GROUP BY dzial HAVING AVG(zarobki)<28</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT dzial, AVG(zarobki) AS srednia, nazwa_dzialu FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie noy like "%a") GROUP BY dzial HAVING AVG(zarobki)<28');
           echo("<table border=1>");
