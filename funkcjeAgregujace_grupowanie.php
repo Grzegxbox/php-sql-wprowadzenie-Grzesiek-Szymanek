@@ -13,7 +13,7 @@
 <h1>Funkcja Agregująca - GRUPOWANIE</h1>
 
 <?php
-  echo("<h3>1. Suma Zarobków W Poszczególnych Działach</h3>");
+  echo("<h3>1. SELECT dzial, SUM(zarobki) AS suma FROM pracownicy GROUP BY dzial</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT dzial, SUM(zarobki) AS suma FROM pracownicy GROUP BY dzial');
           echo("<table border=1>");
@@ -26,9 +26,9 @@
               }
           echo("</table>");
   
-  echo("<h3>2. Ilość Pracowników W Poszczególnych Działach</h3>");
+  echo("<h3>2. SELECT dzial, COUNT(imie) AS ilosc FROM pracownicy GROUP BY dzial</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT dzial, COUNT(imie) AS ilosc FROM pracownicy GROUP BY dzial ');
+    $result = $conn -> query('SELECT dzial, COUNT(imie) AS ilosc FROM pracownicy GROUP BY dzial');
         echo("<table border=1>");
         echo("<th>DZIAŁ</th>");
         echo("<th>ILOŚĆ OSÓB</th>");
@@ -39,7 +39,7 @@
             }
         echo("</table>");
   
-   echo("<h3>3. Średnie Zarobki W Poszczególncyh Działach</h3>");
+   echo("<h3>3. SELECT dzial, AVG(zarobki) AS srednia FROM pracownicy GROUP BY dzial</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT dzial, AVG(zarobki) AS srednia FROM pracownicy GROUP BY dzial');
         echo("<table border=1>");
