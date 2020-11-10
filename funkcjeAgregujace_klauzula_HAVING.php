@@ -18,7 +18,7 @@
       $result = $conn -> query('SELECT dzial, SUM(zarobki) AS suma, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) < 128');
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
-          echo("<td>SUMA</td>");
+          echo("<th>SUMA</th>");
           echo("<th>NAZWA</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
@@ -33,7 +33,7 @@
 //           echo("<table border=1>");
 //           echo("<th>DZIAŁ</th>");
 //           echo("<th>ŚREDNIA</th>");
-//           echo("<td>NAZWA DZIAŁU</td>");
+//           echo("<th>NAZWA DZIAŁU</th>");
 //               while($row = $result -> fetch_assoc()){
 //                   echo("<tr>");
 //                       echo("<td>" .$row["dzial"]. "</td><td>" .$row["srednia"]. "</td><td>" .$row["nazwa_dzialu"]. "</td>");
@@ -45,7 +45,7 @@
 //       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
 //       $result = $conn -> query('SELECT nazwa_dzialu, COUNT(imie) AS ilosc, nazwa_dzialu FROM pracownicy, organizacja WHERE (dzial=id_org) GROUP BY dzial HAVING COUNT(imie)<3');
 //           echo("<table border=1>");
-//           echo("<td>NAZWA DZIAŁU</td>");
+//           echo("<th>NAZWA DZIAŁU</th>");
 //           echo("<th>ILOŚĆ</th>");
 //               while($row = $result -> fetch_assoc()){
 //                   echo("<tr>");
