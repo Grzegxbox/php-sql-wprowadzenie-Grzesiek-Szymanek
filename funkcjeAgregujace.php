@@ -13,7 +13,7 @@
 </div>
   
 <h1>FUNKCJE AGREGUJĄCE</h1>
-  
+  <h4>Linki do strona z odpowiednimi funkcjami</h4>
   <a class="navigation_link1" href="funkcjeAgregujace_kontynuacja.php">KONTYNUACJA FUNCKJI AGREGUJĄCYCH</a>
   <a class="navigation_link1" href="funkcjeAgregujace_grupowanie.php">FUNKCJA AGREGUJĄCA - GRUPOWANIE</a>
   <a class="navigation_link1" href="funkcjeAgregujace_klauzula_HAVING.php">FUNKCJA AGREGUJĄCA - HAVING</a>
