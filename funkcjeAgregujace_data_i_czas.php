@@ -13,23 +13,25 @@
 <h1>Funkcja Agregująca - DATA I CZAS</h1>
 
 <?php
-//   echo("<h3>1. SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma,  FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) > 128</h3>");
-//       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-//       $result = $conn -> query('SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma  FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) > 128');
-//           echo("<table border=1>");
-//           echo("<th>DZIAŁ</th>");
-//           echo("<th>NAZWA DZIAŁU</th>");
-//           echo("<th>SUMA</th>");
-//               while($row = $result -> fetch_assoc()){
-//                   echo("<tr>");
-//                       echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["suma"]. "</td>");
-//                   echo("</tr>");
-//               }
-//           echo("</table>");
+  echo("<h3>1. SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy</h3>");
+      $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+      $result = $conn -> query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy');
+          echo("<table border=1>");
+          echo("<th>ID</th>");
+          echo("<th>IMIĘ</th>");
+          echo("<th>DZIAŁ</th>");
+          echo("<th>ZAROBKI</th>");
+          echo("<th>WIEK</th>");
+              while($row = $result -> fetch_assoc()){
+                  echo("<tr>");
+                      echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td><td>" .$row["wiek"]. "</td>");
+                  echo("</tr>");
+              }
+          echo("</table>");
   
 //   echo("<h3>2. SELECT dzial, nazwa_dzial, AVG(zarobki) AS srednia FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie not like '%a') GROUP BY dzial HAVING AVG(zarobki)>30</h3>");
 //       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-//       $result = $conn -> query('SELECT dzial, nazwa_dzial, AVG(zarobki) AS srednia FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie not like "%a") GROUP BY dzial HAVING AVG(zarobki)>30');
+//       $result = $conn -> query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy');
 //           echo("<table border=1>");
 //           echo("<th>DZIAŁ</th>");
 //           echo("<th>NAZWA DZIAŁU</th>");
