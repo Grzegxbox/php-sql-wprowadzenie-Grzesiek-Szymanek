@@ -41,18 +41,19 @@
               }
           echo("</table>");
   
-//   echo("<h3>3. SELECT nazwa_dzialu, COUNT(imie) AS ilosc, nazwa_dzialu FROM pracownicy, organizacja WHERE (dzial=id_org) GROUP BY dzial HAVING COUNT(imie)<3</h3>");
-//       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-//       $result = $conn -> query('SELECT nazwa_dzialu, COUNT(imie) AS ilosc, nazwa_dzialu FROM pracownicy, organizacja WHERE (dzial=id_org) GROUP BY dzial HAVING COUNT(imie)<3');
-//           echo("<table border=1>");
-//           echo("<th>NAZWA DZIAŁU</th>");
-//           echo("<th>ILOŚĆ</th>");
-//               while($row = $result -> fetch_assoc()){
-//                   echo("<tr>");
-//                       echo("<td>" .$row["nazwa_dzialu"]. "</td><td>" .$row["ilosc"]. "</td><td>" .$row["nazwa_dzialu"]. "</td>");
-//                   echo("</tr>");
-//               }
-//           echo("</table>");
+  echo("<h3>3. SELECT dzial, nazwa_dzialu, COUNT(imie) AS ilosc, nazwa_dzialu FROM pracownicy, organizacja WHERE (dzial=id_org) GROUP BY dzial HAVING COUNT(imie)>3</h3>");
+      $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+      $result = $conn -> query('SELECT dzial, nazwa_dzialu, COUNT(imie) AS ilosc FROM pracownicy, organizacja WHERE (dzial=id_org) GROUP BY dzial HAVING COUNT(imie)>3');
+          echo("<table border=1>");
+          echo("<th>DZIAŁ</th>");
+          echo("<th>NAZWA DZIAŁU</th>");
+          echo("<th>ILOŚĆ</th>");
+              while($row = $result -> fetch_assoc()){
+                  echo("<tr>");
+                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["ilosc"]. "</td>");
+                  echo("</tr>");
+              }
+          echo("</table>");
 ?>
 
     </head>
