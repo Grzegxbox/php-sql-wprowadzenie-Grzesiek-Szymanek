@@ -10,7 +10,7 @@
 </div>
   
 
-<h1>Funkcja Agregująca - Data I Czas</h1>
+<h1>Funkcja Agregująca - DATA I CZAS</h1>
 
 <?php
 //   echo("<h3>1. SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma,  FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) > 128</h3>");
