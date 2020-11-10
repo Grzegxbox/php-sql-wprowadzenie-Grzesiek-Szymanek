@@ -13,6 +13,9 @@
 </div>
   
 <h1>PRACOWNICY I ORGANIZACJA</h1>
+  
+  <a class="navigation_link1" href="pracownicyiorganizacja_sortowanie.php">Sortowanie Pracowników</a>
+  <a class="navigation_link1" href="pracownicyiorganizacja_ograniczanie.php">Ograniczanie Ilości Pracowników</a>
 
   
 <?php
@@ -83,9 +86,6 @@
   
   
 ?>
-
-<a class="navigation_link1" href="pracownicyiorganizacja_sortowanie.php">Sortowanie Pracowników</a>
-<a class="navigation_link1" href="pracownicyiorganizacja_ograniczanie.php">Ograniczanie Ilości Pracowników</a>
   
   </head>
 </html>
