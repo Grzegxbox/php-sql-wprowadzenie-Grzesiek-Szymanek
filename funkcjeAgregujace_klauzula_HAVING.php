@@ -18,7 +18,7 @@
       $result = $conn -> query('SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma  FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) > 128');
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
-          echo("<th>NAZWA</th>");
+          echo("<th>NAZWA DZIAŁU</th>");
           echo("<th>SUMA</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
@@ -32,7 +32,7 @@
       $result = $conn -> query('SELECT dzial, nazwa_dzial, AVG(zarobki) AS srednia FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie not like "%a") GROUP BY dzial HAVING AVG(zarobki)>30');
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
-          echo("<th>NAZWA</th>");
+          echo("<th>NAZWA DZIAŁU</th>");
           echo("<th>ŚREDNIA</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
