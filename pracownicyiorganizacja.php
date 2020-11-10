@@ -14,6 +14,7 @@
   
 <h1>PRACOWNICY I ORGANIZACJA</h1>
   
+<h4>Linki do stron z odpowiednimi funkcjami</h4>
   <a class="navigation_link1" href="pracownicyiorganizacja_sortowanie.php">Sortowanie Pracowników</a>
   <a class="navigation_link1" href="pracownicyiorganizacja_ograniczanie.php">Ograniczanie Ilości Pracowników</a>
 
