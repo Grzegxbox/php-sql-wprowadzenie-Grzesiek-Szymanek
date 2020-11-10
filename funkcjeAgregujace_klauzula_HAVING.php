@@ -13,16 +13,16 @@
 <h1>Funkcja Agregująca - HAVING</h1>
 
 <?php
-  echo("<h3>1. SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) < 28</h3>");
+  echo("<h3>1. SELECT dzial, SUM(zarobki) AS suma, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) < 128</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-      $result = $conn -> query('SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) > 28');
+      $result = $conn -> query('SELECT dzial, SUM(zarobki) AS suma, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) < 128');
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
-          echo("<td>NAZWA DZIAŁU</td>");
-          echo("<th>SUMA</th>");
+          echo("<td>SUMA</td>");
+          echo("<th>NAZWA</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
-                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["suma"]. "</td>");
+                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["suma"]. "</td><td>" .$row["nazwa_dzial"]. "</td>");
                   echo("</tr>");
               }
           echo("</table>");
