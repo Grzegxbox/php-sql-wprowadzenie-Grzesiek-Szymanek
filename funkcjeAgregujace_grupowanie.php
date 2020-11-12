@@ -52,9 +52,9 @@
             }
         echo("</table>");
   
-    echo("<h3>4. SELECT SUM(zarobki) AS suma FROM pracownicy</h3>");
+    echo("<h3>4. SELECT sum(zarobki) as Suma, if( (imie LIKE "%a"), "Kobiety","Mężczyźni") AS "plec" FROM pracownicy GROUP by plec</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT SUM(zarobki) AS suma FROM pracownicy');
+    $result = $conn -> query('SELECT sum(zarobki) as Suma, if( (imie LIKE "%a"), "Kobiety","Mężczyźni") AS "plec" FROM pracownicy GROUP by plec');
         echo("<table border=1>");
         echo("<th>SUMA</th>");
             while($row = $result -> fetch_assoc()){
@@ -64,7 +64,7 @@
             }
         echo("</table>");
   
-    echo("<h3>4. SELECT AVG(zarobki) AS srednia FROM pracownicy</h3>");
+    echo("<h3>5. SELECT AVG(zarobki) AS srednia FROM pracownicy</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy');
         echo("<table border=1>");
