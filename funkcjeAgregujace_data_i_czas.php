@@ -131,7 +131,7 @@
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");
-          echo("<th>NAJWYŻSZY/th>");
+          echo("<th>NAJWYŻSZY WIEK</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
                       echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["maxi"]. "</td>");
@@ -145,7 +145,7 @@
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");
-          echo("<th>NAJNIŻSZY");
+          echo("<th>NAJNIŻSZY WIEK</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
                       echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["mini"]. "</td>");
