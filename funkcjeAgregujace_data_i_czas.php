@@ -59,13 +59,14 @@
   
   echo("<h3>4. SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma FROM pracownicy, organizacja WHERE id_org=dzial and (nazwa_dzial='handel')</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-      $result = $conn -> query('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma FROM pracownicy, organizacja WHERE (id_org=dzial) and (nazwa_dzial="handel")');
+      $result = $conn -> query('SELECT dzial, nazwa_dzial, SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma FROM pracownicy, organizacja WHERE (id_org=dzial) and (nazwa_dzial="handel")');
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
+          echo("<th>NAZWA DZIAŁU</th>");
           echo("<th>SUMA LAT</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
-                      echo("<td>" .$row["nazwa_dzial"]. "</td><td>" .$row["calosclat"]. "</td>");
+                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["suma"]. "</td>");
                   echo("</tr>");
               }
           echo("</table>");
