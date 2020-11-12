@@ -54,7 +54,7 @@
   
     echo("<h3>4. SELECT SUM(zarobki) as Suma, IF(imie LIKE '%a'), 'Kobiety','Mężczyźni') AS plec FROM pracownicy GROUP by plec</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT SUM(zarobki) AS Suma, IF(imie LIKE "%a"), "Kobiety","Mężczyźni") AS PLEC FROM pracownicy GROUP by plec');
+    $result = $conn -> query('SELECT SUM(zarobki) AS suma, IF(imie LIKE "%a", "Kobiety","Mężczyźni") AS plec FROM pracownicy GROUP by plec');
         echo("<table border=1>");
         echo("<th>PŁEĆ</th>");
         echo("<th>SUMA</th>");
