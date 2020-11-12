@@ -4,25 +4,21 @@ body {
 
 table, th, td {
   border: 4px solid rgb(80, 80, 80);
+}
+
+td {
   text-align: center;
+}
+
+th {
   background-color: rgb(60, 179, 113);
   color: white;
+}
+
+table {
   border-collapse: collapse;
 }
 
-/* td {
-  text-align: center;
-} */
-
-/* th {
-  background-color: rgb(60, 179, 113);
-  color: white;
-} */
-
-/* table {
-  border-collapse: collapse;
-}
- */
 h1 {
   color:#800080;
 }
