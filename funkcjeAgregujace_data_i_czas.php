@@ -131,7 +131,7 @@
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");
-          echo("<th>SUMA LAT</th>");
+          echo("<th>NAJSTARSZY WIEK</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
                       echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["maxi"]. "</td>");
