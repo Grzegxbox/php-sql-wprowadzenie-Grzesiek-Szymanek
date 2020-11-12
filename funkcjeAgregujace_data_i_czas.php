@@ -84,6 +84,19 @@
               }
           echo("</table>");
   
+  echo("<h3>6. SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma, IF(imie not like '%a', 'Kobiety', 'Mężczyźni') AS plec FROM pracownicy WHERE (imie not LIKE '%a') GROUP BY plec</h3>");
+      $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+      $result = $conn -> query('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma, IF(imie not like "%a", "Kobiety", "Mężczyźni") AS plec FROM pracownicy WHERE (imie not LIKE "%a") GROUP BY plec');
+          echo("<table border=1>");
+          echo("<th>PŁEĆ</th>");
+          echo("<th>SUMA LAT</th>");
+              while($row = $result -> fetch_assoc()){
+                  echo("<tr>");
+                      echo("<td>" .$row["plec"]. "</td><td>" .$row["suma"]. "</td>");
+                  echo("</tr>");
+              }
+          echo("</table>");
+  
   
  
 ?>
