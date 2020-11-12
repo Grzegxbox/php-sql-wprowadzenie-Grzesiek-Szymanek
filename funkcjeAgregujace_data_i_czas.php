@@ -97,7 +97,7 @@
               }
           echo("</table>");
   
-  echo("<h3>7. SELECT dzial, nazwa_dzial, AVG(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma FROM pracownicy, organizacja WHERE (id_org=dzial) GROUP BY dzial</h3>");
+  echo("<h3>7. SELECT dzial, nazwa_dzial, AVG(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS srednia FROM pracownicy, organizacja WHERE (id_org=dzial) GROUP BY dzial</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT dzial, nazwa_dzial, AVG(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS srednia FROM pracownicy, organizacja WHERE (id_org=dzial) GROUP BY dzial');
           echo("<table border=1>");
@@ -121,6 +121,20 @@
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
                       echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["suma"]. "</td>");
+                  echo("</tr>");
+              }
+          echo("</table>");
+  
+  echo("<h3>9. SELECT dzial, nazwa_dzial, MAX(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS maxi FROM pracownicy, organizacja WHERE (id_org=dzial) GROUP BY dzial</h3>");
+      $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+      $result = $conn -> query('SELECT dzial, nazwa_dzial, MAX(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS maxi FROM pracownicy, organizacja WHERE (id_org=dzial) GROUP BY dzial');
+          echo("<table border=1>");
+          echo("<th>DZIAŁ</th>");
+          echo("<th>NAZWA DZIAŁU</th>");
+          echo("<th>SUMA LAT</th>");
+              while($row = $result -> fetch_assoc()){
+                  echo("<tr>");
+                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["maxi"]. "</td>");
                   echo("</tr>");
               }
           echo("</table>");
