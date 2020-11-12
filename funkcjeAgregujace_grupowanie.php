@@ -52,26 +52,28 @@
             }
         echo("</table>");
   
-    echo("<h3>4. SELECT sum(zarobki) as Suma, if( (imie LIKE '%a'), 'Kobiety','Mężczyźni') AS 'plec FROM pracownicy GROUP by plec</h3>");
+    echo("<h3>4. SELECT SUM(zarobki) as Suma, IF( (imie LIKE '%a'), 'Kobiety','Mężczyźni') AS plec FROM pracownicy GROUP by plec</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT sum(zarobki) as Suma, if( (imie LIKE "%a"), "Kobiety","Mężczyźni") AS "plec" FROM pracownicy GROUP by plec');
+    $result = $conn -> query('SELECT SUM(zarobki) AS Suma, IF( (imie LIKE "%a"), "Kobiety","Mężczyźni") AS PLEC FROM pracownicy GROUP by plec');
         echo("<table border=1>");
+        echo("<th>PŁEĆ</th>");
         echo("<th>SUMA</th>");
             while($row = $result -> fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["suma"]. "</td>");
+                    echo("<td>" .$row["plec"]. "</td><td>" .$row["suma"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
   
-    echo("<h3>5. SELECT AVG(zarobki) AS srednia FROM pracownicy</h3>");
+    echo("<h3>5. SELECT AVG(zarobki) AS srednia, IF(imie like '%a', 'Kobiety', 'Mężczyźni') AS plec FROM pracownicy GROUP BY plec</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result = $conn -> query('SELECT AVG(zarobki) AS srednia FROM pracownicy');
+    $result = $conn -> query('SELECT AVG(zarobki) AS srednia, IF(imie like "%a", "Kobiety", "Mężczyźni") AS plec FROM pracownicy GROUP BY plec');
         echo("<table border=1>");
+        echo("<th>PŁEĆ</th>");
         echo("<th>ŚREDNIA</th>");
             while($row = $result -> fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["srednia"]. "</td>");
+                    echo("<td>" .$row["plec"]. "</td><td>" .$row["srednia"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
