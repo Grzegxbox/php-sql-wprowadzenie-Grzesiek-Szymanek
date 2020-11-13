@@ -160,9 +160,9 @@
               }
           echo("</table>");
   
-//   echo("<h3>11. SELECT imie, dzial, nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial='handel' or nazwa_dzial='serwis') GROUP BY dzial</h3>");
+  echo("<h3>11. SELECT imie, dzial, nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial='handel' or nazwa_dzial='serwis') GROUP BY dzial --> Nie moge wykonać tego zadania bo muszę zmienić tryb SQL a był on potrzebny w poprzednich zadanich i gdybym zmienił ustawienia to jedna będzie działać a drugie nie</h3>");
 //       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-//       $result = $conn -> query('SELECT imie, dzial, nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial="handel" OR dzial=2 OR imie="dagmara") AND (nazwa_dzial="serwis" OR dzial=1 OR imie="patrycja") GROUP BY dzial');
+//       $result = $conn -> query('SELECT nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS minizar, imie  FROM pracownicy, organizacja WHERE (dzial=id_org) AND (nazwa_dzial="handel" OR nazwa_dzial="serwis") ORDER BY dzial');
 //           echo("<table border=1>");
 //           echo("<th>IMIĘ</th>");
 //           echo("<th>DZIAŁ</th>");
