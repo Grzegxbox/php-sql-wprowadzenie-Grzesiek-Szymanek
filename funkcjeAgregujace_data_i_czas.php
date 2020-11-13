@@ -159,7 +159,7 @@
   
   echo("<h3>11. SELECT dzial, nazwa_dzial, imie, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS low FROM pracownicy, organizacja WHERE (dzial=id_org) AND (nazwa_dzial='handel' or nazwa_dzial='serwis') GROUP BY nazwa_dzial</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-      $result = $conn -> query('SELECT dzial, nazwa_dzial, imie, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS low FROM pracownicy, organizacja WHERE (dzial=id_org) AND (nazwa_dzial="handel" OR nazwa_dzial="serwis") AND (dzial=1 OR dzial=2) AND (imie="patrycja" OR imie="dagmara") GROUP BY nazwa_dzial');
+      $result = $conn -> query('SELECT dzial, nazwa_dzial, imie, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS low FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie="patrycja" OR imie="dagmara") GROUP BY nazwa_dzial');
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");
