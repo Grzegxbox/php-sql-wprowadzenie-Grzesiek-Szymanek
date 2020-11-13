@@ -35,7 +35,7 @@
 echo("<h3>2. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(CURDATE(), '%W') AS dzis</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SET lc_time_names = "pl_PL" ');
-    $result=$conn->query('SELECT DATE_FORMAT(CURDATE(), "%W") AS dzis ');
+    $result=$conn->query('SELECT DATE_FORMAT(CURDATE(), "%W") AS dzis');
         echo("<table border=2>");
         echo("<th>DZISIEJSZY DZIEŃ</th>");
             while($row=$result->fetch_assoc()){
@@ -61,7 +61,7 @@ echo("<h3>2. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(CURDATE(), '%W') AS
             }
         echo("</table>");
   
-echo("<h3>4. SET TIME_ZONE = '+01:00'; SELECT curtime(4)</h3>");
+echo("<h3>4. SET TIME_ZONE = '+01:00'; SELECT curtime(4) AS teraz</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SET TIME_ZONE = "+01:00"');
     $result=$conn->query('SELECT curtime(4) AS teraz');
@@ -74,7 +74,7 @@ echo("<h3>4. SET TIME_ZONE = '+01:00'; SELECT curtime(4)</h3>");
             }
         echo("</table>");
   
-   echo("<h3>5. SELECT *, DATE_FORMAT(data_urodzenia,'%Y-%M-%W') AS czas FROM pracownicy</h3>");
+   echo("<h3>5. SET lc_time_names = 'pl_PL'; SELECT *, DATE_FORMAT(data_urodzenia,'%Y-%M-%W') AS czas FROM pracownicy</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SET lc_time_names = "pl_PL" ');
     $result=$conn->query('SELECT *, DATE_FORMAT(data_urodzenia,"%Y-%M-%W") AS czas FROM pracownicy');
@@ -119,7 +119,7 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
             }
         echo("</table>");
   
-   echo("<h3>8. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(data_urodzenia,'%W') AS imie, data_urodzenia, dzien FROM pracownicy ORDER BY CASE WHEN dzien = 'Poniedziałek' THEN 1 WHEN dzien = 'Wtorek' THEN 2 WHEN dzien = 'Środa' THEN 3 WHEN dzien= 'Czwartek' THEN 4 WHEN dzien = 'Piątek' THEN 5 WHEN dzien = 'Sobota' THEN 6 WHEN dzien = 'Niedziela' THEN 7 END ASC</h3>");
+   echo("<h3>8. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(data_urodzenia,'%W') AS dzien, imie, data_urodzenia FROM pracownicy ORDER BY CASE WHEN dzien = 'Poniedziałek' THEN 1 WHEN dzien = 'Wtorek' THEN 2 WHEN dzien = 'Środa' THEN 3 WHEN dzien= 'Czwartek' THEN 4 WHEN dzien = 'Piątek' THEN 5 WHEN dzien = 'Sobota' THEN 6 WHEN dzien = 'Niedziela' THEN 7 END ASC</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SET lc_time_names = "pl_PL" ');
     $result=$conn->query('SELECT DATE_FORMAT(data_urodzenia,"%W") AS dzien, imie, data_urodzenia FROM pracownicy ORDER BY CASE WHEN dzien = "Poniedziałek" THEN 1 WHEN dzien = "Wtorek" THEN 2 WHEN dzien = "Środa" THEN 3 WHEN dzien= "Czwartek" THEN 4 WHEN dzien = "Piątek" THEN 5 WHEN dzien = "Sobota"THEN 6 WHEN dzien = "Niedziela" THEN 7 END ASC');       
@@ -146,7 +146,7 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
             }
         echo("</table>");
   
-   echo("<h3>10. SELECT DATE_FORMAT(data_urodzenia,'%W') AS dd, COUNT(DATE_FORMAT(data_urodzenia,'%W')) AS ilosc FROM pracownicy GROUP BY dd ORDER BY CASE WHEN dzien = 'Poniedziałek' THEN 1 WHEN dzien = 'Wtorek' THEN 2 WHEN dzien = 'Środa' THEN 3 WHEN dzien= 'Czwartek' THEN 4 WHEN dzien = 'Piątek' THEN 5 WHEN dzien = 'Sobota' THEN 6 WHEN dzien = 'Niedziela' THEN 7 END ASC</h3>");
+   echo("<h3>10. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(data_urodzenia,'%W') AS dd, COUNT(DATE_FORMAT(data_urodzenia,'%W')) AS ilosc FROM pracownicy GROUP BY dd ORDER BY CASE WHEN dzien = 'Poniedziałek' THEN 1 WHEN dzien = 'Wtorek' THEN 2 WHEN dzien = 'Środa' THEN 3 WHEN dzien= 'Czwartek' THEN 4 WHEN dzien = 'Piątek' THEN 5 WHEN dzien = 'Sobota' THEN 6 WHEN dzien = 'Niedziela' THEN 7 END ASC</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SET lc_time_names = "pl_PL" ');
     $result=$conn->query('SELECT DATE_FORMAT(data_urodzenia,"%W") AS dzionek, COUNT(DATE_FORMAT(data_urodzenia,"%W")) AS ichilosc FROM pracownicy GROUP BY dd ORDER BY CASE WHEN dzien = "Poniedziałek" THEN 1 WHEN dzien = "Wtorek" THEN 2 WHEN dzien = "Środa" THEN 3 WHEN dzien= "Czwartek" THEN 4 WHEN dzien = "Piątek" THEN 5 WHEN dzien = "Sobota"THEN 6 WHEN dzien = "Niedziela" THEN 7 END ASC');
