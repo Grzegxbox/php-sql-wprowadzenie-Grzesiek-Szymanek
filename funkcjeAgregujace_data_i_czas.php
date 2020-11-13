@@ -141,7 +141,7 @@
   
   echo("<h3>10. SELECT dzial, nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial='handel' or nazwa_dzial='serwis') AND (dzial=1 or dzial=2) GROUP BY dzial</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-      $result = $conn -> query('SELECT dzial, nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial="handel" or nazwa_dzial="serwis") AND (dzial=1 or dzial=2) GROUP BY dzial');
+      $result = $conn -> query('SELECT dzial, nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial="handel" or nazwa_dzial="serwis") GROUP BY dzial');
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");
@@ -155,7 +155,7 @@
   
   echo("<h3>11. SELECT dzial, nazwa_dzial, imie, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial='handel' or nazwa_dzial='serwis') AND (dzial=1 or dzial=2) GROUP BY dzial</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-      $result = $conn -> query('SELECT dzial, nazwa_dzial, imie, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial="handel" or nazwa_dzial="serwis") AND (dzial=1 or dzial=2)  GROUP BY dzial');
+      $result = $conn -> query('SELECT dzial, nazwa_dzial, imie, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial="handel" or nazwa_dzial="serwis") GROUP BY dzial');
           echo("<table border=1>");
           echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");
