@@ -45,7 +45,7 @@ echo("<h3>2. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(CURDATE(), '%W') AS
             }
         echo("</table>");
   
-   echo("<h3>2. SELECT *, DATE_FORMAT(data_urodzenia,'%w-%M-%Y') AS dni FROM pracownicy</h3>");
+   echo("<h3>3. SELECT *, DATE_FORMAT(data_urodzenia,'%w-%M-%Y') AS dni FROM pracownicy</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT *, DATE_FORMAT(data_urodzenia,"%w-%M-%Y") AS dni FROM pracownicy');
         echo("<table border=2>");
@@ -57,6 +57,18 @@ echo("<h3>2. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(CURDATE(), '%W') AS
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td><td>" .$row["dni"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+  
+echo("<h3>4. SELECT curtime(4) AS akttime</h3>");
+  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result=$conn->query('SELECT curtime(4) AS akttime');
+        echo("<table border=2>");
+        echo("<th>AKTUALNA GODZINA</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["akttime"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
