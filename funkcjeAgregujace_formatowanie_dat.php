@@ -61,9 +61,9 @@ echo("<h3>2. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(CURDATE(), '%W') AS
             }
         echo("</table>");
   
-echo("<h3>4. SELECT datetimeoffset(4) AS akttime</h3>");
+echo("<h3>4. SELECT * FROM sys.time_zone_info AS akttime</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT sys.time_zone_info AS akttime');
+    $result=$conn->query('SELECT * FROM sys.time_zone_info AS akttime');
         echo("<table border=2>");
         echo("<th>AKTUALNA GODZINA</th>");
             while($row=$result->fetch_assoc()){
