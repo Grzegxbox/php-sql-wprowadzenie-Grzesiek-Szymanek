@@ -3,24 +3,20 @@ body {
 }
 table, th, td {
   border: 4px solid rgb(80, 80, 80);
-  text-align: center;
-  background-color: rgb(60, 179, 113);
-  color: white;
-  border-collapse: collapse;
 }
-/* td {
+td {
   text-align: center;
 }
 th {
   background-color: rgb(60, 179, 113);
   color: white;
-} */
+}
 tr:nth-child(even){
   background-color: rgba(60, 179, 113, 0.3);
 }
-/* table {
+table {
   border-collapse: collapse;
-} */
+}
 hr{
   border: 4px solid black;
 }
