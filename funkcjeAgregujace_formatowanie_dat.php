@@ -144,15 +144,15 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
             }
         echo("</table>");
   
-   echo("<h3>10. SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) AS dzien, ilosc FROM pracownicy ORDER BY CASE WHEN dzien = 'Monday' THEN 1 WHEN dzien = 'Tuesday' THEN 2 WHEN dzien = 'Wednesday' THEN 3 WHEN dzien= 'Thursday' THEN 4 WHEN dzien = 'Friday' THEN 5 WHEN dzien = 'Saturday' THEN 6 WHEN dzien = 'Sunday' THEN 7 END ASC</h3>");
+   echo("<h3>10. SELECT DATE_FORMAT(data_urodzenia,'%W') AS dd, COUNT(DATE_FORMAT(data_urodzenia,'%W')) AS ilosc FROM pracownicy group by dzien ORDER BY CASE WHEN dzien = 'Poniedziałek' THEN 1 WHEN dzien = 'Wtorek' THEN 2 WHEN dzien = 'Środa' THEN 3 WHEN dzien= 'Czwartek' THEN 4 WHEN dzien = 'Piątek' THEN 5 WHEN dzien = 'Sobota' THEN 6 WHEN dzien = 'Niedziela' THEN 7 END ASC</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT Count(DATE_FORMAT(data_urodzenia, "%W")) AS dzien, ilosc FROM pracownicy ORDER BY CASE WHEN dzien = "Monday" THEN 1 WHEN dzien = "Tuesday" THEN 2 WHEN dzien = "Wednesday" THEN 3 WHEN dzien= "Thursday" THEN 4 WHEN dzien = "Friday" THEN 5 WHEN dzien = "Saturday"THEN 6 WHEN dzien = "Sunday" THEN 7 END ASC');
+    $result=$conn->query('SELECT DATE_FORMAT(data_urodzenia,"%W") AS dd, COUNT(DATE_FORMAT(data_urodzenia,"%W")) AS ilosc FROM pracownicy group by dzien ORDER BY CASE WHEN dzien = "Poniedziałek" THEN 1 WHEN dzien = "Wtorek" THEN 2 WHEN dzien = "Środa" THEN 3 WHEN dzien= "Czwartek" THEN 4 WHEN dzien = "Piątek" THEN 5 WHEN dzien = "Sobota" THEN 6 WHEN dzien = "Niedziela" THEN 7 END ASC');
         echo("<table border=2>");
         echo("<th>DZIEŃ TYGODNIA</th>");
         echo("<th>ILOŚC URODZONYHC OSÓB</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["dzien"]. "</td><td>" .$row["ilosc"]. "</td>");
+                    echo("<td>" .$row["dd"]. "</td><td>" .$row["ilosc"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
