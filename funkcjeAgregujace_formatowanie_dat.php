@@ -100,7 +100,7 @@ echo("<h3>6. SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS dd, DATEDIFF(CUR
         echo("<th>MINUTY ŻYCIA</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["Grzesiek"]. "</td><td>" .$row["dd"]. "</td><td>" .$row["hh"]. "</td><td>" .$row["mim"]. "</td>");
+                    echo("<td>" .$row["imie"]. "</td><td>" .$row["dd"]. "</td><td>" .$row["hh"]. "</td><td>" .$row["mm"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
