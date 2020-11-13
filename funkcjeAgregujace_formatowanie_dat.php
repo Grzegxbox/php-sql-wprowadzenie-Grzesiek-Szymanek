@@ -90,9 +90,9 @@ echo("<h3>4. SET TIME_ZONE = '+01:00'; SELECT curtime(4)</h3>");
             }
         echo("</table>");
   
-echo("<h3>6. SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS numbofd, DATEDIFF(CURDATE(),data_urodzenia)*24 AS hou, DATEDIFF(CURDATE(),data_urodzenia)*24*60 AS min FROM pracownicy WHERE (imie='grzesiek')</h3>");
+echo("<h3>6. SELECT Grzesiek, DATEDIFF(CURDATE(),2003-07-30) AS dd, DATEDIFF(CURDATE(),2003-07-30)*24 AS hh, DATEDIFF(CURDATE(),2003-07-30)*24*60 AS mm</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS numofd, DATEDIFF(CURDATE(),data_urodzenia)*24 AS hou, DATEDIFF(CURDATE(),data_urodzenia)*24*60 AS min FROM pracownicy WHERE (imie="grzesiek")');
+    $result=$conn->query('SELECT Grzesiek, DATEDIFF(CURDATE(),2003-07-30) AS dd, DATEDIFF(CURDATE(),2003-07-30)*24 AS hh, DATEDIFF(CURDATE(),2003-07-30)*24*60 AS mm');
         echo("<table border=2>");
         echo("<th>IMIĘ</th>");
         echo("<th>DNI ŻYCIA</th>");
@@ -100,7 +100,7 @@ echo("<h3>6. SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS numbofd, DATEDIF
         echo("<th>MINUTY ŻYCIA</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["imie"]. "</td><td>" .$row["numofd"]. "</td><td>" .$row["hou"]. "</td><td>" .$row["min"]. "</td>");
+                    echo("<td>" .$row["Grzesiek"]. "</td><td>" .$row["dd"]. "</td><td>" .$row["hh"]. "</td><td>" .$row["mim"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
