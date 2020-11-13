@@ -154,7 +154,7 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
                                         WHEN dzien = "Poniedziałek" THEN 1
                                         WHEN dzien = "Wtorek" THEN 2
                                         WHEN dzien = "Środa" THEN 3
-                                        WHEN dzien= "Czwartek" THEN 4
+                                        WHEN dzien = "Czwartek" THEN 4
                                         WHEN dzien = "Piątek" THEN 5
                                         WHEN dzien = "Sobota" THEN 6
                                         WHEN dzien = "Niedziela" THEN 7
@@ -164,7 +164,7 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
         echo("<th>ILOŚC URODZONYHC OSÓB</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["dzionek"]. "</td><td>" .$row["ichilosc"]. "</td>");
+                    echo("<td>" .$row["ichilosc"]. "</td><td>" .$row["dzionek"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
