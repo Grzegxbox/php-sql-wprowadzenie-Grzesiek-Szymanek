@@ -105,14 +105,15 @@ echo("<h3>6. SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS dd, DATEDIFF(CUR
             }
         echo("</table>");
   
-echo("<h3>7. SELECT DATE_FORMAT('data_urodzenia', '%m') AS dzur FROM pracownicy WHERE (imie='Grzesiek')</h3>");
+echo("<h3>7. SELECT imie, DATE_FORMAT('data_urodzenia', '%M') AS dzur FROM pracownicy WHERE (imie='Grzesiek')</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT DATE_FORMAT("data_urodzenia", "%m") AS dzur FROM pracownicy WHERE (imie="Grzesiek")');
+    $result=$conn->query('SELECT imie, DATE_FORMAT("data_urodzenia", "%M") AS dzur FROM pracownicy WHERE (imie="Grzesiek")');
         echo("<table border=2>");
+        echo("<th>IMIĘ</th>");
         echo("<th>DZIEŃ NARODZIN</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["dzur"]. "</td>");
+                    echo("<td>" .$row["imie"]. "</td><td>" .$row["dzur"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
