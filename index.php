@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <body>
   
 <link rel="stylesheet" href="style.css">
 <a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
@@ -13,6 +12,9 @@
     <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
     <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
   </div>
+  
+  </head>
+  <body>
 
   
 <h1>STRONA GŁÓWNA</h1>
