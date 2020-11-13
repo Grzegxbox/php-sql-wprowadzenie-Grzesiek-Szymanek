@@ -32,7 +32,17 @@
             }
         echo("</table>");
   
-echo("<h3>2. SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') AS dni FROM pracownicy</h3>");
+echo("<h3>2. SET lc_time_names = 'pl_P'; SELECT DATE_FORMAT(CURDATE(), '%W') AS dziś FROM pracownicy</h3>");
+  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result=$conn->query('SET lc_time_names = "pl_P"; SELECT DATE_FORMAT(CURDATE(), "%W") AS dziś FROM pracownicy');
+        echo("<table border=2>");
+        echo("<th>DZISIEJSZY DZIEŃ</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["dzis"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
   
   
   
