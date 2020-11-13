@@ -153,17 +153,16 @@
               }
           echo("</table>");
   
-  echo("<h3>11. SELECT imie, dzial, nazwa_dzialu, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini FROM pracownicy, organizacja WHERE (id_org=dzial) (nazwa_dzial='handel' or nazwa_dzial='serwis') ORDER BY miniwiek</h3>");
+  echo("<h3>11. SELECT imie, nazwa_dzialu, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini FROM pracownicy, organizacja WHERE (id_org=dzial) (nazwa_dzial='handel' or nazwa_dzial='serwis') GROUP BY imie</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-      $result = $conn -> query('SELECT imie, dzial, nazwa_dzialu, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS miniwiek  FROM pracownicy, organizacja WHERE (id_org=dzial) (nazwa_dzial="handel" or nazwa_dzial="serwis") ORDER BY miniwiek');
+      $result = $conn -> query('SELECT imie, nazwa_dzialu, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS miniwiek  FROM pracownicy, organizacja WHERE (id_org=dzial) (nazwa_dzial="handel" or nazwa_dzial="serwis") GROUP BY imie');
           echo("<table border=1>");
           echo("<th>IMIĘ</th>");
-          echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");
           echo("<th>NAJNIŻSZY WIEK</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
-                      echo("<td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["miniwiek"]. "</td>");
+                      echo("<td>" .$row["imie"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["miniwiek"]. "</td>");
                   echo("</tr>");
               }
           echo("</table>");
