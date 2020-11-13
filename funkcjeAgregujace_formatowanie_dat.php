@@ -134,25 +134,25 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
   
    echo("<h3>9. SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) AS bim FROM pracownicy WHERE DATE_FORMAT(data_urodzenia, '%W')='Monday'</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT Count(DATE_FORMAT(data_urodzenia, "%W")) AS bim FROM pracownicy WHERE DATE_FORMAT(data_urodzenia, "%W")="Monday"');
+    $result=$conn->query('SELECT Count(DATE_FORMAT(data_urodzenia, "%W")) AS bim, il FROM pracownicy WHERE DATE_FORMAT(data_urodzenia, "%W")="Monday"');
         echo("<table border=2>");
         echo("<th>URODZENI W PONIEDZIAŁEK</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["bim"]. "</td>");
+                    echo("<td>" .$row["bim"]. "</td><td>" .$row["il"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
   
    echo("<h3>10. SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) AS d FROM pracownicy ORDER BY CASE WHEN dzien = 'Monday' THEN 1 WHEN dzien = 'Tuesday' THEN 2 WHEN dzien = 'Wednesday' THEN 3 WHEN dzien= 'Thursday' THEN 4 WHEN dzien = 'Friday' THEN 5 WHEN dzien = 'Saturday' THEN 6 WHEN dzien = 'Sunday' THEN 7 END ASC</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT Count(DATE_FORMAT(data_urodzenia, "%W")) AS d FROM pracownicy ORDER BY CASE WHEN dzien = "Monday" THEN 1 WHEN dzien = "Tuesday" THEN 2 WHEN dzien = "Wednesday" THEN 3 WHEN dzien= "Thursday" THEN 4 WHEN dzien = "Friday" THEN 5 WHEN dzien = "Saturday"THEN 6 WHEN dzien = "Sunday" THEN 7 END ASC');
+    $result=$conn->query('SELECT Count(DATE_FORMAT(data_urodzenia, "%W")) AS il FROM pracownicy ORDER BY CASE WHEN dzien = "Monday" THEN 1 WHEN dzien = "Tuesday" THEN 2 WHEN dzien = "Wednesday" THEN 3 WHEN dzien= "Thursday" THEN 4 WHEN dzien = "Friday" THEN 5 WHEN dzien = "Saturday"THEN 6 WHEN dzien = "Sunday" THEN 7 END ASC');
         echo("<table border=2>");
         echo("<th>DZIEŃ TYGODNIA</th>");
         echo("<th>ILOŚC URODZONYHC OSÓB</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["dzien"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["data_urodzenia"]. "</td>");
+                    echo("<td>" .$row["il"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["data_urodzenia"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
