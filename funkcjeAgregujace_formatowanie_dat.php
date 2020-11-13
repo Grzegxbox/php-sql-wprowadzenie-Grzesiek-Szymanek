@@ -164,7 +164,7 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
         echo("<th>DZIEŃ TYOGODNIA</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["ilosc"]. "</td><td>" .$row["dzien"]. "</td>");
+                    echo("<td>" .$row["dzien"]. "</td><td>" .$row["ilosc"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
