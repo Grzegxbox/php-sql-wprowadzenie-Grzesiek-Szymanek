@@ -13,7 +13,7 @@
   <hr></hr>
 <body>
   
-<h1>Funkcja Agregująca - DATA I CZAS - FORMATOWANIE DAT</h1>
+<h1>FUNKCJA AGREGUJĄCA - DATA I CZAS - FORMATOWANIE DAT</h1>
   
   <?php
    echo("<h3>0. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)</h3>");
