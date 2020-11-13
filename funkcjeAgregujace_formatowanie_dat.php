@@ -134,12 +134,12 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
   
    echo("<h3>9. SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) AS bim FROM pracownicy WHERE DATE_FORMAT(data_urodzenia, '%W')='Monday'</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT Count(DATE_FORMAT(data_urodzenia, "%W")) AS bim, il FROM pracownicy WHERE DATE_FORMAT(data_urodzenia, "%W")="Monday"');
+    $result=$conn->query('SELECT Count(DATE_FORMAT(data_urodzenia, "%W")) AS bim FROM pracownicy WHERE DATE_FORMAT(data_urodzenia, "%W")="Monday"');
         echo("<table border=2>");
         echo("<th>URODZENI W PONIEDZIAŁEK</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["bim"]. "</td><td>" .$row["il"]. "</td>");
+                    echo("<td>" .$row["bim"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
