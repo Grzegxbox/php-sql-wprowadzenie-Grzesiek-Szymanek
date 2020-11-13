@@ -13,7 +13,7 @@ th {
   color: white;
 }
 tr:nth-child(even){
-  background-color: rgba(60, 179, 113, 0.3);
+  background-color: rgba(60, 179, 113, 0.7);
 }
 table {
   border-collapse: collapse;
