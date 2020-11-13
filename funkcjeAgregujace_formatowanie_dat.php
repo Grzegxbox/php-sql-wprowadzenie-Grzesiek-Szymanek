@@ -160,8 +160,8 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
                                         WHEN dzien = "Niedziela" THEN 7
                                    END ASC');
         echo("<table border=2>");
-        echo("<th>ILOŚĆ URODZONYCH PRACOWNIKÓW</th>");
         echo("<th>DZIEŃ TYOGODNIA</th>");
+        echo("<th>ILOŚĆ URODZONYCH PRACOWNIKÓW</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>" .$row["dzien"]. "</td><td>" .$row["ilosc"]. "</td>");
