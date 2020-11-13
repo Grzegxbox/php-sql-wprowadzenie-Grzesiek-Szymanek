@@ -9,6 +9,10 @@
   <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
 </div>
   
+  </head>
+  <hr></hr>
+<body>
+  
 
 <h1>Funkcja Agregująca - DATA I CZAS</h1>
 
@@ -205,5 +209,5 @@
  
 ?>
 
-    </head>
+    </body>
   </html>
