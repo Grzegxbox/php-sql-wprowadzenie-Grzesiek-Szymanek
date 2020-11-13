@@ -153,7 +153,7 @@
               }
           echo("</table>");
   
-//   echo("<h3>11. SELECT dzial, nazwa_dzial, imie, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial='handel' or nazwa_dzial='serwis') GROUP BY dzial</h3>");
+  echo("<h3>11. SELECT dzial, nazwa_dzial, imie, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial='handel' or nazwa_dzial='serwis') GROUP BY dzial--W TRAKCIE ROBIENIA</h3>");
 //       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
 //       $result = $conn -> query('SELECT dzial, nazwa_dzial, imie, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial="handel" or nazwa_dzial="serwis") GROUP BY dzial');
 //           echo("<table border=1>");
@@ -176,7 +176,7 @@
           echo("<th>IMIĘ</th>");
           echo("<th>DZIAŁ</th>");
           echo("<th>ZAROBKI</th>");
-          echo("<th>WIEK</th>");
+          echo("<th>DNI ŻYCIA</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
                       echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td><td>" .$row["dnilat"]. "</td>");
