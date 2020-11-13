@@ -37,18 +37,20 @@ h4 {
   background-color: #000000;
   color: #ff0000;
   text-decoration: none;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .navigation_link0 {
   background-color:#ffffff;
   color:#000000;
   text-decoration: none;
+  margin-inline-start: auto;
 }
 .navigation_link1 {
   background-color:#ffffff;
   color:#000000;
   text-decoration: none;
   padding: 1rem;
+  margin-inline-start: auto;
 }
 
 
