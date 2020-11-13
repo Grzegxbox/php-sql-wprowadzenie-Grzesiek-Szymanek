@@ -144,6 +144,19 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
             }
         echo("</table>");
   
+   echo("<h3>10. SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) AS d FROM pracownicy ORDER BY CASE WHEN dzien = 'Monday' THEN 1 WHEN dzien = 'Tuesday' THEN 2 WHEN dzien = 'Wednesday' THEN 3 WHEN dzien= 'Thursday' THEN 4 WHEN dzien = 'Friday' THEN 5 WHEN dzien = 'Saturday' THEN 6 WHEN dzien = 'Sunday' THEN 7 END ASC</h3>");
+  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result=$conn->query('SELECT Count(DATE_FORMAT(data_urodzenia, "%W")) AS d FROM pracownicy ORDER BY CASE WHEN dzien = "Monday" THEN 1 WHEN dzien = "Tuesday" THEN 2 WHEN dzien = "Wednesday" THEN 3 WHEN dzien= "Thursday" THEN 4 WHEN dzien = "Friday" THEN 5 WHEN dzien = "Saturday"THEN 6 WHEN dzien = "Sunday" THEN 7 END ASC');
+        echo("<table border=2>");
+        echo("<th>DZIEŃ TYGODNIA</th>");
+        echo("<th>ILOŚC URODZONYHC OSÓB</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["dzien"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["data_urodzenia"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+  
   
   
   
