@@ -1,5 +1,6 @@
 <?php
 
+
 // Add your data (jak by co to nie mam takich nazw użytkownika, haseł i nazwy serwera)
 $servername = "remotemysql.com";
 $username = "Rp4CxP6YkY";
@@ -13,5 +14,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
+
 
 ?>
