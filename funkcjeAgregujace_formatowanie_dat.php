@@ -73,9 +73,9 @@ echo("<h3>4. SELECT curtime(4) AS akttime</h3>");
             }
         echo("</table>");
   
-   echo("<h3>5. SELECT *, DATE_FORMAT(data_urodzenia,'%Y-%m-%w') AS czas FROM pracownicy</h3>");
+   echo("<h3>5. SELECT *, DATE_FORMAT(data_urodzenia,'%y-%M-%W') AS czas FROM pracownicy</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT *, DATE_FORMAT(data_urodzenia,"%Y-%m-%w") AS czas FROM pracownicy');
+    $result=$conn->query('SELECT *, DATE_FORMAT(data_urodzenia,"%y-%M-%W") AS czas FROM pracownicy');
         echo("<table border=2>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
