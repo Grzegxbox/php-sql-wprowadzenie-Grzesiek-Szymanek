@@ -33,14 +33,17 @@ h4 {
 .mojlink0 {
   background-color: #000000;
   color: #ff0000;
+  border-style: 4px solid black
 }
 .navigation_link0 {
   background-color:#ffffff;
   color:#000000;
+  border-style: 3px solid black;
 }
 .navigation_link1 {
   background-color:#ffffff;
   color:#000000;
+  border-style: 3px solid black;
 }
 
 
