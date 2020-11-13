@@ -153,20 +153,37 @@
               }
           echo("</table>");
   
-  echo("<h3>11. SELECT dzial, nazwa_dzial, imie, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial='handel' or nazwa_dzial='serwis') GROUP BY dzial</h3>");
+//   echo("<h3>11. SELECT dzial, nazwa_dzial, imie, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial='handel' or nazwa_dzial='serwis') GROUP BY dzial</h3>");
+//       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+//       $result = $conn -> query('SELECT dzial, nazwa_dzial, imie, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial="handel" or nazwa_dzial="serwis") GROUP BY dzial');
+//           echo("<table border=1>");
+//           echo("<th>DZIAŁ</th>");
+//           echo("<th>NAZWA DZIAŁU</th>");
+//           echo("<th>IMIE</th>");
+//           echo("<th>NAJNIŻSZY WIEK</th>");
+//               while($row = $result -> fetch_assoc()){
+//                   echo("<tr>");
+//                       echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["mini"]. "</td>");
+//                   echo("</tr>");
+//               }
+//           echo("</table>");
+  
+  echo("<h3>12. SELECT *, DATEDIFF(CURDATE(),data_urodzenia) AS dnilat FROM pracownicy</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-      $result = $conn -> query('SELECT dzial, nazwa_dzial, imie, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial="handel" or nazwa_dzial="serwis") GROUP BY dzial');
+      $result = $conn -> query('SELECT *, DATEDIFF(CURDATE(),data_urodzenia) AS dnilat FROM pracownicy');
           echo("<table border=1>");
+          echo("<th>ID</th>");
+          echo("<th>IMIĘ</th>");
           echo("<th>DZIAŁ</th>");
-          echo("<th>NAZWA DZIAŁU</th>");
-          echo("<th>IMIE</th>");
-          echo("<th>NAJNIŻSZY WIEK</th>");
+          echo("<th>ZAROBKI</th>");
+          echo("<th>WIEK</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
-                      echo("<td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["mini"]. "</td>");
+                      echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td><td>" .$row["dnilat"]. "</td>");
                   echo("</tr>");
               }
           echo("</table>");
+  
   
 
  
