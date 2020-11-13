@@ -9,8 +9,8 @@
   <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
 </div>
   
-  <hr</hr>
-  </head>
+   </head>
+   <hr></hr>
   <body>
   
 <h1>WYKORZYSTANIE FUNKCJI 'LIMIT'</h1>
