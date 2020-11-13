@@ -11,6 +11,9 @@ th {
   background-color: rgb(60, 179, 113);
   color: white;
 }
+tr:nth-child(even){
+    background-color: rgba(60, 179, 113, 0.5);
+}
 table {
   border-collapse: collapse;
 }
