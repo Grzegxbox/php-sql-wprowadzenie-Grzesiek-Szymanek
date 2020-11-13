@@ -13,7 +13,7 @@
   <hr></hr>
 <body>
 
-<h1>Funkcja Agregująca - GRUPOWANIE</h1>
+<h1>FUNKCJA AGREGUJĄCA - GRUPOWANIE</h1>
 
 <?php
   echo("<h3>1. SELECT dzial, SUM(zarobki) AS suma FROM pracownicy GROUP BY dzial</h3>");
