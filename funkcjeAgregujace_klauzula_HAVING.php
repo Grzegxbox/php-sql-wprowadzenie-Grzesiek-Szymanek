@@ -13,7 +13,7 @@
   <hr></hr>
 <body>
  
-<h1>Funkcja Agregująca - HAVING</h1>
+<h1>FUNKCJA AGREGUJĄCA - HAVING</h1>
 
 <?php
   echo("<h3>1. SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma,  FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) > 128</h3>");
