@@ -14,6 +14,9 @@ th {
 table {
   border-collapse: collapse;
 }
+hr{
+  border: 4px solid black;
+}
 h1 {
   color:#800080;
 }
