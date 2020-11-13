@@ -90,9 +90,9 @@ echo("<h3>4. SET TIME_ZONE = '+01:00'; SELECT curtime(4)</h3>");
             }
         echo("</table>");
   
-echo("<h3>6. SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS numbofd, DATEDIFF(CURDATE(),data_urodzenia)*24 AS hou, DATEDIFF(CURDATE(),data_urodzenia)*24*60 AS min FROM pracownicy</h3>");
+echo("<h3>6. SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS numbofd, DATEDIFF(CURDATE(),data_urodzenia)*24 AS hou, DATEDIFF(CURDATE(),data_urodzenia)*24*60 AS min FROM pracownicy WHERE (imie='grzesiek')</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS numofd, DATEDIFF(CURDATE(),data_urodzenia)*24 AS hou, DATEDIFF(CURDATE(),data_urodzenia)*24*60 AS min FROM pracownicy');
+    $result=$conn->query('SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS numofd, DATEDIFF(CURDATE(),data_urodzenia)*24 AS hou, DATEDIFF(CURDATE(),data_urodzenia)*24*60 AS min FROM pracownicy WHERE (imie="grzesiek")');
         echo("<table border=2>");
         echo("<th>IMIĘ</th>");
         echo("<th>DNI ŻYCIA</th>");
