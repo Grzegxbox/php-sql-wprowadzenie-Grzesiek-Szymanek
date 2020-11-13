@@ -12,6 +12,10 @@
   <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
 </div>
   
+  </head>
+  <hr></hr>
+<body>
+  
 <h1>FUNKCJE AGREGUJĄCE</h1>
   <h4>Linki do stron z odpowiednimi funkcjami</h4>
   <a class="navigation_link1" href="funkcjeAgregujace_kontynuacja.php">KONTYNUACJA FUNCKJI AGREGUJĄCYCH</a>
@@ -78,5 +82,5 @@ echo("<h3>3. SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Su
         echo("</table>");
 ?>
   
-  </head>
+  </body>
 </html>
