@@ -9,6 +9,10 @@
   <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
 </div>
   
+  <hr</hr>
+  </head>
+  <body>
+  
 <h1>WYKORZYSTANIE FUNKCJI 'LIMIT'</h1>
  
 <?php
@@ -64,5 +68,5 @@ echo("<h3>3. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) ORDER BY
 
 ?>
   
-  </head>
+  </body>
 </html>
