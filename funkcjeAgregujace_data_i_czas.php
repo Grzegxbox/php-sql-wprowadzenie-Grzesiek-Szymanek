@@ -14,7 +14,7 @@
 <body>
   
 
-<h1>Funkcja Agregująca - DATA I CZAS</h1>
+<h1>FUNKCJA AGREGUJĄCA - DATA I CZAS</h1>
   <h4>Linki do stron z odpowiednimi funkcjami</h4>
     <a class="navigation_link1" href="funkcjeAgregujace_formatowanie_dat.php">FUNKCJA AGREGUJĄCA - FORMATOWANIE DAT</a>
     
