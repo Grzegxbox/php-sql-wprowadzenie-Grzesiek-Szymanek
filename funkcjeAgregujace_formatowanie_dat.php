@@ -6,14 +6,14 @@
 <a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
   
 <div class="nav">
-  <a class="navigation_link1" href="funkcjeAgregujace_data_i_czas.php">FUNKCJA AGREGUJĄCA - DATA I CZAS</a>
+  <a class="navigation_link1" href="funkcjeAgregujace_data_i_czas.php">Funkcja Agregująca - DATA I CZAS</a>
 </div>
   
   </head>
   <hr></hr>
 <body>
   
-<h1>FUNKCJA AGREGUJĄCA - DATA I CZAS - FORMATOWANIE DAT</h1>
+<h1>Funkcja Agregująca - DATA I CZAS - FORMATOWANIE DAT</h1>
   
   <?php
    echo("<h3>0. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)</h3>");
