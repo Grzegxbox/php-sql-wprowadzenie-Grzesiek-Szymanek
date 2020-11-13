@@ -12,6 +12,11 @@
   <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
 </div>
   
+  <hr></hr>
+  </head>
+  <body>
+    
+  
 <h1>PRACOWNICY</h1>
  
 <?php
@@ -77,5 +82,5 @@
         echo("</table>");
 ?>
   
-  </head>
+  </body>
 </html>
