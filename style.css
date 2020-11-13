@@ -1,30 +1,25 @@
-
-
+body {
+  background-color: #ffdcac;
+}
 table, th, td {
   border: 4px solid rgb(80, 80, 80);
 }
-
 td {
   text-align: center;
 }
-
 th {
   background-color: rgb(60, 179, 113);
   color: white;
 }
-
 table {
   border-collapse: collapse;
 }
-
 h1 {
   color:#800080;
 }
-
 h2 {
   color:#8008e1;
 }
-
 h3 {
   color:#B22222;
 }
@@ -33,17 +28,13 @@ h4 {
 }
 
 .mojlink0 {
-	text-algin: center;
-	background-color: orange;
-	text-decoration: none;
-	color: white
+	background-color: #000000;
+	color: #ff0000;
 }
-
 .navigation_link0 {
   background-color:#ffffff;
   color:#000000;
 }
-
 .navigation_link1 {
   background-color:#ffffff;
   color:#000000;
