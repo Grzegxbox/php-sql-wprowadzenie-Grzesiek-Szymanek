@@ -110,7 +110,7 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
     $result=$conn->query('SELECT imie, DATE_FORMAT("2003-07-030", "%j") AS dzur FROM pracownicy WHERE (imie="Grzesiek")');
         echo("<table border=2>");
         echo("<th>IMIĘ</th>");
-        echo("<th>DZIEŃ W ROKU</th>");
+        echo("<th>DZIEŃ NARODZIN W ROKU</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>" .$row["imie"]. "</td><td>" .$row["dzur"]. "</td>");
