@@ -9,6 +9,10 @@
   <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
 </div>
   
+  </head>
+  <hr></hr>
+<body>
+  
 
 <h1>KONTYNUACJA FUNKCJI AGREGUJĄCYCH</h1>
 
@@ -113,5 +117,5 @@
         echo("</table>");
 ?>
 
-</head>
+</body>
 </html>
