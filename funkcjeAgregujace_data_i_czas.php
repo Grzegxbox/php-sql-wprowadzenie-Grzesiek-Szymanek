@@ -184,9 +184,9 @@
               }
           echo("</table>");
   
-  echo("<h3>13. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie NOT LIKE '%a') ORDER BY data_urodzenia ASC LIMIT 1</h3>");
+  echo("<h3>13. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie NOT LIKE '%a') ORDER BY data_urodzenia LIMIT 1</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-      $result = $conn -> query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie NOT LIKE "%a") ORDER BY data_urodzenia ASC LIMIT 1');
+      $result = $conn -> query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie NOT LIKE "%a") ORDER BY data_urodzenia LIMIT 1');
           echo("<table border=1>");
           echo("<th>ID</th>");
           echo("<th>IMIĘ</th>");
