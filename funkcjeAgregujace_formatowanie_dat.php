@@ -32,6 +32,8 @@
             }
         echo("</table>");
   
+echo("<h3>2. SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') AS dni FROM pracownicy</h3>");
+  
   
   
   
