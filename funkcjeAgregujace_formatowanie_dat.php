@@ -61,9 +61,9 @@ echo("<h3>2. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(CURDATE(), '%W') AS
             }
         echo("</table>");
   
-echo("<h3>4. SELECT GETUTCDATE() AS czas</h3>");
+echo("<h3>4. SELECT GETUTCDATE(4) AS czas</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT GETUTCDATE() AS czas');
+    $result=$conn->query('SELECT GETUTCDATE(4) AS czas');
         echo("<table border=2>");
         echo("<th>AKTUALNA GODZINA</th>");
             while($row=$result->fetch_assoc()){
