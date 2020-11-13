@@ -9,6 +9,10 @@
   <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
 </div>
   
+  <hr></hr>
+  </head>
+<body>
+  
 <h1>WYKORZYSTANIE FUNKCJI 'ORDER BY'</h1>
  
 <?php
@@ -94,5 +98,5 @@
 ?>
   
   
-  </head>
+  </body>
 </html>
