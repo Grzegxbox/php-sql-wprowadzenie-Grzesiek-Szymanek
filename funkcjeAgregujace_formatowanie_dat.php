@@ -149,7 +149,7 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
    echo("<h3>10. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(data_urodzenia,'%W') AS dzionek, COUNT(DATE_FORMAT(data_urodzenia,'%W')) AS ichilosc FROM pracownicy GROUP BY dzionek ORDER BY CASE WHEN dzien = 'Poniedziałek' THEN 1 WHEN dzien = 'Wtorek' THEN 2 WHEN dzien = 'Środa' THEN 3 WHEN dzien= 'Czwartek' THEN 4 WHEN dzien = 'Piątek' THEN 5 WHEN dzien = 'Sobota' THEN 6 WHEN dzien = 'Niedziela' THEN 7 END ASC</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SET lc_time_names = "pl_PL" ');
-    $result=$conn->query('SELECT COUNT(DATE_FORMAT(data_urodzenia,"%W")) AS ichilosc, DATE_FORMAT(data_urodzenia,"%W") AS dzionek FROM pracownicy GROUP BY dzionek ORDER BY 
+    $result=$conn->query('SELECT COUNT(DATE_FORMAT(data_urodzenia,"%W")) AS ilosc, DATE_FORMAT(data_urodzenia,"%W") AS dzien FROM pracownicy GROUP BY dzien ORDER BY 
                                    CASE
                                         WHEN dzien = "Poniedziałek" THEN 1
                                         WHEN dzien = "Wtorek" THEN 2
@@ -164,7 +164,7 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
         echo("<th>ILOŚĆ URODZONYCH PRACOWNIKÓW</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["dzionek"]. "</td><td>" .$row["ichilosc"]. "</td>");
+                    echo("<td>" .$row["dzien"]. "</td><td>" .$row["ilosc"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
