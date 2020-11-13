@@ -16,18 +16,18 @@
 <h1>FUNKCJA AGREGUJĄCA - DATA I CZAS - FORMATOWANIE DAT</h1>
   
   <?php
-   echo("<h3>0. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)</h3>");
+   echo("<h3>1. SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') FROM pracownicy;</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)');
+    $result=$conn->query('SELECT *, DATE_FORMAT(data_urodzenia,"%W-%m-%Y") FROM pracownicy');
         echo("<table border=2>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIAŁ</th>");
         echo("<th>ZAROBKI</th>");
-        echo("<th>NAZWA DZIAŁU</th>");
+        echo("<th>DATA URODZENIA</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td><td>" .$row["nazwa_dzial"]. "</td>");
+                    echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td><td>" .$row["data_urodzenia"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
