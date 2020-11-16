@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   
@@ -10,7 +11,7 @@
 </div>
   
   </head>
-  <hr></hr>
+ <hr></hr>
 <body>
   
 
@@ -18,6 +19,7 @@
 
 
 <?php
+  
   echo("<h3>1. SELECT SUM(zarobki) AS SUMA FROM pracownicy</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT SUM(zarobki) AS SUMA FROM pracownicy');
@@ -117,5 +119,5 @@
         echo("</table>");
 ?>
 
-</body>
+  </body>
 </html>
