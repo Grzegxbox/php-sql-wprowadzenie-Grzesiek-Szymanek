@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   
@@ -13,7 +14,7 @@
 </div>
   
   <hr></hr>
-  </head>
+ </head>
 <body>
   
 <h1>PRACOWNICY I ORGANIZACJA</h1>
@@ -88,8 +89,6 @@
                 echo("</tr>");
             }
         echo("</table>");
-  
-  
 ?>
   
   </body>
