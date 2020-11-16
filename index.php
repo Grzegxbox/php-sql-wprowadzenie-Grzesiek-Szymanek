@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   
@@ -14,14 +15,15 @@
   </div>
   
   </head>
-  <hr></hr>
-  <body>
+ <hr></hr>
+<body>
 
   
 <h1>STRONA GŁÓWNA</h1>
   
   
 <?php
+  
   echo("<h3>0. SELECT * FROM pracownicy</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy');
@@ -439,6 +441,8 @@ echo("<h3>6. SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Su
 //                 echo("</tr>");
 //             }
 //         echo("</table>");
+  
 ?>
+  
     </body>
 </html>
