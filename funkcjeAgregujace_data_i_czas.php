@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   
@@ -10,7 +11,7 @@
 </div>
   
   </head>
-  <hr></hr>
+ <hr></hr>
 <body>
   
 
@@ -207,10 +208,6 @@
                   echo("</tr>");
               }
           echo("</table>");
-  
-  
-
- 
 ?>
 
     </body>
