@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   
@@ -16,6 +17,7 @@
 <h1>FUNKCJA AGREGUJĄCA - GRUPOWANIE</h1>
 
 <?php
+  
   echo("<h3>1. SELECT dzial, SUM(zarobki) AS suma FROM pracownicy GROUP BY dzial</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT dzial, SUM(zarobki) AS suma FROM pracownicy GROUP BY dzial');
@@ -80,7 +82,6 @@
                 echo("</tr>");
             }
         echo("</table>");
-    
 ?>
 
     </body>
