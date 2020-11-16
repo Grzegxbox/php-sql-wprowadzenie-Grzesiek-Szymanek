@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   
@@ -10,12 +11,13 @@
 </div>
   
   </head>
-  <hr></hr>
+ <hr></hr>
 <body>
   
 <h1>FUNKCJA AGREGUJĄCA - DATA I CZAS - FORMATOWANIE DAT</h1>
   
   <?php
+  
    echo("<h3>1. SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') AS dni FROM pracownicy</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT *, DATE_FORMAT(data_urodzenia,"%W-%m-%Y") AS dni FROM pracownicy');
@@ -159,13 +161,6 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
                 echo("</tr>");
             }
         echo("</table>");
-  
-  
-  
-  
-  
-  
-  
   ?>
   
   </body>
