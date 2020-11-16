@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   
@@ -10,8 +11,8 @@
 </div>
   
    </head>
-   <hr></hr>
-  <body>
+  <hr></hr>
+ <body>
   
 <h1>WYKORZYSTANIE FUNKCJI 'LIMIT'</h1>
  
