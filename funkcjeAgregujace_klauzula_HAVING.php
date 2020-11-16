@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   
@@ -10,12 +11,13 @@
 </div>
   
   </head>
-  <hr></hr>
+ <hr></hr>
 <body>
  
 <h1>FUNKCJA AGREGUJĄCA - HAVING</h1>
 
 <?php
+  
   echo("<h3>1. SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma,  FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) > 128</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma  FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) > 128');
