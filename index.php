@@ -18,10 +18,10 @@
  <hr></hr>
 <body>
   
-  <form action="strona.php" method="POST">
+<!--   <form action="strona.php" method="POST">
      <input type="text" name="imie"></br>
      <input type="submit" value="wyślij do strona.php">
-  </form>
+  </form> -->
   <div> 
    <a class="navigation_link1" href="formularz.html">Formularz</a>
 </div>
