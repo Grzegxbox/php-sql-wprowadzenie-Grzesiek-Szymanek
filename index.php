@@ -22,7 +22,7 @@
      <input type="text" name="imie"></br>
      <input type="submit" value="wyślij do strona.php">
   </form> -->
-  <div> 
+  <div class="ankieta"> 
    <a class="navigation_link1" href="formularz.html">Formularz</a>
 </div>
 <h1>STRONA GŁÓWNA</h1>
