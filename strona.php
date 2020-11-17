@@ -1,7 +1,8 @@
 <?php
 
-echo("jesteś na strona.php");
+// echo("jesteś na strona.php");
 
-echo($_POST["imie"]);
+<li>($_POST["imie"])</li>
+<li>($_POST[""])</li>
 
 ?>
