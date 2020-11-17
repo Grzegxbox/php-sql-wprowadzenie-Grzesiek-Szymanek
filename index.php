@@ -17,7 +17,10 @@
   </head>
  <hr></hr>
 <body>
-
+  <form action="strona.php" method="POST">
+     <input type="text" name="asd"></br>
+     <input type="submit" value="wyślij do strona.php">
+  </form>
   
 <h1>STRONA GŁÓWNA</h1>
   
