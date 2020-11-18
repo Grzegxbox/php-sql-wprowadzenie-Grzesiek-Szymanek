@@ -2,9 +2,15 @@
 
 
 echo("<h3>Twoje Dane</h3>");
-echo("<li>($_POST['Imie'])</li>");
-echo("<li>($_POST['Nazwisko'])</li>");
-echo("<li>($_POST['Miejscowosc'])</li>");
+
+echo("<h3>IMIĘ</h3>");
+echo($_POST['Imie']);
+
+echo("<h3>NAZWISKO</h3>");
+echo($_POST['Nazwisko']);
+
+echo("<h3>MIEJSCOWOŚĆ</h3>");
+echo($_POST['Miejscowosc']);
 
 
 ?>
