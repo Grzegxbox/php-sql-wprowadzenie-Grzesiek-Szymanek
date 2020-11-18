@@ -1,7 +1,7 @@
 <?php
 
 
-echo("<h3>Twoje Dane</h3>");
+echo("<h2>TWOJE DANE</h2>");
 
 echo("<h3>IMIĘ</h3>");
 echo($_POST['Imie']);
