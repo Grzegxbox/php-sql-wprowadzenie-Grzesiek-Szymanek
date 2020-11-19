@@ -10,7 +10,7 @@ echo("<h3>NAZWISKO</h3>");
 echo($_POST['Nazwisko']);
 
 echo("<h3>MIEJSCOWOŚĆ</h3>");
-echo($_POST['Miejscowość']);
+echo($_POST['Miejscowosc']);
 
 echo("<h3>PESEL</h3>");
 echo($_POST['Pesel']);
