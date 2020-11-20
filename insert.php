@@ -6,10 +6,10 @@
 
 <?php
 
-echo("<li>IMIĘ:".$_POST["imie"]);
-echo("<li>DZIAŁ:".$_POST["dzial"]);
-echo("<li>ZAROBKI:".$_POST["zarobki"]);
-echo("<li>DATA URODZENIA:".$_POST["data_urodzenia"]);
+echo('<h3>IMIĘ".$_POST["imie"]</h3>');
+echo('<h3>DZIAŁ".$_POST["dzial"]</h3>');
+echo('<h3>ZAROBKI".$_POST["zarobki"]</h3>');
+echo('<h3>DATA URODZENIA".$_POST["data_urodzenia"]</h3>');
   
 $servername = "remotemysql.com";
 $username = "Rp4CxP6YkY";
