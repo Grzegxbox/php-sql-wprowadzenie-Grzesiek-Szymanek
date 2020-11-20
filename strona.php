@@ -22,11 +22,6 @@ echo("<h3>DATA URODZENIA</h3>");
 echo($_POST['Data_Urodzenia']);
 
     
-$conn = new mysqli('remotemysql.com', 'Rp4CxP6YkY', 'V0BMRFi2V3', 'Rp4CxP6YkY');
-// if ($conn->connect_error) {
-//   die("Connection failed: " . $conn->connect_error);
-// }
-    
 require_once("connect.php");
 $sql = "INSERT INTO pracownicy ('id_pracownicy', 'imie', 'dzial', 'zarobki', 'data_rodzenia')
 VALUES ('NULL', 'imie', 'dzial', 'zarobki', 'data_urodzenia')";
