@@ -9,25 +9,17 @@
   
 <?php
 
-echo("<li>IMIĘ</li>");
-echo($_POST['imie']);
-
-echo("<li>DZIAŁ</li>");
-echo($_POST['dzial']);
-
-echo("<li>ZAROBKI</li>");
-echo($_POST['zarobki']);
-
-echo("<hli>DATA URODZENIA</li>");
-echo($_POST['data_urodzenia']);
-    
+echo("<li>IMIĘ:.".$_POST["imie"]);
+echo("<li>DZIAŁ:.".$_POST["dzial"]);
+echo("<li>ZAROBKI:.".$_POST["zarobki"]);
+echo("<li>DATA URODZENIA:.".$_POST["data_urodzenia"]);
 
 $servername = "remotemysql.com";
 $username = "Rp4CxP6YkY";
 $password = "V0BMRFi2V3";
 $dbname = " Rp4CxP6YkY"; 
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($remotemysql.com, $Rp4CxP6YkY, $V0BMRFi2V3, $Rp4CxP6YkY);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
