@@ -21,6 +21,7 @@ echo($_POST['Zarobki']);
 echo("<h3>DATA URODZENIA</h3>");
 echo($_POST['Data_Urodzenia']);
 
+require_once("connect.php");
 $sql = "INSERT INTO pracownicy ('id_pracownicy','imie','dzial','zarobki','data_rodzenia')
 VALUES ('NULL','imie','dzial','zarobki','data_urodzenia')";
 
