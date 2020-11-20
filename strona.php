@@ -9,16 +9,16 @@
   
 <?php
 
-echo("<h3>IMIĘ</h3>");
+echo("<li>IMIĘ</li>");
 echo($_POST['imie']);
 
-echo("<h3>DZIAŁ</h3>");
+echo("<li>DZIAŁ</li>");
 echo($_POST['dzial']);
 
-echo("<h3>ZAROBKI</h3>");
+echo("<li>ZAROBKI</li>");
 echo($_POST['zarobki']);
 
-echo("<h3>DATA URODZENIA</h3>");
+echo("<hli>DATA URODZENIA</li>");
 echo($_POST['data_urodzenia']);
     
 
