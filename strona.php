@@ -16,7 +16,7 @@ echo("<h3>PESEL</h3>");
 echo($_POST['Pesel']);
 
 echo("<h3>DATA URODZENIA</h3>");
-echo($_POST['Data Urodzenia']);
+echo($_POST['Data_Urodzenia']);
 
 
 
