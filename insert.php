@@ -21,8 +21,8 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO Pracownik (null, imie, dzial, zarobki, data_urodzenia) 
-       VALUES (null,'Bartosz', 1, 27,'19974-03-13')";
+$sql = "INSERT INTO pracownicy (null, imie, dzial, zarobki, data_urodzenia) 
+       VALUES (null,'Bartosz', 1, 27,'1973-07-28')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully :)";
