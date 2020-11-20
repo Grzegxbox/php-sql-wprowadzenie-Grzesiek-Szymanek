@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-  
-<link rel="stylesheet" href="style.css">
-<a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
 
-  </head>
- <hr></hr>
+
 <body>
   
 <?php
 
 
 echo("<h2>TWOJE DANE</h2>");
-
+ <hr></hr>
 echo("<h3>IMIĘ</h3>");
 echo($_POST['Imie']);
 
