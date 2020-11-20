@@ -2,14 +2,13 @@
 
 <html>
 
-
 <body>
   
 <?php
 
 
-echo("<h2>TWOJE DANE</h2>");
- <hr></hr>
+echo("<h1>TWOJE DANE</h1>");
+
 echo("<h3>IMIĘ</h3>");
 echo($_POST['Imie']);
 
