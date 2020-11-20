@@ -14,9 +14,7 @@
  <hr></hr>
 <body>
   
-
 <h1>KONTYNUACJA FUNKCJI AGREGUJĄCYCH</h1>
-
 
 <?php
   
