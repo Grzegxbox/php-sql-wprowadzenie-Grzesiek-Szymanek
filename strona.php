@@ -10,21 +10,21 @@
 <?php
 
 echo("<h3>IMIĘ</h3>");
-echo($_POST['Imie']);
+echo($_POST['imie']);
 
 echo("<h3>DZIAŁ</h3>");
-echo($_POST['Dzial']);
+echo($_POST['dzial']);
 
 echo("<h3>ZAROBKI</h3>");
-echo($_POST['Zarobki']);
+echo($_POST['zarobki']);
 
 echo("<h3>DATA URODZENIA</h3>");
-echo($_POST['Data_Urodzenia']);
+echo($_POST['data_urodzenia']);
 
     
 require_once("connect.php");
 $sql = "INSERT INTO pracownicy ('id_pracownicy', 'imie', 'dzial', 'zarobki', 'data_rodzenia')
-VALUES ('NULL', '".$_POST['imie']."', 'dzial', 'zarobki', 'data_urodzenia')";
+VALUES ('NULL', 'imie', 'dzial', 'zarobki', 'data_urodzenia')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully :)";
