@@ -1,5 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+  <h1>TWOJE DANE</h1>
+
 <?php
 
+echo("<li>IMIĘ:".$_POST["imie"]);
+echo("<li>DZIAŁ:".$_POST["dzial"]);
+echo("<li>ZAROBKI:".$_POST["zarobki"]);
+echo("<li>DATA URODZENIA:".$_POST["data_urodzenia"]);
+  
 $servername = "remotemysql.com";
 $username = "Rp4CxP6YkY";
 $password = "V0BMRFi2V3";
@@ -10,7 +21,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO Pracownik (null, imie, dzial, zarobki) 
+$sql = "INSERT INTO Pracownik (null, imie, dzial, zarobki, data_urodzenia) 
        VALUES (null,'Bartosz', 1, 27,'19974-03-13')";
 
 if ($conn->query($sql) === TRUE) {
