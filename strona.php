@@ -24,7 +24,7 @@ echo($_POST['Data_Urodzenia']);
     
 require_once("connect.php");
 $sql = "INSERT INTO pracownicy ('id_pracownicy', 'imie', 'dzial', 'zarobki', 'data_rodzenia')
-VALUES ('NULL', 'imie', 'dzial', 'zarobki', 'data_urodzenia')";
+VALUES ('NULL', '".$_POST['imie']."', 'dzial', 'zarobki', 'data_urodzenia')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully :)";
