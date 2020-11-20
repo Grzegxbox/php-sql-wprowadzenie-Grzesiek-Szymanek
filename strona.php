@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    echo("<h1>TWOJE DANE</h1>");
+    <h1>TWOJE DANE</h1>
     <hr</hr>
    </head
 
