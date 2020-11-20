@@ -5,11 +5,19 @@
   <h1>TWOJE DANE</h1>
 
 <?php
+
+echo("<h3>IMIĘ</h3>");
+echo("<h3>".$_POST['imie']."</h3>");
   
-echo("<h3>IMIĘ".$_POST['imie']."</h3>");
-echo("<h3>DZIAŁ".$_POST['dzial']."</h3>");
-echo("<h3>ZAROBKI".$_POST['zarobki']."</h3>");
-echo("<h3>DATA URODZENIA".$_POST['data_urodzenia']."</h3>");
+echo("<h3>DZIAŁ</h3>");  
+echo("<h3>".$_POST['dzial']."</h3>");
+  
+echo("<h3>ZAROBKI</h3>");
+echo("<h3>".$_POST['zarobki']."</h3>");
+  
+echo("<h3>DATA URODZENIA</h3>");  
+echo("<h3>".$_POST['data_urodzenia']."</h3>");
+  
   
 $servername = "remotemysql.com";
 $username = "Rp4CxP6YkY";
