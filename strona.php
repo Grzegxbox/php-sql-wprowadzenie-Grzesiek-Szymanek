@@ -3,8 +3,7 @@
 <html>
   <head>
     <h1>TWOJE DANE</h1>
-    <hr</hr>
-   </head
+  </head
 
 <body>
   
@@ -25,7 +24,16 @@ echo($_POST['Pesel']);
 echo("<h3>DATA URODZENIA</h3>");
 echo($_POST['Data_Urodzenia']);
 
+$sql = "INSERT INTO pracownicy ('id_pracownicy','imie','dzial','zarobki','data_rodzenia')
+VALUES ('NULL','imie','dzial','zarobki','data_urodzenia')";
 
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully :)";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
 
 ?>
 
