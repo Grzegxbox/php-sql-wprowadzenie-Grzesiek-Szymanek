@@ -19,7 +19,7 @@ $username = "Rp4CxP6YkY";
 $password = "V0BMRFi2V3";
 $dbname = " Rp4CxP6YkY"; 
 
-$conn = new mysqli('$remotemysql.com', '$Rp4CxP6YkY', '$V0BMRFi2V3', '$Rp4CxP6YkY');
+$conn = new mysqli('remotemysql.com', 'Rp4CxP6YkY', 'V0BMRFi2V3', 'Rp4CxP6YkY');
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
