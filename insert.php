@@ -4,7 +4,7 @@
   
   <head>
    <div>
-    <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
+    <a class="navigation_link5" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
   </div>
     <hr></hr>
   </head>
