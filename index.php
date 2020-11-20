@@ -19,7 +19,7 @@
 <body>
   
   <div class="ankieta"> 
-   <a class="navigation_link1" href="formularz.html">Formularz</a>
+   <a class="navigation_link1" href="daneDoBazy.html">Formularz</a>
 </div>
 <h1>STRONA GŁÓWNA</h1>
   
