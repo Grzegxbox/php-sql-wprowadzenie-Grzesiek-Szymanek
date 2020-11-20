@@ -6,16 +6,16 @@
 
 <?php
 
-echo("<h3>IMIĘ</h3>");
+echo("<h3>IMIĘ:</h3>");
 echo("<h3>".$_POST['imie']."</h3>");
   
-echo("<h3>DZIAŁ</h3>");  
+echo("<h3>DZIAŁ:</h3>");  
 echo("<h3>".$_POST['dzial']."</h3>");
   
-echo("<h3>ZAROBKI</h3>");
+echo("<h3>ZAROBKI:</h3>");
 echo("<h3>".$_POST['zarobki']."</h3>");
   
-echo("<h3>DATA URODZENIA</h3>");  
+echo("<h3>DATA URODZENIA:</h3>");  
 echo("<h3>".$_POST['data_urodzenia']."</h3>");
   
   
@@ -29,8 +29,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO pracownicy (id_pracownicy, imie, dzial, zarobki, data_urodzenia) 
-       VALUES (null,'Bartosz', 1, 27,'1973-07-28')";
+$sql = "INSERT INTO pracownicy (id_pracownicy, imie, dzial, zarobki, data_urodzenia)";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully :)";
