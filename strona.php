@@ -21,6 +21,17 @@ echo($_POST['Zarobki']);
 echo("<h3>DATA URODZENIA</h3>");
 echo($_POST['Data_Urodzenia']);
 
+    
+$servername = "remotemysql.com";
+$username = "Rp4CxP6YkY";
+$password = "V0BMRFi2V3";
+$dbname = "Rp4CxP6YkY";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+    
 require_once("connect.php");
 $sql = "INSERT INTO pracownicy ('id_pracownicy','imie','dzial','zarobki','data_rodzenia')
 VALUES ('NULL','imie','dzial','zarobki','data_urodzenia')";
