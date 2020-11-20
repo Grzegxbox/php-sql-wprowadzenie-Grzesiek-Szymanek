@@ -12,14 +12,11 @@
 echo("<h3>IMIĘ</h3>");
 echo($_POST['Imie']);
 
-echo("<h3>NAZWISKO</h3>");
-echo($_POST['Nazwisko']);
+echo("<h3>DZIAŁ</h3>");
+echo($_POST['Dzial']);
 
-echo("<h3>MIEJSCOWOŚĆ</h3>");
-echo($_POST['Miejscowosc']);
-
-echo("<h3>PESEL</h3>");
-echo($_POST['Pesel']);
+echo("<h3>ZAROBKI</h3>");
+echo($_POST['Zarobki']);
 
 echo("<h3>DATA URODZENIA</h3>");
 echo($_POST['Data_Urodzenia']);
