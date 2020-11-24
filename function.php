@@ -2,15 +2,15 @@
     
 echo("<h1>Funkcje</h1>");
 
-function literki($litera){
+function liczby($liczba){
     echo("<li>Początek funkcji</li>");
-    echo("<li>START ".$litera);
-    for($i='a';$i<$litera;$i++){
-        echo("<li>Kolejna literka: ".$i);
+    echo("<li>START ".$liczba);
+    for($i='1';$i<$litera;$i++){
+        echo("<li>Kolejna liczba: ".$i);
     }
 }
 
-literki('abcdefghijklmnoprstuwyz')
+liczba('15')
 
 
 ?>
