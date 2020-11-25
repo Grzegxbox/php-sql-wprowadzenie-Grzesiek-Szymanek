@@ -43,22 +43,22 @@ h4 {
 .mojlink0 {
   background-color: #000000;
   color: #ff0000;
+  font-weight: bold;
   text-decoration: none;
   padding: 0.5rem;
-  font-weight: bold;
 }
 .navigation_link0 {
   background-color:#ffffff;
   color:#000000;
+  font-weight: bold;
   text-decoration: none;
   margin-inline-start: auto;
-  font-weight: bold;
 }
 .navigation_link1 {
   background-color:#ffffff;
   color:#000000;
+  font-weight: bold;
   text-decoration: none;
   padding: 1rem;
   margin-inline-start: auto;
-  font-weight: bold;
 }
