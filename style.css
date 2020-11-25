@@ -45,6 +45,7 @@ h4 {
   color: #ff0000;
   text-decoration: none;
   padding: 0.5rem;
+  font-weight: bold;
 }
 .navigation_link0 {
   background-color:#ffffff;
@@ -58,4 +59,5 @@ h4 {
   text-decoration: none;
   padding: 1rem;
   margin-inline-start: auto;
+  font-weight: bold;
 }
