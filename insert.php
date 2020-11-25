@@ -10,7 +10,6 @@
   </head>
   
 <body>
-  
   <h1>TWOJE DANE</h1>
 
 <?php
