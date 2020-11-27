@@ -15,12 +15,9 @@
 <body>
    <form action="insert.php" method="POST">
      <input type="text" name="imie" placeholder="IMIĘ"></br>
-      Dział
-     <input type="text" name="dzial"></br>
-      Zarobki
-     <input type="text" name="zarobki"></br>
-      Data Urodzenia
-     <input type="date" name="data_urodzenia"></br>
+     <input type="text" name="dzial" placeholder="DZIAŁ"></br>
+     <input type="text" name="zarobki" placeholder="ZAROBKI"></br>
+     <input type="date" name="data_urodzenia" placeholder="DATA URODZENIA"></br>
      <input type="submit" value="DODAJ">
    </form>
 </div>
@@ -29,7 +26,6 @@
   <h2>USUWANIE PRACOWNIKÓW</h2>
 <body>
    <form action="delete.php" method="POST">
-     ID
      <input type="text" name="id" placeholder="ID PRACOWNIKA"></br>
      <input type="submit" value="USUŃ">
    </form>
