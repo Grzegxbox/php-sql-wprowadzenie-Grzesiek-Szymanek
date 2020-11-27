@@ -7,6 +7,7 @@
   <title>Dane do Bazy</title>
 </head>
 
+<div class='dodawanie'>
   <h3>DODAWANIE PRACOWNIKÓW</h3>
 <body>
    <form action="insert.php" method="POST">
@@ -20,7 +21,9 @@
      <input type="date" name="data_urodzenia"></br>
      <input type="submit" value="DODAJ">
    </form>
-    
+</div>
+
+<div class='usuwanie'>
   <h3>USUWANIE PRACOWNIKÓW</h3>
 <body>
    <form action="delete.php" method="POST">
@@ -29,6 +32,7 @@
      <input type="submit" value="USUŃ">
    </form>
 </body>
+</div>
 
 <?php
   
