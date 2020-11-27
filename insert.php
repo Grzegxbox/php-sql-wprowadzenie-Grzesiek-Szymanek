@@ -41,7 +41,7 @@ $sql = "INSERT INTO pracownicy (id_pracownicy, imie, dzial, zarobki, data_urodze
 VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."', '".$_POST['data_urodzenia']."')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully :)";
+  echo "WŁAŚNIE SIĘ DODAŁEŚ";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
