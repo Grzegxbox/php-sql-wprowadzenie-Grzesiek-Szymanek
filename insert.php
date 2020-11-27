@@ -43,6 +43,7 @@ VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."'
 
 if ($conn->query($sql) === TRUE) {
   echo "WŁAŚNIE SIĘ DODAŁEŚ";
+  header('Location: https://wprowadzenie.herokuapp.com/');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
@@ -65,7 +66,5 @@ $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
                 echo("</tr>");
             }
         echo("</table>");
-echo("<h4>↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑</h4>");
-echo("<h4>------------------------------------TUTAJ JESTEŚ--------------------------------------</h4>");
-  
+
 ?>
