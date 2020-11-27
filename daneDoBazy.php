@@ -14,7 +14,7 @@
 <div class="dodawanie">
   <h2>DODAWANIE PRACOWNIKÓW</h2>
 <body>
-   <form action="insert.php" method="POST">
+   <form action="insert.php" method="POST" style="margin-left: 80px;">
      <input type="text" name="imie" placeholder="IMIĘ"></br>
      <input type="text" name="dzial" placeholder="DZIAŁ"></br>
      <input type="text" name="zarobki" placeholder="ZAROBKI"></br>
