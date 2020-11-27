@@ -31,6 +31,7 @@ $sql = "DELETE FROM pracownicy WHERE id_pracownicy=('".$_POST['id']."')";
 
 if ($conn->query($sql) === TRUE){
   echo("PRACOWNIK ZOSTAŁ USUNIĘTY");
+  header('Location: https://wprowadzenie.herokuapp.com/');
   } else  {
   echo('ERROR: ' .$sql. '<br>' .$conn->error);
   }
