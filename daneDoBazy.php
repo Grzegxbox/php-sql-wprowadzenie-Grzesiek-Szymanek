@@ -27,9 +27,9 @@
 <div class="odejmowanie">
   <h2>USUWANIE PRACOWNIKÓW</h2>
 <body>
-   <form action="delete.php" method="POST">
+   <form action="delete.php" method="POST" style="margin-left: 85px;">
      <input type="text" name="id" placeholder="ID PRACOWNIKA"></br>
-     <input type="submit" value="USUŃ">
+     <input type="submit" value="USUŃ" style="margin-left: 55px;">
    </form>
 </body>
 </div>
