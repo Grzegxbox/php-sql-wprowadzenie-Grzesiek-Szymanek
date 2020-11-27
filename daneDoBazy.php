@@ -11,7 +11,7 @@
 </head>
 
 
-<div>
+<div class="dodawanie">
   <h2>DODAWANIE PRACOWNIKÓW</h2>
 <body>
    <form action="insert.php" method="POST">
@@ -24,7 +24,7 @@
 </div>
 
 
-<div>
+<div class="odejmowanie">
   <h2>USUWANIE PRACOWNIKÓW</h2>
 <body>
    <form action="delete.php" method="POST">
@@ -34,7 +34,7 @@
 </body>
 </div>
 
-
+<div class="tabelka"
 <?php
   
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
@@ -64,6 +64,6 @@
         echo("</table>");
 
 ?>
-
+     </div>
 
 </html>
