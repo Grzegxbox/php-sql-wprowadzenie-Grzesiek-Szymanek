@@ -39,7 +39,7 @@
   
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)');
-        echo("<table border=2>");
+        echo("<table border="2" style='margin-top: 100px;margin-left: 80px;'>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIAŁ</th>");
