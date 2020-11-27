@@ -10,6 +10,7 @@
   <title>Dane do Bazy</title>
 </head>
 
+
 <div>
   <h2>DODAWANIE PRACOWNIKÓW</h2>
 <body>
@@ -22,6 +23,7 @@
    </form>
 </div>
 
+
 <div>
   <h2>USUWANIE PRACOWNIKÓW</h2>
 <body>
@@ -31,6 +33,7 @@
    </form>
 </body>
 </div>
+
 
 <?php
   
