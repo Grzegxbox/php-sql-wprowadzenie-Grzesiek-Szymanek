@@ -9,7 +9,7 @@
 </head>
 
 <div>
-  <h3>DODAWANIE PRACOWNIKÓW</h3>
+  <h2>DODAWANIE PRACOWNIKÓW</h2>
 <body>
    <form action="insert.php" method="POST">
       Imię
@@ -25,7 +25,7 @@
 </div>
 
 <div>
-  <h3>USUWANIE PRACOWNIKÓW</h3>
+  <h2>USUWANIE PRACOWNIKÓW</h2>
 <body>
    <form action="delete.php" method="POST">
      ID
@@ -53,7 +53,6 @@
                     echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["zarobki"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["data_urodzenia"]. "</td>
                     
                     <td>
-                    asd
                     <form action='delete.php' method='POST'>
                           ID
                           <input type='text' name='id' value='".$row["id_pracownicy"]."' placeholder='ID PRACOWNIKA'></br>
