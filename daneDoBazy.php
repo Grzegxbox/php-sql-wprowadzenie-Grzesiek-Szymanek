@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="background-color:#FFDAB9;">
 
 <head>
   <meta charset="utf-8">
@@ -7,7 +7,7 @@
   <title>Dane do Bazy</title>
 </head>
 
-<div class='dodawanie'>
+<div>
   <h3>DODAWANIE PRACOWNIKÓW</h3>
 <body>
    <form action="insert.php" method="POST">
@@ -23,7 +23,7 @@
    </form>
 </div>
 
-<div class='usuwanie'>
+<div>
   <h3>USUWANIE PRACOWNIKÓW</h3>
 <body>
    <form action="delete.php" method="POST">
