@@ -19,7 +19,7 @@
      <input type="text" name="dzial" placeholder="DZIAŁ"></br>
      <input type="text" name="zarobki" placeholder="ZAROBKI"></br>
      <input type="date" name="data_urodzenia" placeholder="DATA URODZENIA"></br>
-     <input type="submit" value="DODAJ">
+     <input type="submit" value="DODAJ" style="margin-left: 40px;">
    </form>
 </div>
 
