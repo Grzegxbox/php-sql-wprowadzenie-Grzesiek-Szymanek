@@ -6,6 +6,7 @@
    <div>
     <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
   </div>
+      <link rel="stylesheet" href="style.css">
     <hr></hr>
   </head>
   
