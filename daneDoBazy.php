@@ -14,8 +14,7 @@
   <h2>DODAWANIE PRACOWNIKÓW</h2>
 <body>
    <form action="insert.php" method="POST">
-      Imię
-     <input type="text" name="imie"></br>
+     <input type="text" name="imie" placeholder="IMIĘ"></br>
       Dział
      <input type="text" name="dzial"></br>
       Zarobki
