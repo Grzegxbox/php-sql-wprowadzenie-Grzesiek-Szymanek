@@ -34,7 +34,7 @@
 </body>
 </div>
 
-<div class="tabelka"
+
 <?php
   
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
@@ -64,6 +64,6 @@
         echo("</table>");
 
 ?>
-     </div>
+
 
 </html>
