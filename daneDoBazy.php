@@ -21,7 +21,7 @@
      <input type="submit" value="DODAJ">
    </form>
     
-  </h3>USUWANIE PRACOWNIKÓW</h3>
+  <h3>USUWANIE PRACOWNIKÓW</h3>
 <body>
    <form action="delete.php" method="POST">
      ID
