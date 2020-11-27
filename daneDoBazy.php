@@ -50,7 +50,11 @@
                     
                     <td>
                     asd
-
+                    <form action="delete.php" method="POST">
+                          ID
+                          <input type="text" name="id" value="3" placeholder="ID PRACOWNIKA"></br>
+                                    <input type="submit" value="USUŃ">
+                          </form>
                     </td>");
               
                 echo("</tr>");
