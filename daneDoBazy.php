@@ -20,7 +20,6 @@
      <input type="date" name="data_urodzenia"></br>
      <input type="submit" value="DODAJ">
    </form>
-</body>
     
   </h3>USUWANIE PRACOWNIKÓW</h3>
 <body>
