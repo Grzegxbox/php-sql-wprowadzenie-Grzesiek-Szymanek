@@ -7,6 +7,7 @@
   <title>Dane do Bazy</title>
 </head>
 
+  <h3>DODAWANIE PRACOWNIKÓW</h3>
 <body>
    <form action="insert.php" method="POST">
       Imię
@@ -17,23 +18,20 @@
      <input type="text" name="zarobki"></br>
       Data Urodzenia
      <input type="date" name="data_urodzenia"></br>
-     <input type="submit" value="WYŚLIJ DO BAZY">
+     <input type="submit" value="DODAJ">
+   </form>
+</body>
+    
+  </h3>USUWANIE PRACOWNIKÓW</h3>
+<body>
+   <form action="delete.php" method="POST">
+     ID
+     <input type="text" name="id" placeholder="ID PRACOWNIKA"></br>
+     <input type="submit" value="USUŃ">
    </form>
 </body>
 
-<?php
 
-echo("<h1>id: ".$_POST['id']."</h1>");
-  require_once('connect.php');
 
-$sql = "DELETE FROM pracownicy WHERE id_pracownicy=('".$_POST['id']."')";
-
-if($conn->query($sql)==TRUE){
-  echo("<h1 class='ja'>PRACOWNIK ZOSTAŁ USUNIĘTY</h1>");
-  } else  {
-  echo("<h1 class='ja'>'ERROR: ' .$sql. '<br>' .$conn->error</h1>");
-  }
-
-?>
 
 </html>
