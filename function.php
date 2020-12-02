@@ -26,7 +26,7 @@ function liczby($liczba){
     }
 }
 
-liczby('15')
+liczby('100')
 
 
 ?>
