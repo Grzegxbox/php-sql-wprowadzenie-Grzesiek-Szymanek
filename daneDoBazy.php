@@ -2,12 +2,12 @@
 <html>
 
 <head>
-  <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
+  <a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
   <hr></hr>
+  <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
   <link rel="stylesheet" href="style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Dane do Bazy</title>
 </head>
 
 
