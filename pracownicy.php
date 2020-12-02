@@ -11,6 +11,7 @@
   <a class="navigation_link1" href="pracownicy.php">Pracownicy</a>
   <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
   <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
+  <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
 </div>
   
   <hr></hr>
