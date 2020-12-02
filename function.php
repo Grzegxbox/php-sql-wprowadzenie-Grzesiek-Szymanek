@@ -19,14 +19,14 @@
     
 
 function liczby($liczba){
-    echo("<h2>Początek funkcji ");
-    echo("<h3>Napisz Liczby Do ".$liczba);
+    echo("<h3>Początek funkcji ");
+    echo("<h4>Napisz Liczby Do ".$liczba);
     for($i=1;$i<$liczba;$i++){
         echo("<h4>Kolejna liczba: ".$i);
     }
 }
 
-liczby('100')
+liczby('300')
 
 
 ?>
