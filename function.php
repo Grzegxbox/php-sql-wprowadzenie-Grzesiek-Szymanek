@@ -19,10 +19,10 @@
     
 
 function liczby($liczba){
-    echo("<li>Początek funkcji ");
-    echo("<li>START ".$liczba);
+    echo("<h2>Początek funkcji ");
+    echo("<h2>START ".$liczba);
     for($i=1;$i<$liczba;$i++){
-        echo("<li>Kolejna liczba: ".$i);
+        echo("<h2>Kolejna liczba: ".$i);
     }
 }
 
