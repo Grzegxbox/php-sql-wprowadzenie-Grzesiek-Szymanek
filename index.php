@@ -9,6 +9,7 @@
 
   <div class="nav">
     <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
+    <a class="navigation_link1" href="function.php">Funkcja</a>
     <a class="navigation_link1" href="daneDoBazy.php">Formularz</a>
     <a class="navigation_link1" href="pracownicy.php">Pracownicy</a>
     <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
