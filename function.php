@@ -20,9 +20,9 @@
 
 function liczby($liczba){
     echo("<h2>Początek funkcji ");
-    echo("<h2>Napisz Liczby Do ".$liczba);
+    echo("<h3>Napisz Liczby Do ".$liczba);
     for($i=1;$i<$liczba;$i++){
-        echo("<h3>Kolejna liczba: ".$i);
+        echo("<h4>Kolejna liczba: ".$i);
     }
 }
 
