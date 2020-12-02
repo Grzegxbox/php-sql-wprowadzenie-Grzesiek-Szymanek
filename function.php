@@ -27,9 +27,7 @@ function liczby($liczba){
 }
 
 liczby('3000')
-    echo("<h3>Koniec funkcji ");
-
-
 ?>
 
+<h3>Chyba Ci się nudzi jak tu doszłeś/aś</h3>
 </html>
