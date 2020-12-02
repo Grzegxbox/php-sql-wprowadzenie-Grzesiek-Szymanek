@@ -12,6 +12,7 @@
   <meta name="viewport" content="width=device-width">
 </head>
 
+<h1>FORMULARZ</h1>
 
 <div class="dodawanie">
   <h2>DODAWANIE PRACOWNIKÓW</h2>
