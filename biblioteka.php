@@ -28,6 +28,19 @@ echo("<h3>1. SELECT * FROM biblAutor</h3>");
             }
         echo("</table>");
 
+echo("<h3>2. SELECT * FROM biblTytul</h3>");
+    $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result=$conn->query('SELECT * FROM biblTytul');
+        echo("<table border=2>");
+        echo("<th>ID</th>");
+        echo("<th>TYTUŁ</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["id"]. "</td><td>" .$row["tytul"]. "</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+
 
 
 ?>
