@@ -26,7 +26,7 @@ function liczby($liczba){
     }
 }
 
-liczby('300')
+liczby('3000')
 
 
 ?>
