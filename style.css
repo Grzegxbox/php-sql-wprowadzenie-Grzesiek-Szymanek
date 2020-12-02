@@ -24,7 +24,8 @@ hr{
   border: 4px solid black;
 }
 h1 {
-/*   font-size: xxx-large; */
+  margin-left: 500px;
+  font-size: 40px;
   color: #0000CD;
 }
 h2 {
