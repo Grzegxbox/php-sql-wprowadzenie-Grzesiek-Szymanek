@@ -65,6 +65,16 @@ echo("<h3 style='margin-top: -1000px; margin-left: 900px;'>SELECT * FROM biblTyt
           }
        echo("</select>");
 
+echo("<h3 style='margin-top: -900px; margin-left: 900px;'>SELECT * FROM biblAutor - WYBIERANIE</h3>");
+    $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result=$conn->query('SELECT * FROM biblAutor');
+       echo("<select name='tytul' id='tytul' style='margin-top: -900px;margin-left: 900px;'>");
+          while($row=$result->fetch_assoc()){ 
+            echo("<option value=".$row['id'].">".$row['autor']."</option>");
+          }
+       echo("</select>");
+
+
 
 
 ?>
