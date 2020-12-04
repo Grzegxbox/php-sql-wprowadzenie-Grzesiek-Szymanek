@@ -20,7 +20,7 @@
   <label for='biblTytul'>Wybierz Tytuł Książki:</label>
     
     <select name='tytul' id='id'>
-      <option value=".$row['id'].">".$row['tytul']."</option>
+      <option value=" "</option>
     </select>
    
    <br><br>
