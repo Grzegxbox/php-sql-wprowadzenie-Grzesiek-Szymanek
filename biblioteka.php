@@ -16,7 +16,7 @@
 
 <?php
 
-<"form action='biblTytul.php'>
+"
   <label for='biblTytul'>Wybierz Tytuł Książki:</label>
     
     <select name='tytul' id='id'>
@@ -26,7 +26,7 @@
    <br><br>
  
  <input type='submit' value='Do Wypożyczenia'>
-</form">
+"
 
 
 echo("<h3>1. SELECT * FROM biblAutor</h3>");
