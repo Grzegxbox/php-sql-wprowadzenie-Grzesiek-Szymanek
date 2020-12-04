@@ -22,18 +22,10 @@ echo("<h3>1. SELECT * FROM biblTytul</h3>");
         echo("<table border=2>");
         echo("<th>ID</th>");
         echo("<th>TYTUŁ</th>");
-            while($row=$result->fetch_assoc()){
-             <label for="cars">Choose a car:</label>
-
-<select name="cars" id="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-</select>
-                echo("<tr>");
-                    echo("<td>" .$row["id"]. "</td><td>" .$row["autor"]. "</td>");
-                echo("</tr>");
+             while($row=$result->fetch_assoc()){
+                "<select name='tytul' id='tytul'>"
+                  <"option value=".$row['id'].">".$row['tytul']."</option">
+                "</select>"
             }
         echo("</table>");
 
