@@ -25,7 +25,7 @@ hr{
 }
 h1 {
   color: #FF0000;
-  margin-left: 290px;
+/*   margin-left: 290px; */
 }
 h2 {
   color:#8008e1;
@@ -38,7 +38,6 @@ h4 {
 }
 .nav{
   margin-top: 50px;
-/*   font: 19px/1.25 Roboto, Arial Narrow, Arial,sans-serif; */
 
 .mojlink0 {
   background-color: #000000;
