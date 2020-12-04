@@ -17,15 +17,15 @@
 <?php
 
 "
-  <label for='biblTytul'>Wybierz Tytuł Książki:</label>
+//   <label for='biblTytul'>Wybierz Tytuł Książki:</label>
     
-    <select name='tytul' id='id'>
-      <option value=" "</option>
-    </select>
+//     <select name='tytul' id='tytul'>
+//       <option value=1>Krzyzacy</option>
+//     </select>
    
-   <br><br>
+//    <br><br>
  
- <input type='submit' value='Do Wypożyczenia'>
+//  <input type='submit' value='Do Wypożyczenia'>
 "
 
 
