@@ -92,6 +92,7 @@ echo("<h3 style='margin-top: 20px; margin-left: 850px;'></h3>");
             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
           }
        echo("</select>");
+  echo("<input type='submit' value='Wyporzycz'>");
 
 
 ?>
