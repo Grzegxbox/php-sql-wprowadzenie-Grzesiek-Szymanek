@@ -75,7 +75,7 @@ echo("<h3 style='margin-top: 155px; margin-left: 450px;'>SELECT * FROM biblTytul
           }
        echo("</select>");
 
-echo("<h3 style='margin-top: -1000px; margin-left: 900px;'>SELECT * FROM biblAutor, biblTytul - WYBIERANIE</h3>");
+echo("<h3 style='margin-top: -1000px; margin-left: 900px;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblAutor, biblTytul');
        echo("<select name='tytul' id='tytul' style='margin-left: 900px;'>");
