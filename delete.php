@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -42,4 +42,4 @@ if ($conn->query($sql) === TRUE){
 
   </body>
 </html>
- -->
+
