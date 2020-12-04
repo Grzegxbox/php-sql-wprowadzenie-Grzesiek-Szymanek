@@ -1,0 +1,73 @@
+body {
+  background-color: #ffdeaf;
+}
+table, th, td {
+  font-weight: bold;
+  border: 4px solid rgb(80, 80, 80);
+  background-color: rgba(255, 255, 0, 0.3);
+}
+td {
+  text-align: center;
+}
+th {
+  background-color: rgb(60, 179, 113);
+  color: white;
+}
+tr:nth-child(even){
+  background-color: rgba(60, 179, 113, 0.7);
+}
+table {
+  border-collapse: collapse;
+}
+hr{
+  margin-top: 40px;
+  border: 4px solid black;
+}
+h1 {
+  color: #FF0000;
+/*   margin-left: 290px; */
+}
+h2 {
+  color:#8008e1;
+}
+h3 {
+  color:#B22222;
+}
+h4 {
+  color:#3894e7;
+}
+.nav{
+  margin-top: 50px;
+}
+
+.mojlink0 {
+  background-color: #000000;
+  color: #ff0000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.navigation_link0 {
+  background-color:#ffffff;
+  color:#000000;
+  font-weight: bold;
+  text-decoration: none;
+  margin-inline-start: auto;
+}
+.navigation_link1 {
+  background-color:#ffffff;
+  color:#000000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem;
+  margin-inline-start: auto;
+}
+
+.odejmowanie{
+  margin-left: 450px;
+  margin-top: -180px;
+}
+.tabelka{
+  margin-top: 100px;
+  margin-left: 80px;
+}
