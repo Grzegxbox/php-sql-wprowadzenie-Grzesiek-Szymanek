@@ -57,7 +57,7 @@ echo("<h3>3. SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (bibl
         echo("</table>");
 
 
-echo("<h3 style='margin-top: 150px; margin-left: 900px;'>SELECT * FROM biblAutor - WYBIERANIE</h3>");
+echo("<h3 style='margin-top: -1000px; margin-left: 900px;'>SELECT * FROM biblAutor - WYBIERANIE</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblAutor');
        echo("<select name='tytul' id='tytul' style='margin-left: 900px;'>");
@@ -66,7 +66,7 @@ echo("<h3 style='margin-top: 150px; margin-left: 900px;'>SELECT * FROM biblAutor
           }
        echo("</select>");
 
-echo("<h3 style='margin-top: -1000px; margin-left: 900px;'>SELECT * FROM biblTytul - WYBIERANIE</h3>");
+echo("<h3 style='margin-top: 185px; margin-left: 900px;'>SELECT * FROM biblTytul - WYBIERANIE</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblTytul');
        echo("<select name='tytul' id='tytul' style='margin-top: -1000px;margin-left: 900px;'>");
