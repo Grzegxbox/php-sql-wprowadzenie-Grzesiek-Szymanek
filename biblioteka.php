@@ -42,16 +42,16 @@ echo("<h3>2. SELECT * FROM biblTytul</h3>");
             }
         echo("</table>");
 
-echo("<h3>3. SELECT * FROM biblAutor_biblTytul</h3>");
+echo("<h3>3. SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id=biblAutor.id) AND (biblTytul_id=biblTytul.id)</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT * FROM  biblAutor_biblTytul');
+    $result=$conn->query('SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id=biblAutor.id) AND (biblTytul_id=biblTytul.id)');
         echo("<table border=2>");
         echo("<th>ID</th>");
         echo("<th>AUTOR</th>");
         echo("<th>TYTUŁ</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["id"]. "</td><td>" .$row["biblAutor_id"]. "</td><td>" .$row["biblTytul_id"]. "</td>");
+                    echo("<td>" .$row["id"]. "</td><td>" .$row["autor"]. "</td><td>" .$row["tytul"]. "</td>");
                 echo("</tr>");
             }
         echo("</table>");
