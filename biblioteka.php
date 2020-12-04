@@ -16,17 +16,17 @@
 
 <?php
 
-
-  "<label for='biblTytul'>Wybierz Tytuł Książki:</label>
+<"form action='biblTytul.php'>
+  <label for='biblTytul'>Wybierz Tytuł Książki:</label>
     
     <select name='tytul' id='id'>
-      <option value='volvo'>Volvo</option>
+      <option value=".$row['id'].">".$row['tytul']."</option>
     </select>
    
    <br><br>
  
- <input type='submit' value='Do Wypożyczenia'>"
-
+ <input type='submit' value='Do Wypożyczenia'>
+</form">
 
 
 echo("<h3>1. SELECT * FROM biblAutor</h3>");
