@@ -19,13 +19,12 @@
 echo("<h3> SELECT * FROM biblTytul</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblTytul');
-        echo("<th>ID</th>");
         echo("<th>TYTUŁ</th>");
               while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["id"]. "</td><td>" .$row["tytul"]. "</td>    
+                    echo("<td>" .$row["tytul"]. "</td>    
                     <td>
-                          <option value='".$row['id'].">".$row['tytul'].">'</option>
+                          <option value='".$row['tytul']."'</option>
                     </td>");
               
                 echo("</tr>");
