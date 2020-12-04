@@ -22,10 +22,14 @@ echo("<h3>1. SELECT * FROM biblTytul</h3>");
         echo("<table border=2>");
         echo("<th>ID</th>");
         echo("<th>TYTUŁ</th>");
-             while($row=$result->fetch_assoc()){
-                "<select name='tytul' id='tytul'>"
-                  <"option value=".$row['id'].">".$row['tytul']."</option">
-                "</select>"
+              while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["id"]. "</td><td>" .$row["tytul"]. "</td>    
+                    <td>
+                          <option value='".$row['id'].">".$row['tytul']." placeholder='Wybierz Tytuł' hidden>
+                    </td>");
+              
+                echo("</tr>");
             }
         echo("</table>");
 
