@@ -16,21 +16,17 @@
 
 <?php
 
-echo("<h3> SELECT * FROM biblTytul</h3>");
-    $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT * FROM biblTytul');
-        echo("<table border=2>");
-        echo("<th>TYTUŁ</th>");
-              while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>" .$row["tytul"]. "</td>    
-                    <td>
-                          <option value='".$row['tytul']."'</option>
-                    </td>");
-              
-                echo("</tr>");
-            }
-        echo("</table>");
+
+  "<label for='biblTytul'>Wybierz Tytuł Książki:</label>
+    
+    <select name='tytul' id='id'>
+      <option value='volvo'>Volvo</option>
+    </select>
+   
+   <br><br>
+ 
+ <input type='submit' value='Do Wypożyczenia'>"
+
 
 
 echo("<h3>1. SELECT * FROM biblAutor</h3>");
