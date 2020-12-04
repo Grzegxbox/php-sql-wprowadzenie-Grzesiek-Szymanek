@@ -81,7 +81,6 @@ echo("<h3 style='margin-top: -275px; margin-left: 1000px;'>Wybierz Książkę I 
        echo("<select name='tytul' id='tytul' style='margin-left: 450px;'>");
           while($row=$result->fetch_assoc()){ 
             echo("<option value=".$row['id'].">".$row['autor']."</option>");
-            <hr></hr>
             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
           }
        echo("</select>");
