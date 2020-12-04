@@ -16,6 +16,19 @@
 
 <?php
 
+// <form action="biblioteka.php">
+//   <label for="cars">Choose a car:</label>
+//   <select name="cars" id="cars">
+//     <option value="volvo">Volvo</option>
+//     <option value="saab">Saab</option>
+//     <option value="opel">Opel</option>
+//     <option value="audi">Audi</option>
+//   </select>
+//   <br><br>
+//   <input type="submit" value="Submit">
+// </form>
+
+
 echo("<h3>1. SELECT * FROM biblAutor</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblAutor');
