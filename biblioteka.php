@@ -75,11 +75,6 @@ echo("<h3 style='margin-top: 185px; margin-left: 900px;'>SELECT * FROM biblTytul
           }
        echo("</select>");
 
-
-
-
-
-
 ?>
 
 </head>
