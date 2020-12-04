@@ -56,10 +56,10 @@ echo("<h3>3. SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (bibl
             }
         echo("</table>");
 
-echo("<h3>SELECT * FROM biblTytul - WYBIERANIE</h3>");
+echo("<h3 style='margin-top: -1000px; margin-left: 900px;'>SELECT * FROM biblTytul - WYBIERANIE</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblTytul');
-       echo("<select name='tytul' id='tytul'>");
+       echo("<select name='tytul' id='tytul' style='margin-top: -1000px;margin-left: 900px;'>");
           while($row=$result->fetch_assoc()){ 
             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
           }
