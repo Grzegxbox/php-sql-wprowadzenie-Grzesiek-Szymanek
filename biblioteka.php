@@ -14,7 +14,6 @@
 
 <h1>BIBLIOTEKA</h1>
 
-
 <?php
 
 echo("<h3>1. SELECT * FROM biblAutor</h3>");
