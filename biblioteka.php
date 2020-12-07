@@ -60,7 +60,13 @@ echo("<h3>3. SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (bibl
                 echo("</tr>");
             }
         echo("</table>");
+ 
+ 
+//  Dodatkowe info
+echo("<h2>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek</h2>"); 
 
+ 
+ 
 // Wybór autora
 echo("<h3 style='margin-top: -1150px; margin-left: 800px;'>SELECT * FROM biblAutor - WYBIERANIE</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
