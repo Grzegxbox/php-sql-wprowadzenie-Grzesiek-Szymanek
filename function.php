@@ -19,7 +19,7 @@
     
 
 function liczby($liczba){
-    echo("<h3>Początek funkcji ");
+    echo("<h3 style='margin-top: 60px;'>Początek funkcji </h3>");
     echo("<h4>Napisz Liczby Do ".$liczba);
     for($i=1;$i<$liczba;$i++){
         echo("<h4>Kolejna liczba: ".$i);
