@@ -63,12 +63,12 @@ echo("<h3>3. SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (bibl
  
  
 //  Dodatkowe info
-echo("<h2>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek</h2>"); 
+echo("<h2 style='margin-top: -1200px; margin-left: 35rem;'>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek z boku</h2>"); 
 
  
  
 // Wybór autora
-echo("<h3 style='margin-top: -1150px; margin-left: 800px;'>SELECT * FROM biblAutor - WYBIERANIE</h3>");
+echo("<h3 style='margin-top: 50px; margin-left: 800px;'>SELECT * FROM biblAutor - WYBIERANIE</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblAutor');
        echo("<select name='title' id='title' style='margin-left: 900px;'>");
