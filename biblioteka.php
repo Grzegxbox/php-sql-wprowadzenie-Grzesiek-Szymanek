@@ -16,8 +16,8 @@
 
 <body>
   <h4 style="margin-top: 40px;">Linki do stron z odpowiednimi funkcjami</h4>
-    <a class="navigation_link1" href="wyporzyczone.php">WYPOŻYCZONE KSIĄŻKI</a>
-    <a class="navigation_link1" href="oddane.php">ODDANE KSIĄŻKI</a>
+    <a class="navigation_link1" href="wyporzyczone.php">WYPOŻYCZ KSIĄŻKĘ</a>
+    <a class="navigation_link1" href="oddane.php">ODDAJ KSIĄŻKĘ</a>
 
 <?php
 
