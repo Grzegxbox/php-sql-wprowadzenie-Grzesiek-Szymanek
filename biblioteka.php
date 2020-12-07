@@ -61,7 +61,7 @@ echo("<h3>3. SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (bibl
             }
         echo("</table>");
 
-WYBÓR AUTORA
+// Wybór autora
 echo("<h3 style='margin-top: -1000px; margin-left: 450px;'>SELECT * FROM biblAutor - WYBIERANIE</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblAutor');
@@ -71,7 +71,7 @@ echo("<h3 style='margin-top: -1000px; margin-left: 450px;'>SELECT * FROM biblAut
           }
        echo("</select>");
 
-WYBÓR TYTUŁU
+// Wybór tytułu książki 
 echo("<h3 style='margin-top: 155px; margin-left: 450px;'>SELECT * FROM biblTytul - WYBIERANIE</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblTytul');
