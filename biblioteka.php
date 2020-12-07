@@ -14,6 +14,10 @@
 
 <h1>BIBLIOTEKA</h1>
 
+<body>
+ <a class="navigation_link1" href="wyporzyczone.php">WYPOŻYCZONE KSIĄŻKI</a>
+ <a class="navigation_link1" href="oddane.php">ODDANE KSIĄŻKI</a>
+
 <?php
 
 echo("<h3>1. SELECT * FROM biblAutor</h3>");
