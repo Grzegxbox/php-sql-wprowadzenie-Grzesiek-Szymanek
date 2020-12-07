@@ -21,7 +21,7 @@
 <body>
   
 <h1>FUNKCJE AGREGUJĄCE</h1>
-  <h4>Linki do stron z odpowiednimi funkcjami</h4>
+  <h4 style="margin-top: 40px;">Linki do stron z odpowiednimi funkcjami</h4>
   <a class="navigation_link1" href="funkcjeAgregujace_kontynuacja.php">KONTYNUACJA FUNCKJI AGREGUJĄCYCH</a>
   <a class="navigation_link1" href="funkcjeAgregujace_grupowanie.php">FUNKCJA AGREGUJĄCA - GRUPOWANIE</a>
   <a class="navigation_link1" href="funkcjeAgregujace_klauzula_HAVING.php">FUNKCJA AGREGUJĄCA - HAVING</a>
@@ -29,7 +29,7 @@
   
 <?php
 
-echo("<h3>1. SELECT dzial, max(zarobki) AS Maksimum FROM pracownicy GROUP BY dzial</h3>");
+echo("<h3 style='margin-top: 70px;'>1. SELECT dzial, max(zarobki) AS Maksimum FROM pracownicy GROUP BY dzial</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT dzial, max(zarobki) AS Maksimum FROM pracownicy GROUP BY dzial');
         echo("<table border=1>");
