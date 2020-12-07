@@ -61,43 +61,43 @@ echo("<h3>3. SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (bibl
             }
         echo("</table>");
 
-// WYBÓR AUTORA
-// echo("<h3 style='margin-top: -1000px; margin-left: 450px;'>SELECT * FROM biblAutor - WYBIERANIE</h3>");
-//     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-//     $result=$conn->query('SELECT * FROM biblAutor');
-//        echo("<select name='title' id='title' style='margin-left: 450px;'>");
-//           while($row=$result->fetch_assoc()){ 
-//             echo("<option value=".$row['id'].">".$row['autor']."</option>");
-//           }
-//        echo("</select>");
-
-// WYBÓR TYTUŁU
-// echo("<h3 style='margin-top: 155px; margin-left: 450px;'>SELECT * FROM biblTytul - WYBIERANIE</h3>");
-//     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-//     $result=$conn->query('SELECT * FROM biblTytul');
-//        echo("<select name='tytul' id='tytul' style='margin-left: 450px;'>");
-//           while($row=$result->fetch_assoc()){ 
-//             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
-//           }
-//        echo("</select>");
-
-echo("<h3 style='margin-top: -1000px; margin-left: 850px;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
+WYBÓR AUTORA
+echo("<h3 style='margin-top: -1000px; margin-left: 450px;'>SELECT * FROM biblAutor - WYBIERANIE</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblAutor');
-       echo("<select name='tytul' id='tytul' style='margin-left: 850px;'>");
+       echo("<select name='title' id='title' style='margin-left: 450px;'>");
           while($row=$result->fetch_assoc()){ 
             echo("<option value=".$row['id'].">".$row['autor']."</option>");
           }
        echo("</select>");
-echo("<h3 style='margin-top: 20px; margin-left: 850px;'></h3>");
+
+WYBÓR TYTUŁU
+echo("<h3 style='margin-top: 155px; margin-left: 450px;'>SELECT * FROM biblTytul - WYBIERANIE</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblTytul');
-       echo("<select name='tytul' id='tytul' style='margin-left: 850px;'>");
+       echo("<select name='tytul' id='tytul' style='margin-left: 450px;'>");
           while($row=$result->fetch_assoc()){ 
             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
           }
        echo("</select>");
-  echo("<input type='submit' value='Wypożycz' style='margin-top: 20px; margin-left: 850px;'>");
+
+// echo("<h3 style='margin-top: -1000px; margin-left: 850px;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
+//     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+//     $result=$conn->query('SELECT * FROM biblAutor');
+//        echo("<select name='tytul' id='tytul' style='margin-left: 850px;'>");
+//           while($row=$result->fetch_assoc()){ 
+//             echo("<option value=".$row['id'].">".$row['autor']."</option>");
+//           }
+//        echo("</select>");
+// echo("<h3 style='margin-top: 20px; margin-left: 850px;'></h3>");
+//     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+//     $result=$conn->query('SELECT * FROM biblTytul');
+//        echo("<select name='tytul' id='tytul' style='margin-left: 850px;'>");
+//           while($row=$result->fetch_assoc()){ 
+//             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
+//           }
+//        echo("</select>");
+//   echo("<input type='submit' value='Wypożycz' style='margin-top: 20px; margin-left: 850px;'>");
 
 
 ?>
