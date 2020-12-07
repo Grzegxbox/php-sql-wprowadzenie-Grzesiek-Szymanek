@@ -21,7 +21,7 @@
 
 <?php
 
-echo("<h3>1. SELECT * FROM biblAutor</h3>");
+echo("<h3 style='margin-top: 70px;'>1. SELECT * FROM biblAutor</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblAutor');
         echo("<table border=2>");
