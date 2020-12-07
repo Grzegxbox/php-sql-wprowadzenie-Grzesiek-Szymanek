@@ -63,7 +63,7 @@ echo("<h3>3. SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (bibl
  
  
 //  Dodatkowe info
-echo("<h2 style='margin-top: -1200px; margin-left: 35rem;'>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek z boku</h2>"); 
+echo("<h2 style='margin-top: -1200px; margin-left: 35rem;'>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek po lewej</h2>"); 
 
  
  
