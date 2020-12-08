@@ -38,6 +38,7 @@ h4 {
 }
 .nav{
   margin-top: 50px;
+  flex-wrap:  wrap;
 }
 
 .mojlink0 {
