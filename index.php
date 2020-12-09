@@ -4,7 +4,7 @@
 <head>
   <div class="kontener">
       <div class="item tytul">
-        <h1 class="tltle">Grzesiek Szymanek</h1>
+        <h1 class="nagluwek">Grzesiek Szymanek</h1>
       </div>
       <div class="item bok">Menu Boczne</div>
       <div class="item calosc">Treść Strony</div>
