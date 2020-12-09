@@ -75,31 +75,30 @@ h4 {
   margin-left: 80px;
 }
 
-.kontener {
-  
+.container {
   background-color: lightgray;
   display: flex;
   flex-wrap: wrap;
 }
 
 .item {
+  /*  width: 200px;*/
+  /*height: 100px;*/
   margin: 10px;
 }
 
-.nagluwek {
-  
+.colorRed {
   background-color: red;
   width: 100%;
 }
 
-.bok {
-  
+.colorBlue {
   background-color: lightblue;
   width: 20%;
 }
 
-.calosc {
-  
+.colorGreen {
   background-color: lightgreen;
   width: 70%;
 }
+
