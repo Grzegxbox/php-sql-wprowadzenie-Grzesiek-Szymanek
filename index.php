@@ -2,13 +2,7 @@
 
 <html>
 <head>
-  <div class="kontener">
-      <div class="item tytul">
-        <h1 class="nagluwek">Grzesiek Szymanek</h1>
-      </div>
-      <div class="item bok">Menu Boczne</div>
-      <div class="item calosc">Treść Strony</div>
-    </div>
+
 <link rel="stylesheet" href="style.css">
 <a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
 
@@ -26,7 +20,14 @@
   </head>
  <hr></hr>
 <body>
-  
+     <div class="container">
+      <div class="item colorRed">
+        banner
+        <h1 class="tltle">Grzesiek Szymanek</h1>
+      </div>
+      <div class="item colorBlue">menu boczne</div>
+      <div class="item colorGreen">tresc strony</div>
+    </div> 
 
 <h1>STRONA GŁÓWNA</h1>
   
