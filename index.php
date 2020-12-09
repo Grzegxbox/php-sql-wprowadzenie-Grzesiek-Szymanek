@@ -10,18 +10,18 @@
       <div class="item calosc">Treść Strony</div>
     </div>
 <link rel="stylesheet" href="style.css">
-<!-- <a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
+<!-- <a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a> -->
 
 
-  <div class="nav">
-    <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
-    <a class="navigation_link1" href="function.php">Funkcja</a>
-    <a class="navigation_link1" href="daneDoBazy.php">Formularz</a>
-    <a class="navigation_link1" href="pracownicy.php">Pracownicy</a>
-    <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
-    <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
-    <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
-  </div> -->
+<!--   <div class="nav"> -->
+<!--     <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a> -->
+<!--     <a class="navigation_link1" href="function.php">Funkcja</a> -->
+<!--     <a class="navigation_link1" href="daneDoBazy.php">Formularz</a> -->
+<!--     <a class="navigation_link1" href="pracownicy.php">Pracownicy</a> -->
+<!--     <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a> -->
+<!--     <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a> -->
+<!--     <a class="navigation_link1" href="biblioteka.php">Biblioteka</a> -->
+<!--   </div> -->
   
   </head>
  <hr></hr>
