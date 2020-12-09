@@ -29,7 +29,7 @@
 <body>
   
 
-<h1>STRONA GŁÓWNA</h1>
+<!-- <h1>STRONA GŁÓWNA</h1> -->
   
   
 <?php
