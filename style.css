@@ -75,7 +75,7 @@ h4 {
   margin-left: 80px;
 }
 
-.container {
+.kontener {
   
   background-color: lightgray;
   display: flex;
@@ -86,19 +86,19 @@ h4 {
   margin: 10px;
 }
 
-.colorRed {
+.nagluwek {
   
   background-color: red;
   width: 100%;
 }
 
-.colorBlue {
+.bok {
   
   background-color: lightblue;
   width: 20%;
 }
 
-.colorGreen {
+.calosc {
   
   background-color: lightgreen;
   width: 70%;
