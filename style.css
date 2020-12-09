@@ -76,28 +76,30 @@ h4 {
 }
 
 .container {
+  
   background-color: lightgray;
   display: flex;
   flex-wrap: wrap;
 }
 
 .item {
-  /*  width: 200px;*/
-  /*height: 100px;*/
   margin: 10px;
 }
 
 .colorRed {
+  
   background-color: red;
   width: 100%;
 }
 
 .colorBlue {
+  
   background-color: lightblue;
   width: 20%;
 }
 
 .colorGreen {
+  
   background-color: lightgreen;
   width: 70%;
 }
