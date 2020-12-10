@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-  
 <head>
 
 <link rel="stylesheet" href="style.css">
@@ -16,8 +15,8 @@
     <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
     <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
   </div>
-  
   </head>
+  
  <hr></hr>
 
 <body>
@@ -31,7 +30,6 @@
     </div> 
 
 <h1>STRONA GŁÓWNA</h1>
-  
   
 <?php
   
