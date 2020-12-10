@@ -5,12 +5,16 @@
  
  <link rel="stylesheet" href="style.css">
  <a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
-  <div class="nav">
+ 
+ <div class="nav">
     <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
-  </div>
+ </div>
+ 
  <hr></hr>
+ 
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width">
+ 
 </head>
 
 <h1>BIBLIOTEKA</h1>
