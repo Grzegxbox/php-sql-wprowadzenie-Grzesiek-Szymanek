@@ -1,5 +1,7 @@
 <?php
 
+
+
 // Add your data (jak by co to nie mam takich nazw użytkownika, haseł i nazwy serwera)
 $servername = "remotemysql.com";
 $username = "Rp4CxP6YkY";
