@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-
 <html>
+  
 <head>
 
 <link rel="stylesheet" href="style.css">
@@ -19,6 +19,7 @@
   
   </head>
  <hr></hr>
+
 <body>
      <div class="container">
       <div class="item colorRed">
