@@ -1,5 +1,9 @@
+head {
+  font-family: verdana;
+}
 body {
   background-color: #DEB887;
+  font-family: verdana;
 }
 
 table, th, td {
