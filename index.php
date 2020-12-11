@@ -17,12 +17,19 @@
      <div class="item colorBlue">MENU
          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
+            <li></li>
            <a class="navigation_link1" href="function.php">Funkcja</a>
+            <li></li>
            <a class="navigation_link1" href="daneDoBazy.php">Formularz</a>
+            <li></li>
            <a class="navigation_link1" href="pracownicy.php">Pracownicy</a>
+            <li></li>
            <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
+            <li></li>
            <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
+            <li></li>
            <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
+            <li></li>
          </div>
        </div>
       <div class="item colorGreen">STRONA
