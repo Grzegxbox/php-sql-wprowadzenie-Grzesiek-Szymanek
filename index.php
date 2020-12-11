@@ -6,15 +6,7 @@
 <a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
 
 
-  <div class="nav">
-    <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
-    <a class="navigation_link1" href="function.php">Funkcja</a>
-    <a class="navigation_link1" href="daneDoBazy.php">Formularz</a>
-    <a class="navigation_link1" href="pracownicy.php">Pracownicy</a>
-    <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
-    <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
-    <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
-  </div>
+
   </head>
   
  <hr></hr>
@@ -26,12 +18,18 @@
         <h1 class="tltle">Grzesiek Szymanek</h1>
       </div>
       <div class="item colorBlue">MENU</div>
+         <div class="nav">
+           <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
+           <a class="navigation_link1" href="function.php">Funkcja</a>
+           <a class="navigation_link1" href="daneDoBazy.php">Formularz</a>
+           <a class="navigation_link1" href="pracownicy.php">Pracownicy</a>
+           <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
+           <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
+           <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
+         </div>
       <div class="item colorGreen">STRONA</div>
-    </div> 
-
-<h1>STRONA GŁÓWNA</h1>
-  
-<?php
+       
+       <?php
   
   echo("<h3 style='margin-top: 70px;'>0. SELECT * FROM pracownicy</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
@@ -135,6 +133,11 @@ echo("<h3>6. SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Su
                 echo("</tr>");
             }
         echo("</table>");
+
+?>
+  
+    </div> 
+  
 
 // echo("<h3>ZADANIE 8</h3>");
 //     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
@@ -451,7 +454,6 @@ echo("<h3>6. SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Su
 //             }
 //         echo("</table>");
   
-?>
-  
+
     </body>
 </html>
