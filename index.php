@@ -9,12 +9,12 @@
  <hr></hr>
 
 <body>
-     <div class="container">
-      <div class="item colorRed">
-        Podstawa
-        <h1 class="tltle">Grzesiek Szymanek</h1>
-      </div>
-      <div class="item colorBlue">MENU</div>
+   <div class="container">
+     <div class="item colorRed">
+       Podstawa
+       <h1 class="tltle">Grzesiek Szymanek</h1>
+     </div>
+     <div class="item colorBlue">MENU
          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
            <a class="navigation_link1" href="function.php">Funkcja</a>
@@ -24,7 +24,8 @@
            <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
            <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
          </div>
-      <div class="item colorGreen">STRONA</div>
+       </div>
+      <div class="item colorGreen">STRONA
        
        <?php
   
