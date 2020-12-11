@@ -12,7 +12,7 @@
      <div class="item colorRed">
        
        <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">WYŚWIETL KOD - GitHub</a></h1>
-       <h1 style="margin-top: -4.1%; margin-left: 2%;">Autor: Grzesiek Szymanek</h1>
+       <h1 style="margin-top: -4.1%; margin-left: 2%; color: #6a5ae8;">Autor: Grzesiek Szymanek</h1>
        
      </div>
      
