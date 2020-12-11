@@ -139,7 +139,7 @@ echo("<h3>6. SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Su
     </div> 
   
 
-// echo("<h3>ZADANIE 8</h3>");
+<!-- // echo("<h3>ZADANIE 8</h3>");
 //     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
 //     $result = $conn -> query('SELECT Dzial, Avg(zarobki) AS AVG FROM pracownicy GROUP BY dzial HAVING Avg(zarobki)<36');
 //         echo("<table border=1>");
@@ -453,7 +453,7 @@ echo("<h3>6. SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Su
 //                 echo("</tr>");
 //             }
 //         echo("</table>");
-  
+   -->
 
     </body>
 </html>
