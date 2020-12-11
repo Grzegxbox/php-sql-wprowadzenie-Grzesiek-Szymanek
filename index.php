@@ -25,8 +25,8 @@
         banner
         <h1 class="tltle">Grzesiek Szymanek</h1>
       </div>
-      <div class="item colorBlue">menu boczne</div>
-      <div class="item colorGreen">tresc strony</div>
+      <div class="item colorBlue"></div>
+      <div class="item colorGreen"></div>
     </div> 
 
 <h1>STRONA GŁÓWNA</h1>
