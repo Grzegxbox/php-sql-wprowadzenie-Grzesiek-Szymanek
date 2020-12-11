@@ -10,10 +10,15 @@
 <body>
    <div class="container">
      <div class="item colorRed">
-       Podstawa
+       
        <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a></h1>
+       
      </div>
-     <div class="item colorBlue"><h1>STRONA GŁÓWNA</h1>
+     
+     <div class="item colorBlue">
+       
+       <h1>MENU STRONY</h1>
+       
          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
             <li style="visibility: hidden;">MAMA</li>
@@ -30,7 +35,9 @@
            <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>       
          </div>
        </div>
-      <div class="item colorGreen">STRONA
+      <div class="item colorGreen">
+        
+        <h1>STRONA GŁÓWNA</h1>
        
        <?php
   
