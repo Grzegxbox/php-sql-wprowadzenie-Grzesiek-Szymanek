@@ -47,13 +47,13 @@ h4 {
   text-decoration: none;
   padding: 0.5rem;
   margin-left: 1%;
+  border-radius: 20px;
 }
 .navigation_link0 {
   background-color:#ffffff;
   color:#000000;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 20px;
 }
 .navigation_link1 {
     background-color: #ffffff;
