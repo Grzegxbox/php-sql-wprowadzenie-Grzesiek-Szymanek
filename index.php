@@ -12,7 +12,6 @@
      <div class="item colorRed">
        
        <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko - GitHub</a></h1>
-       <h2>Będę jeszcze zmieniał kolory</h2>
        
      </div>
      
