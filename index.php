@@ -31,14 +31,14 @@
        </div>
       <div class="item colorGreen">
         
-        <h1 style="margin-left: 40%;">STRONA GŁÓWNA</h1>
+        <h1 style="margin-left: 39%;">STRONA GŁÓWNA</h1>
        
        <?php
   
-  echo("<h3 style='margin-top: 70px;'>0. SELECT * FROM pracownicy</h3>");
+  echo("<h3 style='margin-top: 50px; margin-left: 5%;'>0. SELECT * FROM pracownicy</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy');
-        echo("<table border=2>");
+        echo("<table border="2" style=' margin-left: 5%;'>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIAŁ</th>");
