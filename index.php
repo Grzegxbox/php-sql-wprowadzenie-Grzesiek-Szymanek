@@ -21,17 +21,17 @@
        
          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
-            <li style="visibility: hidden;">MAMA</li>
+            <li style="visibility: hidden; margin-top: 20px;">MAMA</li>
            <a class="navigation_link1" href="function.php">Funkcja</a>
-            <li style="visibility: hidden;">MAMA</li>
+            <li style="visibility: hidden; margin-top: 20px;">MAMA</li>
            <a class="navigation_link1" href="daneDoBazy.php">Formularz</a>
-            <li style="visibility: hidden;">MAMA</li>
+            <li style="visibility: hidden; margin-top: 20px;">MAMA</li>
            <a class="navigation_link1" href="pracownicy.php">Pracownicy</a>
-            <li style="visibility: hidden;">MAMA</li>
+            <li style="visibility: hidden; margin-top: 20px;">MAMA</li>
            <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
-            <li style="visibility: hidden;">MAMA</li>
+            <li style="visibility: hidden; margin-top: 20px;">MAMA</li>
            <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
-            <li style="visibility: hidden;">MAMA</li>
+            <li style="visibility: hidden; margin-top: 20px;">MAMA</li>
            <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>       
          </div>
        </div>
