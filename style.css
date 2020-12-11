@@ -97,17 +97,17 @@ h4 {
 }
 
 .colorRed {
-  background-color: yellow;
+  background-color: #00BFFF;
   width: 100%;
 }
 
 .colorBlue {
-  background-color: lightblue;
+  background-color: #00BFFF;
   width: 20%;
 }
 
 .colorGreen {
-  background-color: lightgreen;
+  background-color: #ffffa8;
   width: 77%;
 }
 
