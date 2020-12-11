@@ -2,17 +2,16 @@
 <html>
   
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="style.css">
-<a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
 </head>
-  
- <hr></hr>
 
 <body>
    <div class="container">
      <div class="item colorRed">
        Podstawa
-       <h1 class="tltle">Grzesiek Szymanek</h1>
+       <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a></h1>
      </div>
      <div class="item colorBlue">MENU
          <div class="nav">
