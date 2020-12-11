@@ -56,13 +56,16 @@ h4 {
   margin-inline-start: auto;
 }
 .navigation_link1 {
-  background-color:#ffffff;
-  color:#000000;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 100px;
-  padding: 1rem;
-  margin-inline-start: auto;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 70%;
 }
 .odejmowanie{
   margin-left: 450px;
