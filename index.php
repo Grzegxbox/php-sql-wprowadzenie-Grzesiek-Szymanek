@@ -22,11 +22,11 @@
 <body>
      <div class="container">
       <div class="item colorRed">
-        banner
+        Podstawa
         <h1 class="tltle">Grzesiek Szymanek</h1>
       </div>
-      <div class="item colorBlue"></div>
-      <div class="item colorGreen"></div>
+      <div class="item colorBlue">MENU</div>
+      <div class="item colorGreen">STRONA</div>
     </div> 
 
 <h1>STRONA GŁÓWNA</h1>
