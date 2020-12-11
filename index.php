@@ -21,8 +21,7 @@
 
 <body>
      <div class="container">
-      <div class="item colorRed">
-        banner
+      <div class="item colorYellow">
         <h1 class="tltle">Grzesiek Szymanek</h1>
       </div>
       <div class="item colorBlue"></div>
