@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
-
+  
 <head>
- <link rel="stylesheet" href="style.css">
- <a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
-  <div class="nav">
-    <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
-  </div>
- <hr></hr>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="style.css">
 </head>
 
-<h1>FUNKCJA</h1>
-
+<body>
+   <div class="container">
+    
+    <div class="item colorRed"> 
+     <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">WYŚWIETL KOD - GitHub</a></h1>
+     <h1 style="margin-top: -4.1%; margin-left: 2%; color: #6a5ae8;">Autor: Grzesiek Szymanek</h1>   
+    </div>
+    
+    <div class="item colorBlue"> 
+     <h1 style="margin-left: 15%;">MENU STRONY</h1>
+      <div class="nav">
+       <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
+      </div>
+     </div>
+    
+     <div class="item colorGreen">
+      <h1 style="margin-left: 38%; color: #3cb300;">FUNKCJA</h1>     
 
 <?php
     
@@ -29,5 +39,9 @@ function liczby($liczba){
 liczby('3000')
 ?>
 
+    </div>
+      
 <h3>Chyba Ci się nudzi jak tu doszłeś/aś</h3>
-</html>
+
+    </body>
+ </html>
