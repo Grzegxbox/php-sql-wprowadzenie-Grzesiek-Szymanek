@@ -1,6 +1,7 @@
 body {
   background-color: #DEB887;
 }
+
 table, th, td {
   font-weight: bold;
   border: 4px solid rgb(80, 80, 80);
