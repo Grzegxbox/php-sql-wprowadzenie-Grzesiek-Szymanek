@@ -31,7 +31,7 @@
        </div>
       <div class="item colorGreen">
         
-        <h1 style="margin-left: 39%;">STRONA GŁÓWNA</h1>
+        <h1 style="margin-left: 38%;">STRONA GŁÓWNA</h1>
        
        <?php
   
