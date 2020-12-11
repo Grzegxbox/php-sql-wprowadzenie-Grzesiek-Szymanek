@@ -46,6 +46,7 @@ h4 {
   font-weight: bold;
   text-decoration: none;
   padding: 0.5rem;
+  margin-left: 1%;
 }
 .navigation_link0 {
   background-color:#ffffff;
@@ -87,6 +88,7 @@ h4 {
   /*  width: 200px;*/
   /*height: 100px;*/
   margin: 10px;
+  border-radius: 20px;
 }
 
 .colorRed {
