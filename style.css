@@ -38,9 +38,7 @@ h4 {
 }
 .nav{
   margin-top: 50px;
-  justify-content: space-between;
-/*   flex-direction: row; */
-/*   flex-wrap:  wrap; */
+  flex-direction: column;
 }
 
 .mojlink0 {
