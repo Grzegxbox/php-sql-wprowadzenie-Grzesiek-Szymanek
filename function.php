@@ -41,8 +41,6 @@ liczby('3000')
        
 <h3 style="margin-left: 5%;color: green;">Chyba Ci się nudzi jak tu doszłeś/aś</h3>
     </div>
-      
-
 
     </body>
  </html>
