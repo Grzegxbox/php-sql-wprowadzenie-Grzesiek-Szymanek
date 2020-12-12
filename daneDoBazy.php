@@ -20,29 +20,29 @@
        </div>
       </div>
      <div class="item colorGreen">
-       <h1 style="margin-left: 38%; color: #3cb300;">FORMULARZ</h1>
-          <div class="dodawanie">
-            <h2>DODAWANIE PRACOWNIKÓW</h2>
-               <form action="insert.php" method="POST" style="margin-left: 80px;">
-                 <input type="text" name="imie" placeholder="IMIĘ"></br>
-                 <input type="text" name="dzial" placeholder="DZIAŁ"></br>
-                 <input type="text" name="zarobki" placeholder="ZAROBKI"></br>
-                 <input type="date" name="data_urodzenia" placeholder="DATA URODZENIA"></br>
+       <h1 style="margin-left: 41%; color: #3cb300;">FORMULARZ</h1>
+          <div class="dodawanie" style="margin-top: 7%;">
+            <h2 style="margin-left: 8%;">DODAWANIE PRACOWNIKÓW</h2>
+               <form action="insert.php" method="POST" style="margin-left: 19%;">
+                 <input type="text" name="imie" placeholder="IMIĘ"><br>
+                 <input type="text" name="dzial" placeholder="DZIAŁ"><br>
+                 <input type="text" name="zarobki" placeholder="ZAROBKI"><br>
+                 <input type="date" name="data_urodzenia" placeholder="DATA URODZENIA"><br>
                  <input type="submit" value="DODAJ" style="margin-left: 40px;">
                </form>
             </div>
               <div class="odejmowanie">
                  <h2>USUWANIE PRACOWNIKÓW</h2>
-                   <form action="delete.php" method="POST" style="margin-left: 85px;">
-                     <input type="text" name="id" placeholder="ID PRACOWNIKA"></br>
-                     <input type="submit" value="USUŃ" style="margin-left: 55px;">
+                   <form action="delete.php" method="POST" style="margin-left: 27%;">
+                     <input type="text" name="id" placeholder="ID PRACOWNIKA"><br>
+                     <input type="submit" value="USUŃ" style="margin-left: 13%;">
                    </form>
              </div>
 <?php
   
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)');
-        echo("<table border='2' style='margin-top: 100px;margin-left: 80px;'>");
+        echo("<table style='margin-top: 15%;margin-left: 23%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIAŁ</th>");
