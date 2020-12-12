@@ -18,7 +18,7 @@
      <h1 style="margin-left: 15%;">MENU STRONY</h1>
       <div class="nav">
        <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
-       <h1 style="font-size: 19px;margin-top: 1200%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+       <h1 style="font-size: 19px;margin-top: 32330%;text-align: center;">Autor: Grzesiek Szymanek</h1>
       </div>
      </div>
     
@@ -39,7 +39,7 @@ function liczby($liczba){
 liczby('3000')
 ?>
        
-<h3 style='margin-left: 5%;'>Chyba Ci się nudzi jak tu doszłeś/aś</h3>
+<h3 style="margin-left: 5%;color: green;">Chyba Ci się nudzi jak tu doszłeś/aś</h3>
     </div>
       
 
