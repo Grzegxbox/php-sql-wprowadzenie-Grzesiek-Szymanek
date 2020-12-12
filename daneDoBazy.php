@@ -20,17 +20,16 @@
        </div>
       </div>
      <div class="item colorGreen">
-       <h1 style="margin-left: 38%; color: #3cb300;">STRONA GŁÓWNA</h1>
-         <h1>FORMULARZ</h1>
-            <div class="dodawanie">
-              <h2>DODAWANIE PRACOWNIKÓW</h2>
-                 <form action="insert.php" method="POST" style="margin-left: 80px;">
-                   <input type="text" name="imie" placeholder="IMIĘ"></br>
-                   <input type="text" name="dzial" placeholder="DZIAŁ"></br>
-                   <input type="text" name="zarobki" placeholder="ZAROBKI"></br>
-                   <input type="date" name="data_urodzenia" placeholder="DATA URODZENIA"></br>
-                   <input type="submit" value="DODAJ" style="margin-left: 40px;">
-                 </form>
+       <h1 style="margin-left: 38%; color: #3cb300;">FORMULARZ</h1>
+          <div class="dodawanie">
+            <h2>DODAWANIE PRACOWNIKÓW</h2>
+               <form action="insert.php" method="POST" style="margin-left: 80px;">
+                 <input type="text" name="imie" placeholder="IMIĘ"></br>
+                 <input type="text" name="dzial" placeholder="DZIAŁ"></br>
+                 <input type="text" name="zarobki" placeholder="ZAROBKI"></br>
+                 <input type="date" name="data_urodzenia" placeholder="DATA URODZENIA"></br>
+                 <input type="submit" value="DODAJ" style="margin-left: 40px;">
+               </form>
             </div>
               <div class="odejmowanie">
                  <h2>USUWANIE PRACOWNIKÓW</h2>
