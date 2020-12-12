@@ -12,7 +12,6 @@
     
     <div class="item colorRed"> 
      <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">WYŚWIETL KOD - GitHub</a></h1>
-     <h1 style="margin-top: -4.1%; margin-left: 2%; color: #6a5ae8;">Autor: Grzesiek Szymanek</h1>   
     </div>
     
     <div class="item colorBlue"> 
@@ -38,10 +37,11 @@ function liczby($liczba){
 
 liczby('3000')
 ?>
-
+       
+<h3>Chyba Ci się nudzi jak tu doszłeś/aś</h3>
     </div>
       
-<h3>Chyba Ci się nudzi jak tu doszłeś/aś</h3>
+
 
     </body>
  </html>
