@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
-
+  
 <head>
- <link rel="stylesheet" href="style.css">
-  
- <a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
-   <div class="nav">
-     <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
-  
-
- </div>
- 
- <hr></hr>
-  
- <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="style.css">
 </head>
 
+<body>
+   <div class="container">
+     <div class="item colorRed">
+      <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">WYŚWIETL KOD - GitHub</a></h1>
+     </div>
+     <div class="item colorBlue">
+      <h1 style="margin-left: 15%;">MENU STRONY</h1>
+       <div class="nav">
+          <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
+          <h1 style="font-size: 19px;margin-top: 380%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+       </div>
+      </div>
+     <div class="item colorGreen">
+       <h1 style="margin-left: 38%; color: #3cb300;">STRONA GŁÓWNA</h1>
 <h1>FORMULARZ</h1>
 
 <div class="dodawanie">
   <h2>DODAWANIE PRACOWNIKÓW</h2>
-<body>
    <form action="insert.php" method="POST" style="margin-left: 80px;">
      <input type="text" name="imie" placeholder="IMIĘ"></br>
      <input type="text" name="dzial" placeholder="DZIAŁ"></br>
@@ -34,12 +37,10 @@
 
 <div class="odejmowanie">
   <h2>USUWANIE PRACOWNIKÓW</h2>
-<body>
    <form action="delete.php" method="POST" style="margin-left: 85px;">
      <input type="text" name="id" placeholder="ID PRACOWNIKA"></br>
      <input type="submit" value="USUŃ" style="margin-left: 55px;">
    </form>
-</body>
 </div>
 
 
@@ -74,5 +75,7 @@
 
 ?>
 
+</div>
 
+</body>
 </html>
