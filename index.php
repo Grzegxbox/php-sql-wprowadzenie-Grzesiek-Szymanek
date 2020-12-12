@@ -12,7 +12,6 @@
      <div class="item colorRed">
        
        <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">WYŚWIETL KOD - GitHub</a></h1>
-       <h1 style="margin-top: -4.1%; margin-left: 2%; color: #6a5ae8;">Autor: Grzesiek Szymanek</h1>
        
      </div>
      
@@ -28,7 +27,7 @@
            <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
            <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
            <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
-           <h1 style="font-size: 25.4px;margin-top: 380%;">Autor: Grzesiek Szymanek</h1>
+           <h1 style="font-size: 19px;margin-top: 380%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        </div>
       <div class="item colorGreen">
