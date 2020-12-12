@@ -22,16 +22,16 @@
      </div>
     
      <div class="item colorGreen">
-      <h1 style="margin-left: 38%; color: #3cb300;">FUNKCJA</h1>     
+      <h1 style="margin-left: 44%; color: #3cb300;">FUNKCJA</h1>  
 
 <?php
     
 
 function liczby($liczba){
-    echo("<h3 style='margin-top: 60px;'>Początek funkcji </h3>");
-    echo("<h4>Napisz Liczby Do ".$liczba);
+    echo("<h3 style='margin-top: 6%;margin-left: 5%;color: green;'>Początek funkcji </h3>");
+    echo("<h4 style='margin-left: 5%;'>Napisz Liczby Do ".$liczba);
     for($i=1;$i<$liczba;$i++){
-        echo("<h4>Kolejna liczba: ".$i);
+        echo("<h4 style='margin-left: 5%;'>Kolejna liczba: ".$i);
     }
 }
 
