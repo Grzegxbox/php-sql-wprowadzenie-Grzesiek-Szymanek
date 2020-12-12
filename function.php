@@ -38,7 +38,7 @@ function liczby($liczba){
 liczby('3000')
 ?>
        
-<h3>Chyba Ci się nudzi jak tu doszłeś/aś</h3>
+<h3 style='margin-left: 5%;'>Chyba Ci się nudzi jak tu doszłeś/aś</h3>
     </div>
       
 
