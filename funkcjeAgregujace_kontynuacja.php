@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-
 <html>
+  
 <head>
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="style.css">
-<a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
-  
-<div class="nav">
-  <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
-</div>
-  
-  </head>
- <hr></hr>
-<body>
-  
-<h1>KONTYNUACJA FUNKCJI AGREGUJĄCYCH</h1>
+</head>
 
+<body>
+   <div class="container">
+     
+     <div class="item colorRed">
+      <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">WYŚWIETL KOD - GitHub</a></h1>
+     </div>
+     
+     <div class="item colorBlue">
+      <h1 style="margin-left: 15%;">MENU STRONY</h1>
+       
+         <div class="nav">
+           <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
+           <a class="navigation_link1" href="funkcjeAgregujace_kontynuacja.php">KONTYNUACJA FUNCKJI AGREGUJĄCYCH</a>
+           <a class="navigation_link1" href="funkcjeAgregujace_grupowanie.php">FUNKCJA AGREGUJĄCA - GRUPOWANIE</a>
+           <a class="navigation_link1" href="funkcjeAgregujace_klauzula_HAVING.php">FUNKCJA AGREGUJĄCA - HAVING</a>
+           <a class="navigation_link1" href="funkcjeAgregujace_data_i_czas.php">FUNKCJA AGREGUJĄCA - DATA I CZAS</a>
+           <h1 style="font-size: 19px;margin-top: 135%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+         </div>
+       
+       </div>
+     
+      <div class="item colorGreen">
+        <h1 style="margin-left: 33%; color: #3cb300;">KONTYNUACJA FUNKCJI AGREGUJĄCYCH</h1>
+        
 <?php
   
   echo("<h3 style='margin-top: 70px;'>1. SELECT SUM(zarobki) AS SUMA FROM pracownicy</h3>");
@@ -116,6 +131,6 @@
             }
         echo("</table>");
 ?>
-
+     </div>
   </body>
 </html>
