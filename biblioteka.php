@@ -37,7 +37,7 @@
 echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM biblAutor</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblAutor');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>AUTOR</th>");
             while($row=$result->fetch_assoc()){
@@ -52,7 +52,7 @@ echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM biblAutor<
 echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT * FROM biblTytul</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblTytul');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>TYTUŁ</th>");
             while($row=$result->fetch_assoc()){
@@ -65,7 +65,7 @@ echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT * FROM biblTytul<
 echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id=biblAutor.id) AND (biblTytul_id=biblTytul.id)</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id=biblAutor.id) AND (biblTytul_id=biblTytul.id)');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>AUTOR</th>");
         echo("<th>TYTUŁ</th>");
