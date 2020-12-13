@@ -19,7 +19,7 @@
        
          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
-           <h1 style="font-size: 19px;margin-top: 210%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+           <h1 style="font-size: 19px;margin-top: 335%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        
        </div>
