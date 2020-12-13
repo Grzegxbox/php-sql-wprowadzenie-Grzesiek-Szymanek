@@ -31,7 +31,7 @@
        </div>
      
       <div class="item colorGreen">
-        <h1 style="margin-left: 41%; color: #3cb300;">FUNKCJE AGREGUJĄCE</h1>
+        <h1 style="margin-left: 33.5%; color: #3cb300;">FUNKCJE AGREGUJĄCE</h1>
       
   <h4 style="margin-top: 40px;">Linki do stron z odpowiednimi funkcjami</h4>
   <a class="navigation_link1" href="funkcjeAgregujace_kontynuacja.php">KONTYNUACJA FUNCKJI AGREGUJĄCYCH</a>
@@ -41,10 +41,10 @@
   
 <?php
 
-echo("<h3 style='margin-top: 70px;'>1. SELECT dzial, max(zarobki) AS Maksimum FROM pracownicy GROUP BY dzial</h3>");
+echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT dzial, max(zarobki) AS Maksimum FROM pracownicy GROUP BY dzial</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT dzial, max(zarobki) AS Maksimum FROM pracownicy GROUP BY dzial');
-        echo("<table border=1>");
+        echo("<table style='margin-left: 5%;' border=1>");
         echo("<th>DZIAŁ</th>");
         echo("<th>MAKSIMUM</th>");
             while($row = $result -> fetch_assoc()){
@@ -54,10 +54,10 @@ echo("<h3 style='margin-top: 70px;'>1. SELECT dzial, max(zarobki) AS Maksimum FR
             }
         echo("</table>");
 
-echo("<h3>2. SELECT Dzial, sum(zarobki) AS Całość, avg(zarobki) AS Średnia FROM pracownicy GROUP BY dzial</h3>");
+echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT Dzial, sum(zarobki) AS Całość, avg(zarobki) AS Średnia FROM pracownicy GROUP BY dzial</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT Dzial, sum(zarobki) AS Całość, avg(zarobki) AS Średnia FROM pracownicy GROUP BY dzial');
-        echo("<table border=1>");
+        echo("<table style='margin-left: 5%;' border=1>");
         echo("<th>DZIAŁ</th>");
         echo("<th>CAŁOŚĆ</th>");
         echo("<th>ŚREDNIA</th>");
@@ -68,10 +68,10 @@ echo("<h3>2. SELECT Dzial, sum(zarobki) AS Całość, avg(zarobki) AS Średnia F
             }
         echo("</table>");
 
-echo("<h3>3. SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Sum(zarobki) AS Calosc, Avg(zarobki) AS Srednia FROM pracownicy GROUP BY dzial</h3>");
+echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Sum(zarobki) AS Calosc, Avg(zarobki) AS Srednia FROM pracownicy GROUP BY dzial</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Sum(zarobki) AS Calosc, Avg(zarobki) AS Srednia FROM pracownicy GROUP BY dzial');
-        echo("<table border=1>");
+        echo("<table style='margin-left: 5%;' border=1>");
         echo("<th>DZIAŁ</th>");
         echo("<th>MAKSIMUM</th>");
         echo("<th>MINIMUM</th>");
@@ -84,10 +84,10 @@ echo("<h3>3. SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Su
             }
         echo("</table>");
   
-  echo("<h3>4. SELECT Dzial, Avg(zarobki) AS AVG FROM pracownicy GROUP BY dzial HAVING Avg(zarobki)<36</h3>");
+  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>4. SELECT Dzial, Avg(zarobki) AS AVG FROM pracownicy GROUP BY dzial HAVING Avg(zarobki)<36</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT Dzial, Avg(zarobki) AS AVG FROM pracownicy GROUP BY dzial HAVING Avg(zarobki)<36');
-        echo("<table border=1>");
+        echo("<table style='margin-left: 5%;' border=1>");
         echo("<th>Dzial</th>");
         echo("<th>AVG</th>");
             while($row = $result -> fetch_assoc()){                                                                                                    
