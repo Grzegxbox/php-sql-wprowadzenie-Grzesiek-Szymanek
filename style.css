@@ -31,12 +31,12 @@ hr{
 h1 {
   color: #FF0000;
 }
-h2 {
+/* h2 {
   color: #8008e1;
-}
-/* h3 {
-  color: #B22222;
 } */
+h3 {
+  color: #B22222;
+}
 h4 {
   color: #3894e7;
 }
