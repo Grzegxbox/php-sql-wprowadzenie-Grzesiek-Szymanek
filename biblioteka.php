@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
- 
+  
 <head>
- 
- <link rel="stylesheet" href="style.css">
- <a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
- 
- <div class="nav">
-    <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
- </div>
- 
- <hr></hr>
- 
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width">
- 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="style.css">
 </head>
 
-
-<h1>BIBLIOTEKA</h1>
-
-
 <body>
-  <h4 style="margin-top: 40px;">Linki do stron z odpowiednimi funkcjami</h4>
-    <a class="navigation_link1" href="wyporzyczone.php">WYPOŻYCZ KSIĄŻKĘ</a>
-    <a class="navigation_link1" href="oddane.php">ODDAJ KSIĄŻKĘ</a>
-
-<?php
+   <div class="container">
+     <div class="item colorRed">
+       
+       <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">WYŚWIETL KOD - GitHub</a></h1>
+       
+     </div>
+     
+     <div class="item colorBlue">
+       
+        <h1 style="margin-left: 15%;">MENU STRONY</h1>
+       
+         <div class="nav">
+           <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
+           <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
+           <a class="navigation_link1" href="wyporzyczone.php">WYPOŻYCZ KSIĄŻKĘ</a>
+           <a class="navigation_link1" href="oddane.php">ODDAJ KSIĄŻKĘ</a>
+           <h1 style="font-size: 19px;margin-top: 385%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+         </div>
+       </div>
+      <div class="item colorGreen">
+        
+       <h1 style="margin-left: 37%; color: #3cb300;">BIBLIOTEKA</h1>
+       
+  <?php
 
  
 echo("<h3 style='margin-top: 70px;'>1. SELECT * FROM biblAutor</h3>");
@@ -117,6 +122,6 @@ echo("<h3 style='margin-top: 200px; margin-left: 800px;'>SELECT * FROM biblTytul
 
 
 ?>
-
-</body>
+    </div>
+  </body>
 </html>
