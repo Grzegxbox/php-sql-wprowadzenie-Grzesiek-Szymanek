@@ -25,13 +25,13 @@
            <a class="navigation_link1" href="funkcjeAgregujace_klauzula_HAVING.php">FUNKCJA AGREGUJĄCA - HAVING</a>
            <a class="navigation_link1" href="funkcjeAgregujace_data_i_czas.php">FUNKCJA AGREGUJĄCA - DATA I CZAS</a>
            <a class="navigation_link1" href="funkcjeAgregujace_formatowanie_dat.php">FUNKCJA AGREGUJĄCA - FORMATOWANIE DAT</a>
-           <h1 style="font-size: 19px;margin-top: 770%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+           <h1 style="font-size: 19px;margin-top: 765%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        
        </div>
      
       <div class="item colorGreen">
-        <h1 style="margin-left: 15%; color: #3cb300;">FUNKCJA AGREGUJĄCA - FORMATOWANIE DAT</h1>
+        <h1 style="margin-left: 13%; color: #3cb300;">FUNKCJA AGREGUJĄCA - FORMATOWANIE DAT</h1>
 
 <?php
   
