@@ -22,7 +22,7 @@
      <div class="item colorGreen">
        <h1 style="margin-left: 41%; color: #3cb300;">FORMULARZ</h1>
           <div class="dodawanie" style="margin-top: 7%;">
-            <h2 style="margin-left: 8%;">DODAWANIE PRACOWNIKÓW</h2>
+            <h2 style="margin-left: 8%;color: #2E8B57;">DODAWANIE PRACOWNIKÓW</h2>
                <form action="insert.php" method="POST" style="margin-left: 19%;">
                  <input type="text" name="imie" placeholder="IMIĘ"><br>
                  <input type="text" name="dzial" placeholder="DZIAŁ"><br>
@@ -32,7 +32,7 @@
                </form>
             </div>
               <div class="odejmowanie">
-                 <h2>USUWANIE PRACOWNIKÓW</h2>
+                 <h2 style="color: #2E8B57;">USUWANIE PRACOWNIKÓW</h2>
                    <form action="delete.php" method="POST" style="margin-left: 27%;">
                      <input type="text" name="id" placeholder="ID PRACOWNIKA"><br>
                      <input type="submit" value="USUŃ" style="margin-left: 13%;">
