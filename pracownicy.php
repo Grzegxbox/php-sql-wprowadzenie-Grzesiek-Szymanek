@@ -31,14 +31,14 @@
        </div>
      
       <div class="item colorGreen">
-        <h1 style="margin-left: 38%; color: #3cb300;">PRACOWNICY</h1>
+        <h1 style="margin-left: 41%; color: #3cb300;">PRACOWNICY</h1>
        
 <?php
   
-  echo("<h3 style='margin-top: 60px;'>0. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)</h3>");
+  echo("<h3 style='margin-top: 60px; margin-left: 5%;'>0. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIAŁ</th>");
@@ -51,10 +51,10 @@
             }
         echo("</table>");
   
-  echo("<h3>1. SELECT * FROM pracownicy WHERE dzial=2</h3>");
+  echo("<h3 style='margin-top: 60px; margin-left: 5%;'>1. SELECT * FROM pracownicy WHERE dzial=2</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy WHERE dzial=2');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIAŁ</th>");
@@ -66,10 +66,10 @@
             }
         echo("</table>");
  
-    echo("<h3>2. SELECT * FROM pracownicy WHERE (dzial=2 or dzial=3)</h3>");
+    echo("<h3 style='margin-top: 60px; margin-left: 5%;'>>2. SELECT * FROM pracownicy WHERE (dzial=2 or dzial=3)</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy WHERE (dzial=2 or dzial=3)');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIAŁ</th>");
@@ -81,10 +81,10 @@
             }
         echo("</table>");
   
-    echo("<h3>3. SELECT * FROM pracownicy WHERE (zarobki<30)</h3>");
+    echo("<h3 style='margin-top: 60px; margin-left: 5%;'>3. SELECT * FROM pracownicy WHERE (zarobki<30)</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy WHERE (zarobki<30)');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIAŁ</th>");
