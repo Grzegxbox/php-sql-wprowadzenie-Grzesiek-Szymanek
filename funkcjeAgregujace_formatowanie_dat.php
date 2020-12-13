@@ -1,27 +1,44 @@
 <!DOCTYPE html>
-
 <html>
+  
 <head>
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="style.css">
-<a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">Kliknij aby zobaczyć wszystko</a>
-  
-<div class="nav">
-  <a class="navigation_link1" href="funkcjeAgregujace_data_i_czas.php">Funkcja Agregująca - DATA I CZAS</a>
-</div>
-  
-  </head>
- <hr></hr>
+</head>
+
 <body>
+   <div class="container">
+     
+     <div class="item colorRed">
+      <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">WYŚWIETL KOD - GitHub</a></h1>
+     </div>
+     
+     <div class="item colorBlue">
+      <h1 style="margin-left: 15%;">MENU STRONY</h1>
+       
+         <div class="nav">
+           <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
+           <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
+           <a class="navigation_link1" href="funkcjeAgregujace_kontynuacja.php">KONTYNUACJA FUNCKJI AGREGUJĄCYCH</a>
+           <a class="navigation_link1" href="funkcjeAgregujace_grupowanie.php">FUNKCJA AGREGUJĄCA - GRUPOWANIE</a>
+           <a class="navigation_link1" href="funkcjeAgregujace_klauzula_HAVING.php">FUNKCJA AGREGUJĄCA - HAVING</a>
+           <a class="navigation_link1" href="funkcjeAgregujace_data_i_czas.php">FUNKCJA AGREGUJĄCA - DATA I CZAS</a>
+           <a class="navigation_link1" href="funkcjeAgregujace_formatowanie_dat.php">FUNKCJA AGREGUJĄCA - FORMATOWANIE DAT</a>
+           <h1 style="font-size: 19px;margin-top: 735%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+         </div>
+       
+       </div>
+     
+      <div class="item colorGreen">
+        <h1 style="margin-left: 15%; color: #3cb300;">FUNKCJA AGREGUJĄCA - DATA I CZAS - FORMATOWANIE DAT</h1>
+
+<?php
   
-<h1>FUNKCJA AGREGUJĄCA - DATA I CZAS - FORMATOWANIE DAT</h1>
-  
-  <?php
-  
-   echo("<h3 style='margin-top: 70px;'>1. SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') AS dni FROM pracownicy</h3>");
+   echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') AS dni FROM pracownicy</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT *, DATE_FORMAT(data_urodzenia,"%W-%m-%Y") AS dni FROM pracownicy');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIAŁ</th>");
@@ -34,11 +51,11 @@
             }
         echo("</table>");
   
-echo("<h3>2. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(CURDATE(), '%W') AS dzis</h3>");
+echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(CURDATE(), '%W') AS dzis</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SET lc_time_names = "pl_PL" ');
     $result=$conn->query('SELECT DATE_FORMAT(CURDATE(), "%W") AS dzis');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>DZISIEJSZY DZIEŃ</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
@@ -47,10 +64,10 @@ echo("<h3>2. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(CURDATE(), '%W') AS
             }
         echo("</table>");
   
-   echo("<h3>3. SELECT *, DATE_FORMAT(data_urodzenia,'%w-%M-%Y') AS dni FROM pracownicy</h3>");
+   echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT *, DATE_FORMAT(data_urodzenia,'%w-%M-%Y') AS dni FROM pracownicy</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT *, DATE_FORMAT(data_urodzenia,"%w-%M-%Y") AS dni FROM pracownicy');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIAŁ</th>");
@@ -63,11 +80,11 @@ echo("<h3>2. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(CURDATE(), '%W') AS
             }
         echo("</table>");
   
-echo("<h3>4. SET TIME_ZONE = '+01:00'; SELECT curtime(4) AS teraz</h3>");
+echo("<h3 style='margin-top: 70px; margin-left: 5%;'>4. SET TIME_ZONE = '+01:00'; SELECT curtime(4) AS teraz</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SET TIME_ZONE = "+01:00"');
     $result=$conn->query('SELECT curtime(4) AS teraz');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>AKTUALNA GODZINA</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
@@ -76,11 +93,11 @@ echo("<h3>4. SET TIME_ZONE = '+01:00'; SELECT curtime(4) AS teraz</h3>");
             }
         echo("</table>");
   
-   echo("<h3>5. SET lc_time_names = 'pl_PL'; SELECT *, DATE_FORMAT(data_urodzenia,'%Y-%M-%W') AS czas FROM pracownicy</h3>");
+   echo("<h3 style='margin-top: 70px; margin-left: 5%;'>5. SET lc_time_names = 'pl_PL'; SELECT *, DATE_FORMAT(data_urodzenia,'%Y-%M-%W') AS czas FROM pracownicy</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SET lc_time_names = "pl_PL" ');
     $result=$conn->query('SELECT *, DATE_FORMAT(data_urodzenia,"%Y-%M-%W") AS czas FROM pracownicy');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIAŁ</th>");
@@ -93,10 +110,10 @@ echo("<h3>4. SET TIME_ZONE = '+01:00'; SELECT curtime(4) AS teraz</h3>");
             }
         echo("</table>");
   
-echo("<h3>6. SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS dd, DATEDIFF(CURDATE(),data_urodzenia)*24 AS hh, DATEDIFF(CURDATE(),data_urodzenia)*24*60 AS mm FROM pracownicy WHERE (imie='Grzesiek)'</h3>");
+echo("<h3 style='margin-top: 70px; margin-left: 5%;'>6. SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS dd, DATEDIFF(CURDATE(),data_urodzenia)*24 AS hh, DATEDIFF(CURDATE(),data_urodzenia)*24*60 AS mm FROM pracownicy WHERE (imie='Grzesiek)'</h3>");
   $conn= new mysqli("remotemysql.com","QcPKWLShOa","viq6LN8MWE","QcPKWLShOa");
     $result=$conn->query('SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS dd, DATEDIFF(CURDATE(),data_urodzenia)*24 AS hh, DATEDIFF(CURDATE(),data_urodzenia)*24*60 AS mm FROM pracownicy WHERE (imie="Grzesiek")');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>IMIĘ</th>");
         echo("<th>DNI ŻYCIA</th>");
         echo("<th>GODZINY ŻYCIA</th>");
@@ -108,10 +125,10 @@ echo("<h3>6. SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS dd, DATEDIFF(CUR
             }
         echo("</table>");
   
-echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracownicy WHERE (imie='Grzesiek')</h3>");
+echo("<h3 style='margin-top: 70px; margin-left: 5%;'>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracownicy WHERE (imie='Grzesiek')</h3>");
   $conn= new mysqli("remotemysql.com","QcPKWLShOa","viq6LN8MWE","QcPKWLShOa");
     $result=$conn->query('SELECT imie, DATE_FORMAT("2003-07-030", "%j") AS dzur FROM pracownicy WHERE (imie="Grzesiek")');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIEŃ NARODZIN W ROKU</th>");
             while($row=$result->fetch_assoc()){
@@ -121,11 +138,11 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
             }
         echo("</table>");
   
-   echo("<h3>8. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(data_urodzenia,'%W') AS dzien, imie, data_urodzenia FROM pracownicy ORDER BY CASE WHEN dzien = 'Poniedziałek' THEN 1 WHEN dzien = 'Wtorek' THEN 2 WHEN dzien = 'Środa' THEN 3 WHEN dzien= 'Czwartek' THEN 4 WHEN dzien = 'Piątek' THEN 5 WHEN dzien = 'Sobota' THEN 6 WHEN dzien = 'Niedziela' THEN 7 END ASC</h3>");
+   echo("<h3 style='margin-top: 70px; margin-left: 5%;'>8. SET lc_time_names = 'pl_PL'; SELECT DATE_FORMAT(data_urodzenia,'%W') AS dzien, imie, data_urodzenia FROM pracownicy ORDER BY CASE WHEN dzien = 'Poniedziałek' THEN 1 WHEN dzien = 'Wtorek' THEN 2 WHEN dzien = 'Środa' THEN 3 WHEN dzien= 'Czwartek' THEN 4 WHEN dzien = 'Piątek' THEN 5 WHEN dzien = 'Sobota' THEN 6 WHEN dzien = 'Niedziela' THEN 7 END ASC</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SET lc_time_names = "pl_PL" ');
     $result=$conn->query('SELECT DATE_FORMAT(data_urodzenia,"%W") AS dzien, imie, data_urodzenia FROM pracownicy ORDER BY CASE WHEN dzien = "Poniedziałek" THEN 1 WHEN dzien = "Wtorek" THEN 2 WHEN dzien = "Środa" THEN 3 WHEN dzien= "Czwartek" THEN 4 WHEN dzien = "Piątek" THEN 5 WHEN dzien = "Sobota"THEN 6 WHEN dzien = "Niedziela" THEN 7 END ASC');       
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>DZIEŃ URODZENIA</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DATA URODZENIA</th>");
@@ -136,10 +153,10 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
             }
         echo("</table>");
   
-   echo("<h3>9. SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) AS bim FROM pracownicy WHERE DATE_FORMAT(data_urodzenia, '%W')='Monday'</h3>");
+   echo("<h3 style='margin-top: 70px; margin-left: 5%;'>9. SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) AS bim FROM pracownicy WHERE DATE_FORMAT(data_urodzenia, '%W')='Monday'</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT Count(DATE_FORMAT(data_urodzenia, "%W")) AS bim FROM pracownicy WHERE DATE_FORMAT(data_urodzenia, "%W")="Monday"');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>URODZENI W PONIEDZIAŁEK</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
@@ -148,11 +165,11 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
             }
         echo("</table>");
   
-   echo("<h3>10. SET lc_time_names = 'pl_PL'; SELECT COUNT(DATE_FORMAT(data_urodzenia,'%W')) AS ilosc, DATE_FORMAT(data_urodzenia,'%W'') AS dzien FROM pracownicy GROUP BY dzien ORDER BY CASE WHEN dzien = 'Poniedziałek' THEN 1 WHEN dzien = 'Wtorek' THEN 2 WHEN dzien = ''Środa' THEN 3 WHEN dzien = 'Czwartek' THEN 4 WHEN dzien = 'Piątek' THEN 5 WHEN dzien = 'Sobota' THEN 6 WHEN dzien = 'Niedziela' THEN 7 END ASC</h3>");
+   echo("<h3 style='margin-top: 70px; margin-left: 5%;'>10. SET lc_time_names = 'pl_PL'; SELECT COUNT(DATE_FORMAT(data_urodzenia,'%W')) AS ilosc, DATE_FORMAT(data_urodzenia,'%W'') AS dzien FROM pracownicy GROUP BY dzien ORDER BY CASE WHEN dzien = 'Poniedziałek' THEN 1 WHEN dzien = 'Wtorek' THEN 2 WHEN dzien = ''Środa' THEN 3 WHEN dzien = 'Czwartek' THEN 4 WHEN dzien = 'Piątek' THEN 5 WHEN dzien = 'Sobota' THEN 6 WHEN dzien = 'Niedziela' THEN 7 END ASC</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SET lc_time_names = "pl_PL" ');
     $result=$conn->query('SELECT COUNT(DATE_FORMAT(data_urodzenia,"%W")) AS ilosc, DATE_FORMAT(data_urodzenia,"%W") AS dzien FROM pracownicy GROUP BY dzien ORDER BY CASE WHEN dzien = "Poniedziałek" THEN 1 WHEN dzien = "Wtorek" THEN 2 WHEN dzien = "Środa" THEN 3 WHEN dzien = "Czwartek" THEN 4 WHEN dzien = "Piątek" THEN 5 WHEN dzien = "Sobota" THEN 6 WHEN dzien = "Niedziela" THEN 7 END ASC');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>DZIEŃ TYOGODNIA</th>");
         echo("<th>ILOŚĆ URODZONYCH PRACOWNIKÓW</th>");
             while($row=$result->fetch_assoc()){
@@ -162,7 +179,7 @@ echo("<h3>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracowni
             }
         echo("</table>");
   ?>
-  
+     </div>
   </body>
 </html>
 
