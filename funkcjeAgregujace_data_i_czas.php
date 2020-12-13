@@ -25,19 +25,19 @@
            <a class="navigation_link1" href="funkcjeAgregujace_klauzula_HAVING.php">FUNKCJA AGREGUJĄCA - HAVING</a>
            <a class="navigation_link1" href="funkcjeAgregujace_data_i_czas.php">FUNKCJA AGREGUJĄCA - DATA I CZAS</a>
            <a class="navigation_link1" href="funkcjeAgregujace_formatowanie_dat.php">FUNKCJA AGREGUJĄCA - FORMATOWANIE DAT</a>
-           <h1 style="font-size: 19px;margin-top: 135%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+           <h1 style="font-size: 19px;margin-top: 3050%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        
        </div>
      
       <div class="item colorGreen">
-        <h1 style="margin-left: 33%; color: #3cb300;">FUNKCJA AGREGUJĄCA - DATA I CZAS</h1>
+        <h1 style="margin-left: 20%; color: #3cb300;">FUNKCJA AGREGUJĄCA - DATA I CZAS</h1>
 
 <?php
-  echo("<h3 style='margin-top: 70px;'>1. SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy</h3>");
+  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy');
-          echo("<table border=1>");
+          echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>ID</th>");
           echo("<th>IMIĘ</th>");
           echo("<th>DZIAŁ</th>");
@@ -50,10 +50,10 @@
               }
           echo("</table>");
   
-  echo("<h3>2. SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy WHERE nazwa_dzial='serwis'</h3>");
+  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy WHERE nazwa_dzial='serwis'</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy WHERE dzial=1');
-          echo("<table border=1>");
+          echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>ID</th>");
           echo("<th>IMIĘ</th>");
           echo("<th>DZIAŁ</th>");
@@ -66,10 +66,10 @@
               }
           echo("</table>");
   
-  echo("<h3>3. SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS calosclat FROM pracownicy</h3>");
+  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS calosclat FROM pracownicy</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS calosclat FROM pracownicy');
-          echo("<table border=1>");
+          echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>SUMA LAT</th>");
               while($row = $result -> fetch_assoc()){
                   echo("<tr>");
@@ -78,10 +78,10 @@
               }
           echo("</table>");
   
-  echo("<h3>4. SELECT dzial, nazwa_dzial, SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial='handel') GROUP BY dzial</h3>");
+  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>4. SELECT dzial, nazwa_dzial, SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial='handel') GROUP BY dzial</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT dzial, nazwa_dzial, SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial="handel") GROUP BY dzial');
-          echo("<table border=1>");
+          echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");
           echo("<th>SUMA LAT</th>");
@@ -92,10 +92,10 @@
               }
           echo("</table>");
   
-  echo("<h3>5. SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma, IF(imie like '%a', 'Kobiety', 'Mężczyźni') AS plec FROM pracownicy WHERE (imie LIKE '%a') GROUP BY plec</h3>");
+  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>5. SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma, IF(imie like '%a', 'Kobiety', 'Mężczyźni') AS plec FROM pracownicy WHERE (imie LIKE '%a') GROUP BY plec</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma, IF(imie like "%a", "Kobiety", "Mężczyźni") AS plec FROM pracownicy WHERE (imie LIKE "%a") GROUP BY plec');
-          echo("<table border=1>");
+          echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>PŁEĆ</th>");
           echo("<th>SUMA LAT</th>");
               while($row = $result -> fetch_assoc()){
@@ -105,10 +105,10 @@
               }
           echo("</table>");
   
-  echo("<h3>6. SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma, IF(imie not like '%a', 'Kobiety', 'Mężczyźni') AS plec FROM pracownicy WHERE (imie not LIKE '%a') GROUP BY plec</h3>");
+  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>6. SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma, IF(imie not like '%a', 'Kobiety', 'Mężczyźni') AS plec FROM pracownicy WHERE (imie not LIKE '%a') GROUP BY plec</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma, IF(imie like "%a", "Kobiety", "Mężczyźni") AS plec FROM pracownicy WHERE (imie not LIKE "%a") GROUP BY plec');
-          echo("<table border=1>");
+          echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>PŁEĆ</th>");
           echo("<th>SUMA LAT</th>");
               while($row = $result -> fetch_assoc()){
@@ -118,10 +118,10 @@
               }
           echo("</table>");
   
-  echo("<h3>7. SELECT dzial, nazwa_dzial, AVG(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS srednia FROM pracownicy, organizacja WHERE (id_org=dzial) GROUP BY dzial</h3>");
+  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>7. SELECT dzial, nazwa_dzial, AVG(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS srednia FROM pracownicy, organizacja WHERE (id_org=dzial) GROUP BY dzial</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT dzial, nazwa_dzial, AVG(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS srednia FROM pracownicy, organizacja WHERE (id_org=dzial) GROUP BY dzial');
-          echo("<table border=1>");
+          echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");
           echo("<th>ŚREDNIA WIEKU</th>");
@@ -132,10 +132,10 @@
               }
           echo("</table>");
   
-  echo("<h3>8. SELECT dzial, nazwa_dzial, SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma FROM pracownicy, organizacja WHERE (id_org=dzial) GROUP BY dzial</h3>");
+  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>8. SELECT dzial, nazwa_dzial, SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma FROM pracownicy, organizacja WHERE (id_org=dzial) GROUP BY dzial</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT dzial, nazwa_dzial, SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS suma FROM pracownicy, organizacja WHERE (id_org=dzial) GROUP BY dzial');
-          echo("<table border=1>");
+          echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");
           echo("<th>SUMA LAT</th>");
@@ -146,10 +146,10 @@
               }
           echo("</table>");
   
-  echo("<h3>9. SELECT dzial, nazwa_dzial, MAX(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS maxi FROM pracownicy, organizacja WHERE (id_org=dzial) GROUP BY dzial</h3>");
+  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>9. SELECT dzial, nazwa_dzial, MAX(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS maxi FROM pracownicy, organizacja WHERE (id_org=dzial) GROUP BY dzial</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT dzial, nazwa_dzial, MAX(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS maxi FROM pracownicy, organizacja WHERE (id_org=dzial) GROUP BY dzial');
-          echo("<table border=1>");
+          echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");
           echo("<th>NAJWYŻSZY WIEK</th>");
@@ -160,10 +160,10 @@
               }
           echo("</table>");
   
-  echo("<h3>10. SELECT dzial, nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial='handel' or nazwa_dzial='serwis') GROUP BY dzial</h3>");
+  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>10. SELECT dzial, nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial='handel' or nazwa_dzial='serwis') GROUP BY dzial</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT dzial, nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial="handel" or nazwa_dzial="serwis") GROUP BY dzial');
-          echo("<table border=1>");
+          echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");
           echo("<th>NAJNIŻSZY WIEK</th>");
@@ -174,10 +174,10 @@
               }
           echo("</table>");
   
-  echo("<h3>11. SELECT imie, dzial, nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial='handel' or nazwa_dzial='serwis') GROUP BY dzial --> Nie moge wykonać tego zadania bo muszę zmienić tryb SQL a był on potrzebny w poprzednich zadanich i gdybym zmienił to ustawienie to jedno zadanie będzie działać a drugie nie.</h3>");
+  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>11. SELECT imie, dzial, nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS mini  FROM pracownicy, organizacja WHERE (id_org=dzial) AND (nazwa_dzial='handel' or nazwa_dzial='serwis') GROUP BY dzial --> Nie moge wykonać tego zadania bo muszę zmienić tryb SQL a był on potrzebny w poprzednich zadanich i gdybym zmienił to ustawienie to jedno zadanie będzie działać a drugie nie.</h3>");
 //       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
 //       $result = $conn -> query('SELECT nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS minizar, imie  FROM pracownicy, organizacja WHERE (dzial=id_org) AND (nazwa_dzial="handel" OR nazwa_dzial="serwis") ORDER BY dzial');
-//           echo("<table border=1>");
+//           echo("<table style='margin-left: 5%;' border=2>");
 //           echo("<th>IMIĘ</th>");
 //           echo("<th>DZIAŁ</th>");
 //           echo("<th>NAZWA DZIAŁU</th>");
@@ -189,10 +189,10 @@
 //               }
 //           echo("</table>");
   
-  echo("<h3>12. SELECT *, DATEDIFF(CURDATE(),data_urodzenia) AS dnilat FROM pracownicy</h3>");
+  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>12. SELECT *, DATEDIFF(CURDATE(),data_urodzenia) AS dnilat FROM pracownicy</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT *, DATEDIFF(CURDATE(),data_urodzenia) AS dnilat FROM pracownicy');
-          echo("<table border=1>");
+          echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>ID</th>");
           echo("<th>IMIĘ</th>");
           echo("<th>DZIAŁ</th>");
@@ -205,10 +205,10 @@
               }
           echo("</table>");
   
-  echo("<h3>13. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie NOT LIKE '%a') ORDER BY data_urodzenia LIMIT 1</h3>");
+  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>13. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie NOT LIKE '%a') ORDER BY data_urodzenia LIMIT 1</h3>");
       $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
       $result = $conn -> query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie NOT LIKE "%a") ORDER BY data_urodzenia LIMIT 1');
-          echo("<table border=1>");
+          echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>ID</th>");
           echo("<th>IMIĘ</th>");
           echo("<th>DZIAŁ</th>");
