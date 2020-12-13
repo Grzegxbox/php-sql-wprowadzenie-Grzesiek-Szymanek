@@ -29,7 +29,7 @@
        </div>
      
       <div class="item colorGreen">
-        <h1 style="margin-left: 33%; color: #3cb300;">KONTYNUACJA FUNKCJI AGREGUJĄCYCH</h1>
+        <h1 style="margin-left: 19%; color: #3cb300;">KONTYNUACJA FUNKCJI AGREGUJĄCYCH</h1>
         
 <?php
   
