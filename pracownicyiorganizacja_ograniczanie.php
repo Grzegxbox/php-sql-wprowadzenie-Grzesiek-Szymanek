@@ -28,14 +28,14 @@
        </div>
      
       <div class="item colorGreen">
-        <h1 style="margin-left: 26.5%; color: #3cb300;">WYKORZYSTANIE FUNKCJI 'LIMIT'</h1>
+        <h1 style="margin-left: 23%; color: #3cb300;">WYKORZYSTANIE FUNKCJI 'LIMIT'</h1>
 
 <?php
   
-echo("<h3 style='margin-top: 70px;'>1. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (dzial=4) ORDER BY zarobki desc LIMIT 2</h3>");
+echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (dzial=4) ORDER BY zarobki desc LIMIT 2</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (dzial=4) ORDER BY zarobki desc LIMIT 2');
-        echo("<table border=2>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIAŁ</th>");
@@ -48,10 +48,10 @@ echo("<h3 style='margin-top: 70px;'>1. SELECT * FROM pracownicy, organizacja WHE
             }
         echo("</table>");
 
-echo("<h3>2. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like '%a') AND (dzial=2 OR dzial=4) ORDER BY zarobki desc LIMIT 3</h3>");
+echo("<h3 style='margin-top: 70px; margin-left: 5%;'>>2. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like '%a') AND (dzial=2 OR dzial=4) ORDER BY zarobki desc LIMIT 3</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like "%a") AND (dzial=2 OR dzial=4) ORDER BY zarobki desc LIMIT 3');
-        echo("<table border=1>");
+        echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIAŁ</th>");
@@ -64,10 +64,10 @@ echo("<h3>2. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imi
             }
         echo("</table>");
 
-echo("<h3>3. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) ORDER BY data_urodzenia LIMIT 1</h3>");
+echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) ORDER BY data_urodzenia LIMIT 1</h3>");
     $conn = new mysqli ("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) ORDER BY data_urodzenia LIMIT 1');
-            echo("<table border=1>");
+            echo("<table style='margin-left: 5%;' border=2>");
             echo("<th>ID</th>");
             echo("<th>IMIĘ</th>");
             echo("<th>DZIAŁ</th>");
