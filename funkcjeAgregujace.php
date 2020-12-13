@@ -19,12 +19,10 @@
        
          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
-           <a class="navigation_link1" href="function.php">Funkcja</a>
-           <a class="navigation_link1" href="daneDoBazy.php">Formularz</a>
-           <a class="navigation_link1" href="pracownicy.php">Pracownicy</a>
-           <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
-           <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
-           <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
+           <a class="navigation_link1" href="funkcjeAgregujace_kontynuacja.php">KONTYNUACJA FUNCKJI AGREGUJĄCYCH</a>
+           <a class="navigation_link1" href="funkcjeAgregujace_grupowanie.php">FUNKCJA AGREGUJĄCA - GRUPOWANIE</a>
+           <a class="navigation_link1" href="funkcjeAgregujace_klauzula_HAVING.php">FUNKCJA AGREGUJĄCA - HAVING</a>
+           <a class="navigation_link1" href="funkcjeAgregujace_data_i_czas.php">FUNKCJA AGREGUJĄCA - DATA I CZAS</a>
            <h1 style="font-size: 19px;margin-top: 210%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        
@@ -32,13 +30,7 @@
      
       <div class="item colorGreen">
         <h1 style="margin-left: 33.5%; color: #3cb300;">FUNKCJE AGREGUJĄCE</h1>
-      
-  <h4 style="margin-top: 40px;">Linki do stron z odpowiednimi funkcjami</h4>
-  <a class="navigation_link1" href="funkcjeAgregujace_kontynuacja.php">KONTYNUACJA FUNCKJI AGREGUJĄCYCH</a>
-  <a class="navigation_link1" href="funkcjeAgregujace_grupowanie.php">FUNKCJA AGREGUJĄCA - GRUPOWANIE</a>
-  <a class="navigation_link1" href="funkcjeAgregujace_klauzula_HAVING.php">FUNKCJA AGREGUJĄCA - HAVING</a>
-  <a class="navigation_link1" href="funkcjeAgregujace_data_i_czas.php">FUNKCJA AGREGUJĄCA - DATA I CZAS</a>
-  
+        
 <?php
 
 echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT dzial, max(zarobki) AS Maksimum FROM pracownicy GROUP BY dzial</h3>");
