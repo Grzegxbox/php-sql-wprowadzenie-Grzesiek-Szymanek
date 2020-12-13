@@ -31,11 +31,8 @@
        </div>
      
       <div class="item colorGreen">
-        <h1 style="margin-left: 41%; color: #3cb300;">PRACOWNICY</h1>
-       
-
-  
-<h1>FUNKCJE AGREGUJĄCE</h1>
+        <h1 style="margin-left: 41%; color: #3cb300;">FUNKCJE AGREGUJĄCE</h1>
+      
   <h4 style="margin-top: 40px;">Linki do stron z odpowiednimi funkcjami</h4>
   <a class="navigation_link1" href="funkcjeAgregujace_kontynuacja.php">KONTYNUACJA FUNCKJI AGREGUJĄCYCH</a>
   <a class="navigation_link1" href="funkcjeAgregujace_grupowanie.php">FUNKCJA AGREGUJĄCA - GRUPOWANIE</a>
