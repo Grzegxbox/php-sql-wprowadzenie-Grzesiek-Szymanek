@@ -25,7 +25,7 @@
        </div>
      
       <div class="item colorGreen">
-        <h1 style="margin-left: 41%; color: #3cb300;">PRACOWNICY</h1>
+        <h1 style="margin-left: 40.5%; color: #3cb300;">PRACOWNICY</h1>
        
 <?php
   
