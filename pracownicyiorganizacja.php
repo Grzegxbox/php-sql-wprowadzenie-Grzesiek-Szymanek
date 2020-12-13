@@ -22,13 +22,13 @@
            <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
            <a class="navigation_link1" href="pracownicyiorganizacja_sortowanie.php">Sortowanie Pracowników</a>
            <a class="navigation_link1" href="pracownicyiorganizacja_ograniczanie.php">Ograniczanie Ilości Pracowników</a>
-           <h1 style="font-size: 19px;margin-top: 300%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+           <h1 style="font-size: 19px;margin-top: 305%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        
        </div>
      
       <div class="item colorGreen">
-        <h1 style="margin-left: 30%; color: #3cb300;">PRACOWNICY I ORGANIZACJA</h1>
+        <h1 style="margin-left: 26.5%; color: #3cb300;">PRACOWNICY I ORGANIZACJA</h1>
 
 <?php
   
