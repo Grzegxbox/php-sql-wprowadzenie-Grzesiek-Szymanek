@@ -23,7 +23,7 @@
      </div>
     
      <div class="item colorGreen">
-      <h1 style="margin-left: 44%; color: #3cb300;">FUNKCJA</h1>  
+      <h1 style="margin-left: 45%; color: #3cb300;">FUNKCJA</h1>  
 
 <?php
     
