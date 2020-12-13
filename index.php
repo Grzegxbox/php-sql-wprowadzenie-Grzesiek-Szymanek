@@ -27,12 +27,12 @@
            <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
            <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
            <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
-           <h1 style="font-size: 19px;margin-top: 380%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+           <h1 style="font-size: 19px;margin-top: 385%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        </div>
       <div class="item colorGreen">
         
-        <h1 style="margin-left: 38%; color: #3cb300;">STRONA GŁÓWNA</h1>
+        <h1 style="margin-left: 37%; color: #3cb300;">STRONA GŁÓWNA</h1>
        
        <?php
   
