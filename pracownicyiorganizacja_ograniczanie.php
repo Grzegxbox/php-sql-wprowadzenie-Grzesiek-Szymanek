@@ -22,7 +22,7 @@
            <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
            <a class="navigation_link1" href="pracownicyiorganizacja_sortowanie.php">Sortowanie Pracowników</a>
            <a class="navigation_link1" href="pracownicyiorganizacja_ograniczanie.php">Ograniczanie Ilości Pracowników</a>
-           <h1 style="font-size: 19px;margin-top: 305%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+           <h1 style="font-size: 19px;margin-top: 85%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        
        </div>
@@ -48,7 +48,7 @@ echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM pracownicy
             }
         echo("</table>");
 
-echo("<h3 style='margin-top: 70px; margin-left: 5%;'>>2. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like '%a') AND (dzial=2 OR dzial=4) ORDER BY zarobki desc LIMIT 3</h3>");
+echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like '%a') AND (dzial=2 OR dzial=4) ORDER BY zarobki desc LIMIT 3</h3>");
     $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like "%a") AND (dzial=2 OR dzial=4) ORDER BY zarobki desc LIMIT 3');
         echo("<table style='margin-left: 5%;' border=2>");
