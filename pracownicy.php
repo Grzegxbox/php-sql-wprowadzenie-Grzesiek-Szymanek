@@ -66,7 +66,7 @@
             }
         echo("</table>");
  
-    echo("<h3 style='margin-top: 60px; margin-left: 5%;'>>2. SELECT * FROM pracownicy WHERE (dzial=2 or dzial=3)</h3>");
+    echo("<h3 style='margin-top: 60px; margin-left: 5%;'>2. SELECT * FROM pracownicy WHERE (dzial=2 or dzial=3)</h3>");
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy WHERE (dzial=2 or dzial=3)');
         echo("<table style='margin-left: 5%;' border=2>");
