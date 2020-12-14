@@ -22,7 +22,7 @@
        </div>
       </div>
      <div class="item colorGreen">
-     <h1>DZIAŁA?</h1>
+     <h1>W tym miejscu możesz przejeść do odpowiednich zakładek aby dodać pracownika, autora książki lub samą książkę</h1>
      </div>
      </body>
      </html>
