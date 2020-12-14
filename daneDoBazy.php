@@ -18,7 +18,8 @@
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
            <a class="navigation_link1" href="formularze.php">Formularze</a>
            <a class="navigation_link1" href="daneDoBazy.php">Formularz - Pracownicy</a>
-           <a class="navigation_link1" href="daneDoBiblioteki.php">Formularz - Książki I Autorzy</a>
+           <a class="navigation_link1" href="daneDoAutorow.php">Formularz - Autorzy</a>
+           <a class="navigation_link1" href="daneDoTytulow.php">Formularz - Książki</a>
           <h1 style="font-size: 19px;margin-top: 350%;text-align: center;">Autor: Grzesiek Szymanek</h1>
        </div>
       </div>
