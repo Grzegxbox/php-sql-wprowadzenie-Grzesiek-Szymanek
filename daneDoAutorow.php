@@ -36,12 +36,9 @@
               <div class="odejmowanie">
                  <h2 style="color: #2E8B57;">USUWANIE AUTORA</h2>
                    <form action=".php" method="POST" style="margin-left: 27%;">
-                     <input type="text" name="id" placeholder="ID PRACOWNIKA"><br>
+                     <input type="text" name="id" placeholder="ID AUTORA"><br>
                      <input type="submit" value="USUŃ" style="margin-left: 13%;">
                    </form>
              </div>
-       
-       
-       </div>
        </body>
      </html>
