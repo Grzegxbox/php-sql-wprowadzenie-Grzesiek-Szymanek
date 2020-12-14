@@ -39,6 +39,30 @@
                      <input type="text" name="id" placeholder="ID AUTORA"><br>
                      <input type="submit" value="USUŃ" style="margin-left: 13%;">
                    </form>
+                
+           <?php
+  
+  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result=$conn->query('SELECT * FROM `biblAutor');
+        echo("<table style='margin-top: 15%;margin-left: 21%;' border=2>");
+        echo("<th>ID</th>");
+        echo("<th>AUTOR</th>");
+        echo("<th>USUŃ</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["id"]. "</td><td>" .$row["autor"]. "</td>
+                    
+                    <td>
+                    <form action='delete.php' method='POST'>
+                          <input type='text' name='id' value='".$row["id"]."' placeholder='ID AUTORA' hidden></br>
+                                    <input type='submit' value='USUŃ'>
+                          </form>
+                    </td>");
+              
+                echo("</tr>");
+            }
+        echo("</table>");
+?>
              </div>
        </body>
      </html>
