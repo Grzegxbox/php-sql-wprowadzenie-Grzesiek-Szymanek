@@ -24,7 +24,23 @@
        </div>
       </div>
      <div class="item colorGreen">
-       <h1 style="margin-left: 41%;"></h1>
+       <h1 style="margin-left: 29%; color: #3cb300;">FORMULARZ - AUTORZY</h1>
+          <div class="dodawanie" style="margin-top: 7%;">
+            <h2 style="margin-left: 8%;color: #2E8B57;">DODAWANIE AUTORA</h2>
+               <form action=".php" method="POST" style="margin-left: 19%;">
+                 <input type="text" name="id" placeholder="ID"><br>
+                 <input type="text" name="autor" placeholder="AUTOR"><br>
+                 <input type="submit" value="DODAJ" style="margin-left: 40px;">
+               </form>
+            </div>
+              <div class="odejmowanie">
+                 <h2 style="color: #2E8B57;">USUWANIE AUTORA</h2>
+                   <form action=".php" method="POST" style="margin-left: 27%;">
+                     <input type="text" name="id" placeholder="ID PRACOWNIKA"><br>
+                     <input type="submit" value="USUŃ" style="margin-left: 13%;">
+                   </form>
+             </div>
+       
        
        </div>
        </body>
