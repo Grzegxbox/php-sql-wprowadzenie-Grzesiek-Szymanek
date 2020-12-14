@@ -16,6 +16,9 @@
       <h1 style="margin-left: 15%;">MENU STRONY</h1>
        <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
+           <a class="navigation_link1" href="formularze.php">Formularze</a>
+           <a class="navigation_link1" href="daneDoBazy.php">Formularz - Pracownicy</a>
+           <a class="navigation_link1" href="x">Formularz - Książki I Autorzy</a>
           <h1 style="font-size: 19px;margin-top: 350%;text-align: center;">Autor: Grzesiek Szymanek</h1>
        </div>
       </div>
