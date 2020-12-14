@@ -19,12 +19,12 @@
            <a class="navigation_link1" href="formularze.php">Formularze</a>
            <a class="navigation_link1" href="daneDoBazy.php">Formularz - Pracownicy</a>
            <a class="navigation_link1" href="x">Formularz - Książki I Autorzy</a>
-          <h1 style="font-size: 19px;margin-top: 350%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+           <h1 style="font-size: 19px;margin-top: 40%;text-align: center;">Autor: Grzesiek Szymanek</h1>
        </div>
       </div>
      <div class="item colorGreen">
-       <h1>FORMULARZE</h1>
-     <h2>W tym miejscu możesz przejeść do odpowiednich zakładek aby dodać pracownika, autora książki lub samą książkę</h2>
+       <h1 style="margin-left: 41%;">FORMULARZE</h1>
+         <h2 style="margin-top: 11%;margin-left: 7%;margin-right: 5%;color: ;">W tym miejscu możesz przejeść do odpowiednich zakładek aby dodać pracownika, autora książki lub samą książkę</h2>
         </div>
        </body>
      </html>
