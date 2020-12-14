@@ -43,7 +43,7 @@
            <?php
   
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT * FROM `biblAutor');
+    $result=$conn->query('SELECT * FROM biblAutor');
         echo("<table style='margin-top: 15%;margin-left: 21%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>AUTOR</th>");
