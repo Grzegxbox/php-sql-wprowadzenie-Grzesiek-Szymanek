@@ -24,7 +24,7 @@
       </div>
      <div class="item colorGreen">
        <h1 style="margin-left: 41%;">FORMULARZE</h1>
-         <h2 style="margin-top: 11%; margin-left: 7%; margin-right: 5%; color: #3cb371;">W tym miejscu możesz przejeść do odpowiednich zakładek aby dodać pracownika, autora książki lub samą książkę</h2>
+         <h2 style="margin-top: 11%; margin-left: 7%; margin-right: 5%; color: #3cb371;">W tym miejscu możesz przejeść do odpowiednich zakładek aby dodać/usunąć pracownika, autora książki lub samą książkę.</h2>
         </div>
        </body>
      </html>
