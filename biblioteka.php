@@ -22,8 +22,8 @@
          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
            <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
-           <a class="navigation_link1" href="wyporzyczone.php">WYPOŻYCZ KSIĄŻKĘ</a>
-           <a class="navigation_link1" href="oddane.php">ODDAJ KSIĄŻKĘ</a>
+           <a class="navigation_link1" href="wyporzyczone.php">Wypożycz książkę</a>
+           <a class="navigation_link1" href="oddane.php">Oddaj książkę</a>
            <h1 style="font-size: 19px;margin-top: 250%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        </div>
