@@ -23,7 +23,7 @@
        </div>
       </div>
      <div class="item colorGreen">
-       <h1 style="margin-left: 42%; color: #3cb300;">FORMULARZ - PRACOWNICY</h1>
+       <h1 style="margin-left: 29%; color: #3cb300;">FORMULARZ - PRACOWNICY</h1>
           <div class="dodawanie" style="margin-top: 7%;">
             <h2 style="margin-left: 8%;color: #2E8B57;">DODAWANIE PRACOWNIKÓW</h2>
                <form action="insert.php" method="POST" style="margin-left: 19%;">
