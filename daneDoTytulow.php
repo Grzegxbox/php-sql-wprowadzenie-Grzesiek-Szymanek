@@ -46,7 +46,7 @@
   
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblTytul');
-        echo("<table style='margin-top: 22%;margin-left: -47%;' border=2>");
+        echo("<table style='margin-top: 11%;margin-left: 25%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>TYTUŁ</th>");
         echo("<th>USUŃ</th>");
