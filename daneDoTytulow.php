@@ -28,7 +28,6 @@
           <div class="dodawanie" style="margin-top: 7%;">
             <h2 style="margin-left: 12%;color: #2E8B57;">DODAWANIE KSIĄŻKI</h2>
                <form action="insert_tytul.php" method="POST" style="margin-left: 19%;">
-                 <input type="text" name="id" placeholder="ID"><br>
                  <input type="text" name="tytul" placeholder="TYTUŁ"><br>
                  <input type="submit" value="DODAJ" style="margin-left: 40px;">
                </form>
