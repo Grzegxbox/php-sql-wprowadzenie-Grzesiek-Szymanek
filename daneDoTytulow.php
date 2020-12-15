@@ -20,7 +20,7 @@
            <a class="navigation_link1" href="daneDoBazy.php">Formularz - Pracownicy</a>
            <a class="navigation_link1" href="daneDoAutorow.php">Formularz - Autorzy</a>
            <a class="navigation_link1" href="daneDoTytulow.php">Formularz - Książki</a>
-           <h1 style="font-size: 19px;margin-top: 40%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+           <h1 style="font-size: 19px;margin-top: 250%;text-align: center;">Autor: Grzesiek Szymanek</h1>
        </div>
       </div>
      <div class="item colorGreen">
