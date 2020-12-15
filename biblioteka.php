@@ -33,7 +33,7 @@
        
   <?php
 
-        echo("<h2 style='margin-left: 5%; margin-top: 5%; color: #008000;'>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek po lewej</h2>"); 
+        echo("<h2 style='margin-left: 5%; margin-top: 5%; color: #008000;'>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek po lewej.</h2>"); 
  
 echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM biblAutor</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
@@ -81,7 +81,7 @@ echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT * FROM biblAutor,
  
  
 // Wybór autora
-echo("<h3 style='margin-top: 1px; margin-left: 5%;'>SELECT * FROM biblAutor - WYBIERANIE</h3>");
+echo("<h3 style='margin-top: 9%; margin-left: 5%;'>SELECT * FROM biblAutor - WYBIERANIE</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblAutor');
        echo("<select name='title' id='title' style='margin-left: 17%;'>");
