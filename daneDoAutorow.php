@@ -27,7 +27,7 @@
        <h1 style="margin-left: 32.5%; color: #3cb300;">FORMULARZ - AUTORZY</h1>
           <div class="dodawanie" style="margin-top: 7%;">
             <h2 style="margin-left: 11%;color: #2E8B57;">DODAWANIE AUTORA</h2>
-               <form action=".php" method="POST" style="margin-left: 17%;">
+               <form action="insert_autor.php" method="POST" style="margin-left: 17%;">
                  <input type="text" name="autor" placeholder="AUTOR"><br>
                  <input type="submit" value="DODAJ" style="margin-left: 40px;">
                </form>
