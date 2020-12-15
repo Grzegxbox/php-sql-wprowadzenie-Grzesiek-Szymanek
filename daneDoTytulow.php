@@ -55,7 +55,7 @@
                     echo("<td>" .$row["id"]. "</td><td>" .$row["tytul"]. "</td>
                     
                     <td>
-                    <form action='x' method='POST'>
+                    <form action='delete_tytul.php' method='POST'>
                           <input type='text' name='id' value='".$row["id"]."' placeholder='ID KSIĄŻKI' hidden></br>
                                     <input type='submit' value='USUŃ'>
                           </form>
