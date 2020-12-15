@@ -24,9 +24,9 @@
        </div>
       </div>
      <div class="item colorGreen">
-       <h1 style="margin-left: 29%; color: #3cb300;">FORMULARZ - KSIĄŻKI</h1>
+       <h1 style="margin-left: 33.5%; color: #3cb300;">FORMULARZ - KSIĄŻKI</h1>
           <div class="dodawanie" style="margin-top: 7%;">
-            <h2 style="margin-left: 8%;color: #2E8B57;">DODAWANIE KSIĄŻKI</h2>
+            <h2 style="margin-left: 12%;color: #2E8B57;">DODAWANIE KSIĄŻKI</h2>
                <form action=".php" method="POST" style="margin-left: 19%;">
                  <input type="text" name="id" placeholder="ID"><br>
                  <input type="text" name="tytul" placeholder="TYTUŁ"><br>
@@ -34,11 +34,41 @@
                </form>
             </div>
               <div class="odejmowanie">
-                 <h2 style="color: #2E8B57;">USUWANIE KSIĄŻKI</h2>
-                   <form action=".php" method="POST" style="margin-left: 27%;">
+                 <h2 style="color: #2E8B57;margin-top: 14%;margin-left: 13%;">USUWANIE KSIĄŻKI</h2>
+                   <form action=".php" method="POST" style="margin-left: 31%;">
                      <input type="text" name="id" placeholder="ID KSIĄŻKI"><br>
                      <input type="submit" value="USUŃ" style="margin-left: 13%;">
                    </form>
              </div>
+       
+             
+           <?php
+  
+  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    $result=$conn->query('SELECT * FROM biblTytul');
+        echo("<table style='margin-top: 22%;margin-left: -47%;' border=2>");
+        echo("<th>ID</th>");
+        echo("<th>TYTUŁ</th>");
+        echo("<th>USUŃ</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>" .$row["id"]. "</td><td>" .$row["tytul"]. "</td>
+                    
+                    <td>
+                    <form action='x' method='POST'>
+                          <input type='text' name='id' value='".$row["id"]."' placeholder='ID KSIĄŻKI' hidden></br>
+                                    <input type='submit' value='USUŃ'>
+                          </form>
+                    </td>");
+              
+                echo("</tr>");
+            }
+        echo("</table>");
+?>
+       
+       
+       
+       
+       
        </body>
      </html>
