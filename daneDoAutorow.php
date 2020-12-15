@@ -34,7 +34,7 @@
             </div>
               <div class="odejmowanie">
                  <h2 style="color: #2E8B57; margin-top: 14%; margin-left: 12%;">USUWANIE AUTORA</h2>
-                   <form action=".php" method="POST" style="margin-left: 28%;">
+                   <form action="delete_autor.php" method="POST" style="margin-left: 28%;">
                      <input type="text" name="id" placeholder="ID AUTORA"><br>
                      <input type="submit" value="USUŃ" style="margin-left: 13%;">
                    </form>
