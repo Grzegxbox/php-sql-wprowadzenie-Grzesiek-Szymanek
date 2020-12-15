@@ -32,7 +32,7 @@ VALUES(NULL,'".$_POST['autor']."')";
 
 if ($conn->query($sql) === TRUE) {
   echo "WŁAŚNIE DODAŁEŚ AUTORA";
-  header('Location: https://wprowadzenie.herokuapp.com/');
+  header('Location: https://wprowadzenie.herokuapp.com/biblioteka.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
