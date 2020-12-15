@@ -27,7 +27,7 @@
        <h1 style="margin-left: 33.5%; color: #3cb300;">FORMULARZ - KSIĄŻKI</h1>
           <div class="dodawanie" style="margin-top: 7%;">
             <h2 style="margin-left: 12%;color: #2E8B57;">DODAWANIE KSIĄŻKI</h2>
-               <form action=".php" method="POST" style="margin-left: 19%;">
+               <form action="insert_tytul.php" method="POST" style="margin-left: 19%;">
                  <input type="text" name="id" placeholder="ID"><br>
                  <input type="text" name="tytul" placeholder="TYTUŁ"><br>
                  <input type="submit" value="DODAJ" style="margin-left: 40px;">
@@ -35,7 +35,7 @@
             </div>
               <div class="odejmowanie">
                  <h2 style="color: #2E8B57;margin-top: 14%;margin-left: 13%;">USUWANIE KSIĄŻKI</h2>
-                   <form action=".php" method="POST" style="margin-left: 31%;">
+                   <form action="delete_tytul.php" method="POST" style="margin-left: 31%;">
                      <input type="text" name="id" placeholder="ID KSIĄŻKI"><br>
                      <input type="submit" value="USUŃ" style="margin-left: 13%;">
                    </form>
