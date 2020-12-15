@@ -29,11 +29,11 @@
        </div>
       <div class="item colorGreen">
         
-       <h1 style="margin-left: 35.5%; color: #3cb300;">ODDAJ KSIĄŻKĘ</h1>
+       <h1 style="margin-left: 38%; color: #3cb300;">ODDAJ KSIĄŻKĘ</h1>
        
   <?php
 
-echo("<h1>Tutaj będą książki oddane:)</h1>");
+
 
 ?>
     </div>
