@@ -33,10 +33,10 @@
        
   <?php
 
-echo("<h3 style='margin-top: 15%; margin-left: 5%;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
+echo("<h3 style='margin-top: 10%; margin-left: 31%;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblAutor');
-       echo("<select name='tytul' id='tytul' style='margin-left: 5%;'>");
+       echo("<select name='tytul' id='tytul' style='margin-left: 45%;'>");
           while($row=$result->fetch_assoc()){ 
             echo("<option value=".$row['id'].">".$row['autor']."</option>");
           }
@@ -44,7 +44,7 @@ echo("<h3 style='margin-top: 15%; margin-left: 5%;'>Wybierz Książkę I Autora 
 echo("<h3 style='margin-top: 20px; margin-left: 5%;'></h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblTytul');
-       echo("<select name='tytul' id='tytul' style='margin-left: 5%;'>");
+       echo("<select name='tytul' id='tytul' style='margin-left: 35%;'>");
           while($row=$result->fetch_assoc()){ 
             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
           }
