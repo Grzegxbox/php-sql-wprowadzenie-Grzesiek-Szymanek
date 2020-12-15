@@ -41,19 +41,26 @@ $conn->close();
   
 // Tabelka  
 $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)');
-        echo("<table border=2>");
+    $result=$conn->query('SELECT * FROM biblAutor');
+        echo("<table style='margin-top: 22%;margin-left: -47%;' border=2>");
         echo("<th>ID</th>");
-        echo("<th>IMIĘ</th>");
-        echo("<th>DZIAŁ</th>");
-        echo("<th>NAZWA DZIAŁU</th>");
-        echo("<th>ZAROBKI</th>");
-        echo("<th>DATA URODZENIA</th>");
+        echo("<th>AUTOR</th>");
+        echo("<th>USUŃ</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>" .$row["id_pracownicy"]. "</td><td>" .$row["imie"]. "</td><td>" .$row["dzial"]. "</td><td>" .$row["nazwa_dzial"]. "</td><td>" .$row["zarobki"]. "</td><td>" .$row["data_urodzenia"]. "</td>");
+                    echo("<td>" .$row["id"]. "</td><td>" .$row["autor"]. "</td>
+                    
+                    <td>
+                    <form action='delete.php' method='POST'>
+                          <input type='text' name='id' value='".$row["id"]."' placeholder='ID AUTORA' hidden></br>
+                                    <input type='submit' value='USUŃ'>
+                          </form>
+                    </td>");
+              
                 echo("</tr>");
             }
         echo("</table>");
 
 ?>
+</body>
+</html>
