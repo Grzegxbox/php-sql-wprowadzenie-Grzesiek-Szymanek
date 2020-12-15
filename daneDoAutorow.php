@@ -52,7 +52,7 @@
                     echo("<td>" .$row["id"]. "</td><td>" .$row["autor"]. "</td>
                     
                     <td>
-                    <form action='delete.php' method='POST'>
+                    <form action='delete_autor.php' method='POST'>
                           <input type='text' name='id' value='".$row["id"]."' placeholder='ID AUTORA' hidden></br>
                                     <input type='submit' value='USUŃ'>
                           </form>
