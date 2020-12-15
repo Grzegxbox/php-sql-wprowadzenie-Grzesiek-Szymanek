@@ -14,10 +14,7 @@
 
 <?php
 
-echo("<h3>ID:</h3>");
-echo("<h3>".$_POST['id']."</h3>");
-  
-echo("<h3>AUTOR:</h3>");  
+echo("<h3>AUTOR:</h3>");
 echo("<h3>".$_POST['autor']."</h3>");
   
 $servername = "remotemysql.com";
@@ -31,10 +28,10 @@ if ($conn->connect_error) {
 }
 
 $sql = "INSERT INTO biblAutor (id, autor)
-VALUES(NULL,'".$_POST['id']."', '".$_POST['autor']."', '""', '""')";
+VALUES(NULL,'".$_POST['autor']."')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "WŁAŚNIE SIĘ DODAŁEŚ";
+  echo "WŁAŚNIE DODAŁEŚ AUTORA";
   header('Location: https://wprowadzenie.herokuapp.com/');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
