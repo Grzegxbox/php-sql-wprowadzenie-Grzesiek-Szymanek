@@ -78,7 +78,7 @@ echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT * FROM biblAutor,
  
  
 //  Dodatkowe info
-echo("<h2 style='margin-top: -1200px; margin-left: 35rem;'>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek po lewej</h2>"); 
+echo("<h2 style='margin-top: -1200px; margin-left: 5%;'>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek po lewej</h2>"); 
 
  
  
