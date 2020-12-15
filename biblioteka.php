@@ -33,6 +33,7 @@
        
   <?php
 
+        echo("<h2 style='margin-left: 5%;'>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek po lewej</h2>"); 
  
 echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM biblAutor</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
@@ -77,9 +78,6 @@ echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT * FROM biblAutor,
         echo("</table>");
  
  
-//  Dodatkowe info
-echo("<h2 style='margin-top: -1200px; margin-left: 5%;'>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek po lewej</h2>"); 
-
  
  
 // Wybór autora
