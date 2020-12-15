@@ -33,17 +33,17 @@
        
   <?php
 
-echo("<h3 style='margin-top: 10%; margin-left: 31%;'>Wybierz Książkę I Autora Do Oddania</h3>");
+echo("<h3 style='margin-top: 10%; margin-left: 33.5%;'>Wybierz Książkę I Autora Do Oddania</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblAutor');
-       echo("<select name='tytul' id='tytul' style='margin-left: 45%;'>");
+       echo("<select name='tytul' id='tytul' style='margin-left: 45.5%;'>");
           while($row=$result->fetch_assoc()){ 
             echo("<option value=".$row['id'].">".$row['autor']."</option>");
           }
        echo("</select>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblTytul');
-       echo("<select name='tytul' id='tytul' style='margin-left: 35%;'>");
+       echo("<select name='tytul' id='tytul' style='margin-left: 36.5%;'>");
           while($row=$result->fetch_assoc()){ 
             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
           }
