@@ -41,7 +41,6 @@ echo("<h3 style='margin-top: 10%; margin-left: 31%;'>Wybierz Książkę I Autora
             echo("<option value=".$row['id'].">".$row['autor']."</option>");
           }
        echo("</select>");
-echo("<h3 style='margin-top: 20px; margin-left: 5%;'></h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblTytul');
        echo("<select name='tytul' id='tytul' style='margin-left: 35%;'>");
