@@ -11,7 +11,6 @@
   
 <body>
   <h1>TWOJE DANE</h1>
-
 <?php
 
 echo("<h3>TYTUŁ:</h3>");
