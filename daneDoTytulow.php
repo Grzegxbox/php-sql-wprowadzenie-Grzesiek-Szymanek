@@ -39,8 +39,6 @@
                      <input type="submit" value="USUŃ" style="margin-left: 13%;">
                    </form>
              </div>
-       
-             
            <?php
   
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
