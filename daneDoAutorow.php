@@ -38,7 +38,6 @@
                      <input type="text" name="id" placeholder="ID AUTORA"><br>
                      <input type="submit" value="USUŃ" style="margin-left: 13%;">
                    </form>
-                
            <?php
   
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
