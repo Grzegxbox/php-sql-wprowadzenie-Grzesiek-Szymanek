@@ -10,15 +10,10 @@
 <body>
    <div class="container">
      <div class="item colorRed">
-       
        <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">WYŚWIETL KOD - GitHub</a></h1>
-       
      </div>
-     
      <div class="item colorBlue">
-       
-        <h1 style="margin-left: 15%;">MENU STRONY</h1>
-       
+       <h1 style="margin-left: 15%;">MENU STRONY</h1>
          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
            <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
@@ -28,10 +23,8 @@
          </div>
        </div>
       <div class="item colorGreen">
-        
        <h1 style="margin-left: 41.5%; color: #3cb300;">BIBLIOTEKA</h1>
-       
-  <?php
+       <?php
 
         echo("<h2 style='margin-left: 5%; margin-top: 5%; color: #008000;'>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek po lewej.</h2>"); 
  
