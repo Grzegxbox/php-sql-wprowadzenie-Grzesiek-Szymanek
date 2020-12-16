@@ -3,4 +3,4 @@ https://wprowadzenie.herokuapp.com/
                              
                                                                                  
                              
-CodeSandBox.io -->> https://
+CodeSandBox.io -->> http
