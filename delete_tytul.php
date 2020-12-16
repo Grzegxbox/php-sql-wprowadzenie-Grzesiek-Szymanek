@@ -27,7 +27,6 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-
 $sql = "DELETE FROM biblTytul WHERE id=('".$_POST['id']."')";
 
 if ($conn->query($sql) === TRUE){
