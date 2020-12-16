@@ -42,7 +42,7 @@
                      <input type="submit" value="USUŃ" style="margin-left: 13%;">
                    </form>
              </div>
-<?php
+       <?php
   
   $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)');
@@ -71,7 +71,7 @@
         echo("</table>");
 ?>
 
-</div>
+     </div>
 
-</body>
+  </body>
 </html>
