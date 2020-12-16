@@ -110,8 +110,6 @@ echo("<h3 style='margin-top: -5.7%; margin-left: 55%;'>SELECT * FROM biblTytul -
 //           }
 //        echo("</select>");
 //   echo("<input type='submit' value='Wypożycz' style='margin-top: 20px; margin-left: 850px;'>");
-
-
 ?>
     </div>
   </body>
