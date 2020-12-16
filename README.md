@@ -2,5 +2,4 @@
 https://wprowadzenie.herokuapp.com/
                              
                                                                                  
-                             
-Cod
+                            
