@@ -63,9 +63,5 @@
         echo("</table>");
 ?>
        
-       
-       
-       
-       
        </body>
      </html>
