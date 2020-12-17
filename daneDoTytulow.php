@@ -50,7 +50,6 @@
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>" .$row["id"]. "</td><td>" .$row["tytul"]. "</td>
-                    
                     <td>
                     <form action='delete_tytul.php' method='POST'>
                           <input type='text' name='id' value='".$row["id"]."' placeholder='ID KSIĄŻKI' hidden></br>
