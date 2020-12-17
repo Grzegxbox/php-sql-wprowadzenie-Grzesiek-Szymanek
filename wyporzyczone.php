@@ -23,7 +23,6 @@
          </div>
        </div>
       <div class="item colorGreen">
-        
        <h1 style="margin-left: 35.5%; color: #3cb300;">WYPOŻYCZ KSIĄŻKĘ</h1>
        
   <?php
