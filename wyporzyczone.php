@@ -14,7 +14,6 @@
      </div>
      <div class="item colorBlue">
         <h1 style="margin-left: 15%;">MENU STRONY</h1>
-       
          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
            <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
