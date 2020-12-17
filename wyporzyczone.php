@@ -24,7 +24,6 @@
        </div>
       <div class="item colorGreen">
        <h1 style="margin-left: 35.5%; color: #3cb300;">WYPOŻYCZ KSIĄŻKĘ</h1>
-       
   <?php
 
 echo("<h3 style='margin-top: 10%; margin-left: 31%;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
