@@ -67,9 +67,6 @@ echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT * FROM biblAutor,
             }
         echo("</table>");
  
- 
- 
- 
 // Wybór autora
 echo("<h3 style='margin-top: 9%; margin-left: 5%;'>SELECT * FROM biblAutor - WYBIERANIE</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
