@@ -40,7 +40,6 @@ echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM biblAutor<
             }
         echo("</table>");
  
- 
 echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT * FROM biblTytul</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblTytul');
