@@ -39,7 +39,6 @@ echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM biblAutor<
                 echo("</tr>");
             }
         echo("</table>");
-
  
  
 echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT * FROM biblTytul</h3>");
