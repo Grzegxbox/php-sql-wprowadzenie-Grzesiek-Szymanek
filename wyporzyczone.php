@@ -1,3 +1,4 @@
+<!-- dałem sobie przez rz bo mogę  -->
 <!DOCTYPE html>
 <html>
   
