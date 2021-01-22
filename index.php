@@ -1,4 +1,4 @@
-<!DOCTYPE html>   // tutaj wpisałem komentarz z vsc i wszystko działa jak należy
+<!DOCTYPE html>   
 <html>     
   
 <head>
