@@ -1,5 +1,5 @@
 <!DOCTYPE html>   // tutaj wpisałem komentarz z vsc
-<html>     //dałem rade jejeeejejee
+<html>     
   
 <head>
 <meta charset="utf-8">
