@@ -1,10 +1,10 @@
 <!DOCTYPE html>   // tutaj wpisałem komentarz z vsc
-<html>
+<html>     //dałem rade jejeeejejee
   
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width">
 </head>
 
 <body>
