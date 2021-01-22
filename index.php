@@ -1,4 +1,4 @@
-<!-- tutaj jest mój komentarz -->
+<!-- tutaj jest mój komentarz który dodałem przez vsc -->
 <!DOCTYPE html>   
 <html>     
   
