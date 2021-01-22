@@ -1,3 +1,4 @@
+<!-- tutaj jest mój komentarz -->
 <!DOCTYPE html>   
 <html>     
   
