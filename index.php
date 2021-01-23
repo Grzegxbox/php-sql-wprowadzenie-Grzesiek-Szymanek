@@ -1,4 +1,4 @@
-<!-- tutaj jest mój nowy komentarz  -->
+<!-- tutaj jest mój nowy komentarz, nowy -->
 <!DOCTYPE html>   
 <html>     
   
