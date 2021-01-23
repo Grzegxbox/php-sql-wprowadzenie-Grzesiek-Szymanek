@@ -1,4 +1,4 @@
-<!-- tutaj jest mój nowy komentarz, nowy -->
+<!-- komenatrz podczas zadania -->
 <!DOCTYPE html>   
 <html>     
   
