@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="ASSETS/style.css">
+<link rel="stylesheet" href="../ASSETS/style.css">
 </head>
 
 <body>
@@ -20,9 +20,9 @@
        
          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
-           <a class="navigation_link1" href="BIBLIOTEKA/biblioteka.php">Biblioteka</a>
-           <a class="navigation_link1" href="BIBLIOTEKA/wyporzyczone.php">Wypożycz książkę</a>
-           <a class="navigation_link1" href="BIBLIOTEKA/oddane.php">Oddaj książkę</a>
+           <a class="navigation_link1" href="../BIBLIOTEKA/biblioteka.php">Biblioteka</a>
+           <a class="navigation_link1" href="../BIBLIOTEKA/wyporzyczone.php">Wypożycz książkę</a>
+           <a class="navigation_link1" href="../BIBLIOTEKA/oddane.php">Oddaj książkę</a>
            <h1 style="font-size: 19px;margin-top: 250%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        </div>
