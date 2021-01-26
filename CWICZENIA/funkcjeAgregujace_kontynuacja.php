@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="ASSETS/style.css">
 </head>
 
 <body>
@@ -18,12 +18,12 @@
        
          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
-           <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
-           <a class="navigation_link1" href="funkcjeAgregujace_kontynuacja.php">Kontynuacja Funkcji Agregujących</a>
-           <a class="navigation_link1" href="funkcjeAgregujace_grupowanie.php">Funkcja Agregująca - Grupowanie</a>
-           <a class="navigation_link1" href="funkcjeAgregujace_klauzula_HAVING.php">Funkcja Agregująca - Having</a>
-           <a class="navigation_link1" href="funkcjeAgregujace_data_i_czas.php">Funkcja Agregująca - Data I Czas</a>
-           <a class="navigation_link1" href="funkcjeAgregujace_formatowanie_dat.php">Funkcja Agregująca - Formatowanie Dat</a>
+           <a class="navigation_link1" href="CWICZENIA/funkcjeAgregujace.php">Funkcje Agregujące</a>
+           <a class="navigation_link1" href="CWICZENIA/funkcjeAgregujace_kontynuacja.php">Kontynuacja Funkcji Agregujących</a>
+           <a class="navigation_link1" href="CWICZENIA/funkcjeAgregujace_grupowanie.php">Funkcja Agregująca - Grupowanie</a>
+           <a class="navigation_link1" href="CWICZENIA/funkcjeAgregujace_klauzula_HAVING.php">Funkcja Agregująca - Having</a>
+           <a class="navigation_link1" href="CWICZENIA/funkcjeAgregujace_data_i_czas.php">Funkcja Agregująca - Data I Czas</a>
+           <a class="navigation_link1" href="CWICZENIA/funkcjeAgregujace_formatowanie_dat.php">Funkcja Agregująca - Formatowanie Dat</a>
            <h1 style="font-size: 19px;margin-top: 195%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        
