@@ -1,4 +1,3 @@
-<!-- komenatrz podczas zadania -->
 <!DOCTYPE html>   
 <html>     
   
