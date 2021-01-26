@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="../ASSETS/style.css">
-</head> //hack
+</head> 
+<!--  hack -->
 
 <body>
   <div class="container">
