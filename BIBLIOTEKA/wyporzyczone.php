@@ -42,6 +42,7 @@ echo("<h3 style='margin-top: 10%; margin-left: 31%;'>Wybierz Książkę I Autora
             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
           }
        echo("</select>");
+        <br>
   echo("<input type='submit' value='Wypożycz' style='margin-top: 20px; margin-left: 5%;'>");
 
 ?>
