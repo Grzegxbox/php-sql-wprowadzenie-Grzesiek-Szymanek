@@ -42,13 +42,13 @@ echo("<h3 style='margin-top: 10%; margin-left: 33.5%;'>Wybierz Książkę I Auto
        echo("</select>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblTytul');
-       echo("<select name='tytul' id='tytul' style='margin-left: 36.5%;'>");
+       echo("<select name='tytul' id='tytul' style='margin-left: 36.5%; margin-top: 3.5%;'>");
           while($row=$result->fetch_assoc()){ 
             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
           }
        echo("</select>");
        echo("<h4></h4>");
-       echo("<input type='submit' value='Oddaj' style='margin-top: 20px; margin-left: 5%;'>");
+       echo("<input type='submit' value='Oddaj' style='margin-top: 1.2%; margin-left: 49%;'>");
        
 
 ?>
