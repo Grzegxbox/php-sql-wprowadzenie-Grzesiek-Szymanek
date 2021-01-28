@@ -47,9 +47,9 @@ echo("<h3 style='margin-top: 10%; margin-left: 33.5%;'>Wybierz Książkę I Auto
             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
           }
        echo("</select>");
-        <br>
+       echo("<h4></h4>");
        echo("<input type='submit' value='Oddaj' style='margin-top: 20px; margin-left: 5%;'>");
-        </br>
+       
 
 ?>
     </div>
