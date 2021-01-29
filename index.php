@@ -2,6 +2,7 @@
 <html>     
   
 <head>
+<?php require("/ASSETS/nazwastrony.php"); ?>
 <meta charset="utf-8">
 <link rel="stylesheet" href="/ASSETS/style.css">
 <meta name="viewport" content="width=device-width">
@@ -10,7 +11,7 @@
 <body>
    <div class="container">
      <div class="item colorRed">
-       <h1 class="tltle">Grzesiek Szymanek 2TI gr2<a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">WYŚWIETL KOD - GitHub</a></h1>
+       <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">WYŚWIETL KOD - GitHub</a></h1>
      </div>
      
      <div class="item colorBlue">
