@@ -2,7 +2,7 @@
 <html>     
   
 <head>
-<?php include("/ASSETS/nazwastrony.php"); ?>
+
 <meta charset="utf-8">
 <link rel="stylesheet" href="/ASSETS/style.css">
 <meta name="viewport" content="width=device-width">
