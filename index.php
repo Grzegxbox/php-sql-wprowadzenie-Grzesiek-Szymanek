@@ -2,7 +2,9 @@
 <html>     
   
 <head>
-// <?php require_once("/ASSETS/nazwastrony.php"); ?>
+ <?php 
+  require_once("/ASSETS/nazwastrony.php"); 
+  ?>
 <meta charset="utf-8">
 <link rel="stylesheet" href="/ASSETS/style.css">
 <meta name="viewport" content="width=device-width">
