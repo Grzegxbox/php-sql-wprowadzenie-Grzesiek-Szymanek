@@ -7,6 +7,7 @@
       <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
     </div>
     <link rel="stylesheet" href="/ASSETS/style.css">
+    <link rel="icon" href="https://i.ytimg.com/vi/iu-skHVnxGc/hqdefault.jpg">
     <hr></hr>
   </head>
   
