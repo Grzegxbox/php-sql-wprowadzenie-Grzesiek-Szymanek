@@ -76,6 +76,8 @@ echo("<h3 style='margin-top: 9%; margin-left: 5%;'>SELECT * FROM biblAutor - WYB
             echo("<option value=".$row['id'].">".$row['autor']."</option>");
           }
        echo("</select>");
+       
+       echo("<h4></h4>");
 
 // Wybór tytułu książki 
 echo("<h3 style='margin-top: -5.7%; margin-left: 55%;'>SELECT * FROM biblTytul - WYBIERANIE</h3>");
