@@ -2,7 +2,7 @@
 <html>     
   
 <head>
-
+  <title>Grzesiek Szymanek 2TI gr2</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="/ASSETS/style.css">
 <meta name="viewport" content="width=device-width">
