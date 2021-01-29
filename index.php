@@ -5,7 +5,7 @@
 <title>Grzesiek Szymanek 2TI gr2</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="/ASSETS/style.css">
-<link rel="icon" href="http://dekormania.pl/30480-large_default/szablon-malarski-litera-g-czcionka-arial.jpg">
+<link rel="icon" href="https://i.ytimg.com/vi/iu-skHVnxGc/hqdefault.jpg">
 <meta name="viewport" content="width=device-width">
 </head>
 
