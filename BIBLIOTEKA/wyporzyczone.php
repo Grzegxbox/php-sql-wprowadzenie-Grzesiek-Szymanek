@@ -49,7 +49,7 @@ echo("<h3 style='margin-top: 10%; margin-left: 31.5%;'>Wybierz Książkę I Auto
         
  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblWypo');
-        echo("<table style='margin-left: 5%;' border=2>");
+        echo("<table style='margin-left: 25%; margin-top: 5%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>ID AUTORA</th>");
         echo("<th>ID TYTUŁU</th>");
