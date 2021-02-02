@@ -85,7 +85,7 @@ echo("<h3>SELECT * FROM biblAutor - WYBIERANIE</h3>");
 echo("<h3>SELECT * FROM biblTytul - WYBIERANIE</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblTytul');
-       echo("<select name='tytul' id='tytul' style='margin-left: 59.2%;'>");
+       echo("<select name='tytul' id='tytul' style='margin-left: 17%;'>");
           while($row=$result->fetch_assoc()){ 
             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
           }
