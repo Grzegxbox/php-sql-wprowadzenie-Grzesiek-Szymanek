@@ -21,7 +21,7 @@
            <a class="navigation_link1" href="/BIBLIOTEKA/biblioteka.php">Biblioteka</a>
            <a class="navigation_link1" href="/BIBLIOTEKA/wyporzyczone.php">Wypożycz książkę</a>
            <a class="navigation_link1" href="/BIBLIOTEKA/oddane.php">Oddaj książkę</a>
-           <h1 style="font-size: 19px;margin-top: 400%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+           <h1 style="font-size: 19px;margin-top: 450%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        </div>
       <div class="item colorGreen">
