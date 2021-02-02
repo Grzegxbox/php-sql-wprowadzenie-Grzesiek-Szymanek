@@ -97,8 +97,7 @@ echo("<h3 style='margin-top: 23%; margin-left: 5%;'>Wybierz Książkę I Autora 
     $result=$conn->query('SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id = biblAutor.id) AND (biblTytul_id = biblTytul.id)');
        echo("<select name='tytul' id='tytul' style='margin-left: 5%;'>");
           while($row=$result->fetch_assoc()){ 
-            echo("<option value=".$row['id'].">".$row['autor']."</option>");
-            echo("<option value=".$row['id'].">".$row['tytul']."</option>");
+            echo("<option value=".$row['id'].">".$row['autor'].  .$row['tytul']."</option>");
           }
 //        echo("</select>");
 // echo("<h3 style='margin-top: 5%; margin-left: 5%;'></h3>");
@@ -109,7 +108,7 @@ echo("<h3 style='margin-top: 23%; margin-left: 5%;'>Wybierz Książkę I Autora 
 //             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
 //           }
 //        echo("</select>");
-  echo("<input type='submit' value='Wypożycz' style='margin-top: 1.5%; margin-left: 5%;'>");
+//   echo("<input type='submit' value='Wypożycz' style='margin-top: 1.5%; margin-left: 5%;'>");
 ?>
        
     </div>
