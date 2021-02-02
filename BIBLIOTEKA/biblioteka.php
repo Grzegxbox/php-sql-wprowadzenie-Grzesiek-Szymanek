@@ -21,7 +21,7 @@
            <a class="navigation_link1" href="/BIBLIOTEKA/biblioteka.php">Biblioteka</a>
            <a class="navigation_link1" href="/BIBLIOTEKA/wyporzyczone.php">Wypożycz książkę</a>
            <a class="navigation_link1" href="/BIBLIOTEKA/oddane.php">Oddaj książkę</a>
-           <h1 style="font-size: 19px;margin-top: 450%;text-align: center;">Autor: Grzesiek Szymanek</h1>
+           <h1 style="font-size: 19px;margin-top: 550%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        </div>
       <div class="item colorGreen">
@@ -92,10 +92,10 @@ echo("<h3 style='margin-left: 5%; margin-top: 15%;'>SELECT * FROM biblTytul - WY
        echo("</select>");
 
 // Wybór obu rzeczy na raz
-echo("<h3 style='margin-top: 25%; margin-left: 5%;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
+echo("<h3 style='margin-top: 23%; margin-left: 5%;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id = biblAutor.id) AND (biblTytul_id = biblTytul.id)');
-       echo("<select name='tytul' id='tytul' style='margin-left: 15%;'>");
+       echo("<select name='tytul' id='tytul' style='margin-left: 5%;'>");
           while($row=$result->fetch_assoc()){ 
             echo("<option value=".$row['id'].">".$row['autor']."</option>");
             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
@@ -109,7 +109,7 @@ echo("<h3 style='margin-top: 25%; margin-left: 5%;'>Wybierz Książkę I Autora 
 //             echo("<option value=".$row['id'].">".$row['tytul']."</option>");
 //           }
 //        echo("</select>");
-  echo("<input type='submit' value='Wypożycz' style='margin-top: 20px; margin-left: 850px;'>");
+  echo("<input type='submit' value='Wypożycz' style='margin-top: 1.5%; margin-left: 5%;'>");
 ?>
        
     </div>
