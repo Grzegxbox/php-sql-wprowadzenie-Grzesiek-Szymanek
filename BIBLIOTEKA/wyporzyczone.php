@@ -29,12 +29,12 @@
        <h1 style="margin-left: 35.5%; color: #3cb300;">WYPOŻYCZ KSIĄŻKĘ</h1>
   <?php
 
-echo("<h3 style='margin-top: 10%; margin-left: 31.5%;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
-    $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query("SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id = biblAutor.id) AND (biblTytul_id = biblTytul.id)");
-       echo("<select name='tytul' id='tytul' style='margin-left: 5%;'>");
-          while($row=$result->fetch_assoc()){ 
-            echo("<option value=".$row['id'].">".$row['autor'].' - '.$row['tytul']."</option>");
+// echo("<h3 style='margin-top: 10%; margin-left: 31.5%;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
+//     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+//     $result=$conn->query("SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id = biblAutor.id) AND (biblTytul_id = biblTytul.id)");
+//        echo("<select name='tytul' id='tytul' style='margin-left: 5%;'>");
+//           while($row=$result->fetch_assoc()){ 
+//             echo("<option value=".$row['id'].">".$row['autor'].' - '.$row['tytul']."</option>");
             
 //           }
 //        echo("</select>");
@@ -46,23 +46,23 @@ echo("<h3 style='margin-top: 10%; margin-left: 31.5%;'>Wybierz Książkę I Auto
 //           }
 //        echo("</select>");
             
-       echo("<h4></h4>");
-       echo("<input type='submit' value='Wypożycz' style='margin-top: 1.5%; margin-left: 48%;'>");
+//        echo("<h4></h4>");
+//        echo("<input type='submit' value='Wypożycz' style='margin-top: 1.5%; margin-left: 48%;'>");
         
- $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT * FROM biblWypo');
-        echo("<table style='margin-left: 25%; margin-top: 5%;' border=2>");
-        echo("<th>ID</th>");
-        echo("<th>ID AUTORA</th>");
-        echo("<th>ID TYTUŁU</th>");
-        echo("<th>DATA WYPOŻYCZENIA</th>");
-        echo("<th>DATA ODDANIA</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>" .$row["id"]. "</td><td>" .$row["autor_id"]. "</td><td>" .$row["tytul_id"]. "</td><td>" .$row["data_wyporzyczenia"]. "</td><td>" .$row["data_oddania"]. "</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
+//  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+//     $result=$conn->query('SELECT * FROM biblWypo');
+//         echo("<table style='margin-left: 25%; margin-top: 5%;' border=2>");
+//         echo("<th>ID</th>");
+//         echo("<th>ID AUTORA</th>");
+//         echo("<th>ID TYTUŁU</th>");
+//         echo("<th>DATA WYPOŻYCZENIA</th>");
+//         echo("<th>DATA ODDANIA</th>");
+//             while($row=$result->fetch_assoc()){
+//                 echo("<tr>");
+//                     echo("<td>" .$row["id"]. "</td><td>" .$row["autor_id"]. "</td><td>" .$row["tytul_id"]. "</td><td>" .$row["data_wyporzyczenia"]. "</td><td>" .$row["data_oddania"]. "</td>");
+//                 echo("</tr>");
+//             }
+//         echo("</table>");
 
 ?>
     </div>
