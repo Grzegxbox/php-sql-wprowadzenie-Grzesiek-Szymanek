@@ -32,13 +32,13 @@
 echo("<h3 style='margin-top: 10%; margin-left: 31.5%;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query("SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id = biblAutor.id) AND (biblTytul_id = biblTytul.id)");
-       echo("<select name='tytul' id='tytul' style='margin-left: 31.6%;'>");
+       echo("<select name='tytul' id='tytul' style='margin-left: 31.6%; margin-top: 2%;'>");
           while($row=$result->fetch_assoc()){ 
             echo("<option value=".$row['id'].">".$row['autor'].' - '.$row['tytul']."</option>");
             
           }        
        echo("<h4></h4>");
-       echo("<input type='submit' value='Wypożycz' style='margin-top: 1.5%; margin-left: 48%;'>");
+       echo("<input type='submit' value='Wypożycz' style='margin-top: 2.5%; margin-left: 48%;'>");
         
 //  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
 //     $result=$conn->query('SELECT * FROM biblWypo');
