@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 <!-- komenatrz podczas zadania teraz -->
-=======
->>>>>>> c1cf039b308bb41726d90248e9dda3cb929bd864
 <!DOCTYPE html>   
 <html>     
   
