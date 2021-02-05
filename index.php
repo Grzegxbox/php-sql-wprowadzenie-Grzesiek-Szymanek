@@ -1,4 +1,4 @@
-<!-- komenatrz podczas zadania -->
+<!-- komenatrz podczas zadania teraz -->
 <!DOCTYPE html>   
 <html>     
   
