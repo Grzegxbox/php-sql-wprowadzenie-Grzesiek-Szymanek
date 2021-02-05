@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 <!-- komenatrz podczas zadania teraz -->
+=======
+>>>>>>> c1cf039b308bb41726d90248e9dda3cb929bd864
 <!DOCTYPE html>   
 <html>     
   
 <head>
+<title>Grzesiek Szymanek 2TI gr2</title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/ASSETS/style.css">
+<link rel="icon" href="https://i.ytimg.com/vi/iu-skHVnxGc/hqdefault.jpg">
 <meta name="viewport" content="width=device-width">
 </head>
 
@@ -20,12 +25,12 @@
        
          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
-           <a class="navigation_link1" href="function.php">Funkcja</a>
+           <a class="navigation_link1" href="/CWICZENIA/function.php">Funkcja</a>
            <a class="navigation_link1" href="formularze.php">Formularze</a>
-           <a class="navigation_link1" href="pracownicy.php">Pracownicy</a>
-           <a class="navigation_link1" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
-           <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
-           <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
+           <a class="navigation_link1" href="/PRACOWNICY/pracownicy.php">Pracownicy</a>
+           <a class="navigation_link1" href="/CWICZENIA/funkcjeAgregujace.php">Funkcje Agregujące</a>
+           <a class="navigation_link1" href="/PRACOWNICY/pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
+           <a class="navigation_link1" href="/BIBLIOTEKA/biblioteka.php">Biblioteka</a>
            <h1 style="font-size: 19px;margin-top: 385%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        </div>

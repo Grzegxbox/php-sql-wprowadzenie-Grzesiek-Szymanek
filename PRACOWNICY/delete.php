@@ -2,14 +2,16 @@
 <html>
 
 <head>
+     <title>Grzesiek Szymanek 2TI gr2</title>
      <div>
     <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
   </div>
     <hr></hr>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/ASSETS/style.css">
+  <link rel="icon" href="https://i.ytimg.com/vi/iu-skHVnxGc/hqdefault.jpg"> 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Dane do Bazy</title>
+<!--   <title>Dane do Bazy</title> -->
 </head>
 <body>
 

@@ -2,9 +2,11 @@
 <html>
   
 <head>
+<title>Grzesiek Szymanek 2TI gr2</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/ASSETS/style.css">
+<link rel="icon" href="https://i.ytimg.com/vi/iu-skHVnxGc/hqdefault.jpg">
 </head>
 
 <body>
@@ -18,9 +20,9 @@
        
          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
-           <a class="navigation_link1" href="pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
-           <a class="navigation_link1" href="pracownicyiorganizacja_sortowanie.php">Sortowanie Pracowników</a>
-           <a class="navigation_link1" href="pracownicyiorganizacja_ograniczanie.php">Ograniczanie Ilości Pracowników</a>
+           <a class="navigation_link1" href="/PRACOWNICY/pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
+           <a class="navigation_link1" href="/PRACOWNICY/pracownicyiorganizacja_sortowanie.php">Sortowanie Pracowników</a>
+           <a class="navigation_link1" href="/PRACOWNICY/pracownicyiorganizacja_ograniczanie.php">Ograniczanie Ilości Pracowników</a>
            <h1 style="font-size: 19px;margin-top: 395%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        

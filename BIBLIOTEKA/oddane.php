@@ -4,7 +4,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/ASSETS/style.css">
+<link rel="icon" href="https://i.ytimg.com/vi/iu-skHVnxGc/hqdefault.jpg">
 </head>
 
 <body>
@@ -20,9 +21,9 @@
        
          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
-           <a class="navigation_link1" href="biblioteka.php">Biblioteka</a>
-           <a class="navigation_link1" href="wyporzyczone.php">Wypożycz książkę</a>
-           <a class="navigation_link1" href="oddane.php">Oddaj książkę</a>
+           <a class="navigation_link1" href="/BIBLIOTEKA/biblioteka.php">Biblioteka</a>
+           <a class="navigation_link1" href="/BIBLIOTEKA/wyporzyczone.php">Wypożycz książkę</a>
+           <a class="navigation_link1" href="/BIBLIOTEKA/oddane.php">Oddaj książkę</a>
            <h1 style="font-size: 19px;margin-top: 250%;text-align: center;">Autor: Grzesiek Szymanek</h1>
          </div>
        </div>
@@ -34,23 +35,16 @@
 
 echo("<h3 style='margin-top: 10%; margin-left: 33.5%;'>Wybierz Książkę I Autora Do Oddania</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT * FROM biblAutor');
-       echo("<select name='tytul' id='tytul' style='margin-left: 45.5%;'>");
+    $result=$conn->query("SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id = biblAutor.id) AND (biblTytul_id = biblTytul.id)");
+       echo("<select name='tytul' id='tytul' style='margin-left: 30.8%; margin-top: 2%;'>");
           while($row=$result->fetch_assoc()){ 
-            echo("<option value=".$row['id'].">".$row['autor']."</option>");
+           echo("<option value=".$row['id'].">".$row['autor'].' - '.$row['tytul']."</option>");
           }
        echo("</select>");
-    $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-    $result=$conn->query('SELECT * FROM biblTytul');
-       echo("<select name='tytul' id='tytul' style='margin-left: 36.5%;'>");
-          while($row=$result->fetch_assoc()){ 
-            echo("<option value=".$row['id'].">".$row['tytul']."</option>");
-          }
-       echo("</select>");
-  echo("<input type='submit' value='Oddaj' style='margin-top: 20px; margin-left: 5%;'>");
-
-?>
+       echo("<h4></h4>");
+       echo("<input type='submit' value='Oddaj' style='margin-top: 1.2%; margin-left: 49%;'>");
+       
+ ?>
     </div>
-    </body>
+   </body>
  </html>
-
