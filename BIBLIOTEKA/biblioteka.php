@@ -29,7 +29,7 @@
 
        <?php
 
-        require_once("ASSETS/connect.php");
+        require_once("../ASSETS/connect.php");
 
   echo("<h2 style='margin-left: 5%; margin-top: 5%; color: #008000;'>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek po lewej.</h2>"); 
     echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM biblAutor</h3>");
