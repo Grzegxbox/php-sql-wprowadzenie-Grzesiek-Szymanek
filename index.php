@@ -38,7 +38,7 @@
        <?php
         
 
-          require_once ("ASSETS/connect.php");
+          require_once("ASSETS/config.php");
 
         
 //  echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>0. SELECT * FROM pracownicy</h3>");
