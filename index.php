@@ -37,15 +37,11 @@
        
        <?php
         
-$hostname = $_SERVER['HTTP_HOST'];
+        $hostname = $_SERVER['HTTP_HOST'];
 
-if ($hostname == 'localhost:8003') {
-    require_once ("config.php");
-}
-echo("<h3> hostname : ".$hostname);
-echo("<h3> SERVER passsword: ".$_SERVER['pass']); 
-  
-  
+        if ($hostname == 'localhost:8003') {
+            require_once("assets/connect.php");
+        }
   echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>0. SELECT * FROM pracownicy</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy');
