@@ -37,13 +37,12 @@
        
        <?php
         
-        $hostname = $_SERVER['HTTP_HOST'];
-        if ($hostname == 'localhost:8003') {
+//         $hostname = $_SERVER['HTTP_HOST'];
+//         if ($hostname == 'localhost:8003') {
             require_once("/ASSETS/connect.php");
-        }
+//         }
 
-echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>0. SELECT * FROM pracownicy</h3>");
-
+    echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>0. SELECT * FROM pracownicy</h3>");
     $result=$conn->query('SELECT * FROM pracownicy');
         echo("<table border=2 style=' margin-left: 5%;'>");
         echo("<th>ID</th>");
@@ -57,8 +56,7 @@ echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>0. SELECT *
             }
         echo("</table>");
 
-echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>1. SELECT * FROM pracownicy WHERE imie like '%a'</h3>");
-    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>1. SELECT * FROM pracownicy WHERE imie like '%a'</h3>");
     $result = $conn -> query('SELECT * FROM pracownicy WHERE imie like "%a"');
         echo("<table border=2 style=' margin-left: 5%;'>");
         echo("<th>ID</th>");
@@ -72,8 +70,7 @@ echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>1. SELECT *
             }
         echo("</table>");
 
-echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>2. SELECT * FROM pracownicy WHERE (imie like '%a') AND (dzial=1 or dzial=2 or dzial=3) AND (zarobki>10)</h3>");
-    $conn = new mysqli ("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>2. SELECT * FROM pracownicy WHERE (imie like '%a') AND (dzial=1 or dzial=2 or dzial=3) AND (zarobki>10)</h3>");
     $result = $conn -> query('SELECT * FROM pracownicy WHERE (imie like "%a") AND (dzial=1 or dzial=2 or dzial=3) AND (zarobki>10)');
             echo("<table border=2 style=' margin-left: 5%;'>");
             echo("<th>ID</th>");
@@ -87,8 +84,7 @@ echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>2. SELECT *
                 }
             echo("</table>");
 
-echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>3. SELECT * FROM pracownicy WHERE (imie not like '%a') AND (zarobki>30)</h3>");
-    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>3. SELECT * FROM pracownicy WHERE (imie not like '%a') AND (zarobki>30)</h3>");
     $result = $conn -> query('SELECT * FROM pracownicy WHERE (imie not like "%a") AND (zarobki>30)');
         echo("<table border=2 style=' margin-left: 5%;'>");
         echo("<th>ID</th>");
@@ -102,8 +98,7 @@ echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>3. SELECT *
             }
         echo("</table>");
 
-echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>4. SELECT dzial, max(zarobki) AS Maksimum FROM pracownicy GROUP BY dzial</h3>");
-    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>4. SELECT dzial, max(zarobki) AS Maksimum FROM pracownicy GROUP BY dzial</h3>");
     $result = $conn -> query('SELECT dzial, max(zarobki) AS Maksimum FROM pracownicy GROUP BY dzial');
         echo("<table border=2 style=' margin-left: 5%;'>");
         echo("<th>DZIAŁ</th>");
@@ -115,8 +110,7 @@ echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>4. SELECT d
             }
         echo("</table>");
 
-echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>5. SELECT Dzial, sum(zarobki) AS Całość, avg(zarobki) AS Średnia FROM pracownicy GROUP BY dzial</h3>");
-    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>5. SELECT Dzial, sum(zarobki) AS Całość, avg(zarobki) AS Średnia FROM pracownicy GROUP BY dzial</h3>");
     $result = $conn -> query('SELECT Dzial, sum(zarobki) AS Całość, avg(zarobki) AS Średnia FROM pracownicy GROUP BY dzial');
         echo("<table border=2 style=' margin-left: 5%;'>");
         echo("<th>DZIAŁ</th>");
@@ -129,8 +123,7 @@ echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>5. SELECT D
             }
         echo("</table>");
 
-echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>6. SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Sum(zarobki) AS Calosc, Avg(zarobki) AS Srednia FROM pracownicy GROUP BY dzial</h3>");
-    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>6. SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Sum(zarobki) AS Calosc, Avg(zarobki) AS Srednia FROM pracownicy GROUP BY dzial</h3>");
     $result = $conn -> query('SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Sum(zarobki) AS Calosc, Avg(zarobki) AS Srednia FROM pracownicy GROUP BY dzial');
         echo("<table border=2 style=' margin-left: 5%;'>");
         echo("<th>DZIAŁ</th>");
