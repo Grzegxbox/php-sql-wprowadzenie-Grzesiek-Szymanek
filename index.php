@@ -36,6 +36,17 @@
         <h1 style="margin-left: 37%; color: #3cb300;">STRONA GŁÓWNA</h1>
        
        <?php
+        
+$host = $_SERVER['HTTP_HOST'];
+
+if ($host == 'localhost:8003') {
+    require_once ("config.php");
+}
+
+echo("<h1>How to use Environmental Variables (phpdotenv for php2)</h1>");
+
+echo("<li> hostname : ".$_SERVER['HTTP_HOST']);
+
   
   echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>0. SELECT * FROM pracownicy</h3>");
     $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
