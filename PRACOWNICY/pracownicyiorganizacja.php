@@ -33,8 +33,9 @@
 
 <?php
   
-  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>0. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)</h3>");
-  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+require_once("ASSETS/connect.php");
+
+    echo("<h3 style='margin-top: 70px; margin-left: 5%;'>0. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)</h3>");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)');
         echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
@@ -49,8 +50,7 @@
             }
         echo("</table>");
   
-  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM pracownicy, organizacja WHERE (dzial=1 or dzial=4) AND (dzial=id_org)</h3>");
-  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM pracownicy, organizacja WHERE (dzial=1 or dzial=4) AND (dzial=id_org)</h3>");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=1 or dzial=4) AND (dzial=id_org)');
         echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
@@ -65,8 +65,7 @@
             }
         echo("</table>");
   
-  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT * FROM pracownicy, organizacja WHERE (imie like '%a') AND (dzial=id_org)</h3>");
-  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT * FROM pracownicy, organizacja WHERE (imie like '%a') AND (dzial=id_org)</h3>");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (imie like "%a") AND (dzial=id_org)');
         echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
@@ -82,7 +81,6 @@
         echo("</table>");
   
     echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT * FROM pracownicy, organizacja WHERE (imie not like '%a') AND (dzial=id_org)</h3>");
-  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (imie not like "%a") AND (dzial=id_org)');
         echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");

@@ -26,11 +26,13 @@
        </div>
       <div class="item colorGreen">
        <h1 style="margin-left: 41.5%; color: #3cb300;">BIBLIOTEKA</h1>
+
        <?php
 
-        echo("<h2 style='margin-left: 5%; margin-top: 5%; color: #008000;'>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek po lewej.</h2>"); 
-echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM biblAutor</h3>");
-    $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+        require_once("ASSETS/connect.php");
+
+  echo("<h2 style='margin-left: 5%; margin-top: 5%; color: #008000;'>Jeśli chcesz wypożyczyć lub oddać książkę przejedź do odpowiednich zakładek po lewej.</h2>"); 
+    echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM biblAutor</h3>");
     $result=$conn->query('SELECT * FROM biblAutor');
         echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
@@ -42,8 +44,7 @@ echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM biblAutor<
             }
         echo("</table>");
  
-echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT * FROM biblTytul</h3>");
-    $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT * FROM biblTytul</h3>");
     $result=$conn->query('SELECT * FROM biblTytul');
         echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
@@ -55,8 +56,7 @@ echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT * FROM biblTytul<
             }
         echo("</table>");
 
-echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id=biblAutor.id) AND (biblTytul_id=biblTytul.id)</h3>");
-    $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id=biblAutor.id) AND (biblTytul_id=biblTytul.id)</h3>");
     $result=$conn->query('SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id=biblAutor.id) AND (biblTytul_id=biblTytul.id)');
         echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
@@ -70,8 +70,7 @@ echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT * FROM biblAutor,
         echo("</table>");
  
 // Wybór autora
-echo("<h3 style='margin-top: 5%; margin-left: 5%;'>SELECT * FROM biblAutor - WYBIERANIE</h3>");
-    $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 5%; margin-left: 5%;'>SELECT * FROM biblAutor - WYBIERANIE</h3>");
     $result=$conn->query('SELECT * FROM biblAutor');
        echo("<select name='title' id='title' style='margin-left: 10%;'>");
           while($row=$result->fetch_assoc()){ 
@@ -82,8 +81,7 @@ echo("<h3 style='margin-top: 5%; margin-left: 5%;'>SELECT * FROM biblAutor - WYB
        echo("<h4></h4>");
 
 // Wybór tytułu książki 
-echo("<h3 style='margin-left: 5%; margin-top: 15%;'>SELECT * FROM biblTytul - WYBIERANIE</h3>");
-    $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-left: 5%; margin-top: 15%;'>SELECT * FROM biblTytul - WYBIERANIE</h3>");
     $result=$conn->query('SELECT * FROM biblTytul');
        echo("<select name='tytul' id='tytul' style='margin-left: 8.5%;'>");
           while($row=$result->fetch_assoc()){ 
@@ -92,8 +90,7 @@ echo("<h3 style='margin-left: 5%; margin-top: 15%;'>SELECT * FROM biblTytul - WY
        echo("</select>");
 
 // Wybór obu rzeczy na raz
-echo("<h3 style='margin-top: 23%; margin-left: 5%;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
-    $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 23%; margin-left: 5%;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");  
     $result=$conn->query('SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id = biblAutor.id) AND (biblTytul_id = biblTytul.id)');
        echo("<select name='tytul' id='tytul' style='margin-left: 5%;'>");
           while($row=$result->fetch_assoc()){ 

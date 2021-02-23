@@ -33,8 +33,9 @@
        
   <?php
 
-echo("<h3 style='margin-top: 10%; margin-left: 33.5%;'>Wybierz Książkę I Autora Do Oddania</h3>");
-    $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+  require_once("ASSETS/connect.php");
+
+    echo("<h3 style='margin-top: 10%; margin-left: 33.5%;'>Wybierz Książkę I Autora Do Oddania</h3>");
     $result=$conn->query("SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id = biblAutor.id) AND (biblTytul_id = biblTytul.id)");
        echo("<select name='tytul' id='tytul' style='margin-left: 30.8%; margin-top: 2%;'>");
           while($row=$result->fetch_assoc()){ 

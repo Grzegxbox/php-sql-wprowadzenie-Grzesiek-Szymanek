@@ -42,8 +42,10 @@
                    </form>
              </div>
            <?php
-  
-  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+
+            require_once("ASSETS/connect.php");
+
+
     $result=$conn->query('SELECT * FROM biblTytul');
         echo("<table style='margin-top: 11%;margin-left: 25%;' border=2>");
         echo("<th>ID</th>");

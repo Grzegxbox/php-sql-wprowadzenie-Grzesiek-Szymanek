@@ -36,9 +36,10 @@
 
 <?php
   
-  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma,  FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) > 128</h3>");
-      $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-      $result = $conn -> query('SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma  FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) > 128');
+require_once("ASSETS/connect.php");
+
+    echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma,  FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) > 128</h3>");
+    $result = $conn -> query('SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma  FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) > 128');
           echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");
@@ -50,9 +51,8 @@
               }
           echo("</table>");
   
-  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT dzial, nazwa_dzial, AVG(zarobki) AS srednia FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie not like '%a') GROUP BY dzial HAVING AVG(zarobki)>30</h3>");
-      $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-      $result = $conn -> query('SELECT dzial, nazwa_dzial, AVG(zarobki) AS srednia FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie not like "%a") GROUP BY dzial HAVING AVG(zarobki)>30');
+    echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT dzial, nazwa_dzial, AVG(zarobki) AS srednia FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie not like '%a') GROUP BY dzial HAVING AVG(zarobki)>30</h3>");
+    $result = $conn -> query('SELECT dzial, nazwa_dzial, AVG(zarobki) AS srednia FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie not like "%a") GROUP BY dzial HAVING AVG(zarobki)>30');
           echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");
@@ -64,9 +64,8 @@
               }
           echo("</table>");
   
-  echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT dzial, nazwa_dzial, COUNT(id_pracownicy) AS ilosc FROM pracownicy, organizacja WHERE (dzial=id_org) GROUP BY dzial HAVING COUNT(id_pracownicy)>3</h3>");
-      $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-      $result = $conn -> query('SELECT dzial, nazwa_dzial, COUNT(id_pracownicy) AS ilosc FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING COUNT(id_pracownicy)>3');
+    echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT dzial, nazwa_dzial, COUNT(id_pracownicy) AS ilosc FROM pracownicy, organizacja WHERE (dzial=id_org) GROUP BY dzial HAVING COUNT(id_pracownicy)>3</h3>");
+    $result = $conn -> query('SELECT dzial, nazwa_dzial, COUNT(id_pracownicy) AS ilosc FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING COUNT(id_pracownicy)>3');
           echo("<table style='margin-left: 5%;' border=2>");
           echo("<th>DZIAŁ</th>");
           echo("<th>NAZWA DZIAŁU</th>");

@@ -35,10 +35,11 @@
         <h1 style="margin-left: 19%; color: #3cb300;">FUNKCJA AGREGUJĄCA - GRUPOWANIE</h1>
         
 <?php
+
+require_once("ASSETS/connect.php");
   
-  echo("<h3 style='margin-top: 70px;margin-left: 5%;'>1. SELECT dzial, SUM(zarobki) AS suma FROM pracownicy GROUP BY dzial</h3>");
-      $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
-      $result = $conn -> query('SELECT dzial, SUM(zarobki) AS suma FROM pracownicy GROUP BY dzial');
+    echo("<h3 style='margin-top: 70px;margin-left: 5%;'>1. SELECT dzial, SUM(zarobki) AS suma FROM pracownicy GROUP BY dzial</h3>");
+    $result = $conn -> query('SELECT dzial, SUM(zarobki) AS suma FROM pracownicy GROUP BY dzial');
           echo("<table style='margin-left: 5%;' border=1>");
           echo("<th>DZIAŁ</th>");
           echo("<th>SUMA</th>");
@@ -49,8 +50,7 @@
               }
           echo("</table>");
   
-  echo("<h3 style='margin-top: 70px;margin-left: 5%;'>2. SELECT dzial, COUNT(imie) AS ilosc FROM pracownicy GROUP BY dzial</h3>");
-    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 70px;margin-left: 5%;'>2. SELECT dzial, COUNT(imie) AS ilosc FROM pracownicy GROUP BY dzial</h3>");
     $result = $conn -> query('SELECT dzial, COUNT(imie) AS ilosc FROM pracownicy GROUP BY dzial');
         echo("<table style='margin-left: 5%;' border=1>");
         echo("<th>DZIAŁ</th>");
@@ -62,8 +62,7 @@
             }
         echo("</table>");
   
-   echo("<h3 style='margin-top: 70px;margin-left: 5%;'>3. SELECT dzial, AVG(zarobki) AS srednia FROM pracownicy GROUP BY dzial</h3>");
-    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 70px;margin-left: 5%;'>3. SELECT dzial, AVG(zarobki) AS srednia FROM pracownicy GROUP BY dzial</h3>");
     $result = $conn -> query('SELECT dzial, AVG(zarobki) AS srednia FROM pracownicy GROUP BY dzial');
         echo("<table style='margin-left: 5%;' border=1>");
         echo("<th>DZIAŁ</th>");
@@ -76,7 +75,6 @@
         echo("</table>");
   
     echo("<h3 style='margin-top: 70px;margin-left: 5%;'>4. SELECT SUM(zarobki) as Suma, IF(imie LIKE '%a'), 'Kobiety','Mężczyźni') AS plec FROM pracownicy GROUP by plec</h3>");
-    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT SUM(zarobki) AS suma, IF(imie LIKE "%a", "Kobiety","Mężczyźni") AS plec FROM pracownicy GROUP by plec');
         echo("<table style='margin-left: 5%;' border=1>");
         echo("<th>PŁEĆ</th>");
@@ -89,7 +87,6 @@
         echo("</table>");
   
     echo("<h3 style='margin-top: 70px;margin-left: 5%;'>5. SELECT AVG(zarobki) AS srednia, IF(imie like '%a', 'Kobiety', 'Mężczyźni') AS plec FROM pracownicy GROUP BY plec</h3>");
-    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
     $result = $conn -> query('SELECT AVG(zarobki) AS srednia, IF(imie like "%a", "Kobiety", "Mężczyźni") AS plec FROM pracownicy GROUP BY plec');
         echo("<table style='margin-left: 5%;' border=1>");
         echo("<th>PŁEĆ</th>");

@@ -33,8 +33,9 @@
 
 <?php
   
-echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (dzial=4) ORDER BY zarobki desc LIMIT 2</h3>");
-    $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+require_once("ASSETS/connect.php");
+
+    echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (dzial=4) ORDER BY zarobki desc LIMIT 2</h3>");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (dzial=4) ORDER BY zarobki desc LIMIT 2');
         echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
@@ -49,8 +50,7 @@ echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM pracownicy
             }
         echo("</table>");
 
-echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like '%a') AND (dzial=2 OR dzial=4) ORDER BY zarobki desc LIMIT 3</h3>");
-    $conn = new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like '%a') AND (dzial=2 OR dzial=4) ORDER BY zarobki desc LIMIT 3</h3>");
     $result = $conn -> query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like "%a") AND (dzial=2 OR dzial=4) ORDER BY zarobki desc LIMIT 3');
         echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
@@ -65,8 +65,7 @@ echo("<h3 style='margin-top: 70px; margin-left: 5%;'>2. SELECT * FROM pracownicy
             }
         echo("</table>");
 
-echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) ORDER BY data_urodzenia LIMIT 1</h3>");
-    $conn = new mysqli ("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+    echo("<h3 style='margin-top: 70px; margin-left: 5%;'>3. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) ORDER BY data_urodzenia LIMIT 1</h3>");
     $result = $conn -> query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) ORDER BY data_urodzenia LIMIT 1');
             echo("<table style='margin-left: 5%;' border=2>");
             echo("<th>ID</th>");

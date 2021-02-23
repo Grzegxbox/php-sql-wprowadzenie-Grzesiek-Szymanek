@@ -25,7 +25,7 @@
       <h1 style="margin-left: 45%; color: #3cb300;">FUNKCJA</h1>  
 
 <?php
-  
+
 function liczby($liczba){
     echo("<h3 style='margin-top: 6%;margin-left: 5%;color: green;'>Początek funkcji </h3>");
     echo("<h4 style='margin-left: 5%;'>Napisz Liczby Do ".$liczba);

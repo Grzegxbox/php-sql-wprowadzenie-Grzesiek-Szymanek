@@ -46,7 +46,8 @@
              </div>
        <?php
   
-  $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+      require_once("ASSETS/connect.php");
+
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)');
         echo("<table style='margin-top: 15%;margin-left: 21%;' border=2>");
         echo("<th>ID</th>");

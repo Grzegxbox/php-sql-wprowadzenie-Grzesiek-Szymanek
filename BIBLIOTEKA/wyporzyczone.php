@@ -29,8 +29,9 @@
        <h1 style="margin-left: 35.5%; color: #3cb300;">WYPOŻYCZ KSIĄŻKĘ</h1>
   <?php
 
-echo("<h3 style='margin-top: 10%; margin-left: 31.5%;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
-    $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+  require_once("ASSETS/connect.php");
+
+    echo("<h3 style='margin-top: 10%; margin-left: 31.5%;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
     $result=$conn->query("SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id = biblAutor.id) AND (biblTytul_id = biblTytul.id)");
        echo("<select name='tytul' id='tytul' style='margin-left: 31.6%; margin-top: 2%;'>");
           while($row=$result->fetch_assoc()){ 
@@ -40,7 +41,7 @@ echo("<h3 style='margin-top: 10%; margin-left: 31.5%;'>Wybierz Książkę I Auto
        echo("<h4></h4>");
        echo("<input type='submit' value='Wypożycz' style='margin-top: 2.5%; margin-left: 48%;'>");
         
- $conn= new mysqli("remotemysql.com","Rp4CxP6YkY","V0BMRFi2V3","Rp4CxP6YkY");
+
     $result=$conn->query('SELECT * FROM biblWypo');
         echo("<table style='margin-left: 25%; margin-top: 5%;' border=2>");
         echo("<th>ID</th>");
