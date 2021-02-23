@@ -42,7 +42,7 @@
                    </form>
            <?php
   
-            require_once("ASSETS/connect.php");
+            require_once("../ASSETS/connect.php");
 
     $result=$conn->query('SELECT * FROM biblAutor');
         echo("<table style='margin-top: 22%;margin-left: -47%;' border=2>");

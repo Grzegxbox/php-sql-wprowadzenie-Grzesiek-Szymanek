@@ -29,7 +29,7 @@
        <h1 style="margin-left: 35.5%; color: #3cb300;">WYPOŻYCZ KSIĄŻKĘ</h1>
   <?php
 
-  require_once("ASSETS/connect.php");
+  require_once("../ASSETS/connect.php");
 
     echo("<h3 style='margin-top: 10%; margin-left: 31.5%;'>Wybierz Książkę I Autora Do Wypożyczenia</h3>");
     $result=$conn->query("SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE (biblAutor_id = biblAutor.id) AND (biblTytul_id = biblTytul.id)");

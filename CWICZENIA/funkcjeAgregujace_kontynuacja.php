@@ -36,7 +36,7 @@
         
 <?php
   
-require_once("ASSETS/connect.php");
+require_once("../ASSETS/connect.php");
 
     echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT SUM(zarobki) AS SUMA FROM pracownicy</h3>");
     $result = $conn -> query('SELECT SUM(zarobki) AS SUMA FROM pracownicy');

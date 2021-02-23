@@ -43,7 +43,7 @@
              </div>
            <?php
 
-            require_once("ASSETS/connect.php");
+            require_once("../ASSETS/connect.php");
 
 
     $result=$conn->query('SELECT * FROM biblTytul');

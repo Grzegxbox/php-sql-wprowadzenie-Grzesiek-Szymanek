@@ -46,7 +46,7 @@
              </div>
        <?php
   
-      require_once("ASSETS/connect.php");
+      require_once("../ASSETS/connect.php");
 
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)');
         echo("<table style='margin-top: 15%;margin-left: 21%;' border=2>");

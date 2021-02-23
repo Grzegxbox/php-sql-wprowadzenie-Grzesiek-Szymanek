@@ -36,7 +36,7 @@
 
 <?php
   
-require_once("ASSETS/connect.php");
+require_once("../ASSETS/connect.php");
 
     echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma,  FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) > 128</h3>");
     $result = $conn -> query('SELECT dzial, nazwa_dzial, SUM(zarobki) AS suma  FROM pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING sum(zarobki) > 128');

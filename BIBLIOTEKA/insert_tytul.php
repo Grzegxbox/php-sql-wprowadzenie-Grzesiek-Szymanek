@@ -18,7 +18,7 @@
 echo("<h3>TYTUŁ:</h3>");
 echo("<h3>".$_POST['tytul']."</h3>");
   
-require_once("ASSETS/connect.php");
+require_once("../ASSETS/connect.php");
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {

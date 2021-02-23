@@ -18,7 +18,7 @@
 echo("<h3>AUTOR:</h3>");
 echo("<h3>".$_POST['autor']."</h3>");
   
-require_once("ASSETS/connect.php");
+require_once("../ASSETS/connect.php");
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {

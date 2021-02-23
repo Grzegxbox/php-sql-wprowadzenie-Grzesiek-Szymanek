@@ -36,7 +36,7 @@
 
 <?php
 
-require_once("ASSETS/connect.php");
+require_once("../ASSETS/connect.php");
 
     echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy</h3>");
     $result = $conn -> query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy');

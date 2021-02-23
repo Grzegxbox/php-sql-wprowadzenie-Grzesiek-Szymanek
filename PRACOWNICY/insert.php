@@ -28,7 +28,7 @@ echo("<h3>DATA URODZENIA:</h3>");
 echo("<h3>".$_POST['data_urodzenia']."</h3>");
   
   
-require_once("ASSETS/connect.php");
+require_once("../ASSETS/connect.php");
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {

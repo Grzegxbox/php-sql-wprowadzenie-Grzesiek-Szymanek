@@ -19,7 +19,7 @@
   
 echo("<h1>ID: ".$_POST['id']."</h1>");
   
-require_once("ASSETS/connect.php");
+require_once("../ASSETS/connect.php");
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {

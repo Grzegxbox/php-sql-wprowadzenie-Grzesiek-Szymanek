@@ -33,7 +33,7 @@
 
 <?php
   
-require_once("ASSETS/connect.php");
+require_once("../ASSETS/connect.php");
 
     echo("<h3 style='margin-top: 70px; margin-left: 5%;'>1. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (dzial=4) ORDER BY zarobki desc LIMIT 2</h3>");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org) AND (dzial=4) ORDER BY zarobki desc LIMIT 2');

@@ -33,7 +33,7 @@
 
 <?php
   
-require_once("ASSETS/connect.php");
+require_once("../ASSETS/connect.php");
 
     echo("<h3 style='margin-top: 70px; margin-left: 5%;'>0. SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)</h3>");
     $result=$conn->query('SELECT * FROM pracownicy, organizacja WHERE (dzial=id_org)');
