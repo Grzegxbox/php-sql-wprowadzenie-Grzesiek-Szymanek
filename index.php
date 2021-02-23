@@ -38,7 +38,7 @@
        <?php
         
 
-          require_once("ASSETS/config.php");
+          require_once("C:\xampp\htdocs\STRONA Z GITHUBA\php-sql-wprowadzenie-Grzesiek-Szymanek\config.php");
 
         
 //  echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>0. SELECT * FROM pracownicy</h3>");
