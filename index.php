@@ -37,8 +37,11 @@
        
        <?php
         
-
-          require_once("ASSETS/connect.php");
+        $hostname = $_SERVER['HTTP_HOST'];
+        if ($hostname == 'localhost:8003') {
+            require_once("ASSETS/connect.php");
+        }
+        echo("<li> hostname : ".$hostname);
 
         
 //  echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>0. SELECT * FROM pracownicy</h3>");
