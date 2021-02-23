@@ -37,9 +37,9 @@
        
        <?php
         
-        require("../ASSETS/connect.php");
-
-    echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>0. SELECT * FROM pracownicy</h3>");
+        require_once('ASSETS/connect.php');
+        
+//  echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>0. SELECT * FROM pracownicy</h3>");
     $result=$conn->query('SELECT * FROM pracownicy');
         echo("<table border=2 style=' margin-left: 5%;'>");
         echo("<th>ID</th>");
