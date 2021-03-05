@@ -16,11 +16,9 @@
        <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">WYŚWIETL KOD - GitHub</a></h1>
      </div>
      
-     <div class="item colorBlue">
-       
+     <div class="item colorBlue">   
         <h1 style="margin-left: 15%;">MENU STRONY</h1>
-       
-         <div class="nav">
+          <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
            <a class="navigation_link1" href="/CWICZENIA/function.php">Funkcja</a>
            <a class="navigation_link1" href="formularze.php">Formularze</a>
@@ -29,12 +27,10 @@
            <a class="navigation_link1" href="/PRACOWNICY/pracownicyiorganizacja.php">Pracownicy I Organizacja</a>
            <a class="navigation_link1" href="/BIBLIOTEKA/biblioteka.php">Biblioteka</a>
            <h1 style="font-size: 19px;margin-top: 385%;text-align: center;">Autor: Grzesiek Szymanek</h1>
-         </div>
-       </div>
-      <div class="item colorGreen">
-        
+          </div>
+     </div>
+     <div class="item colorGreen">
         <h1 style="margin-left: 37%; color: #3cb300;">STRONA GŁÓWNA</h1>
-       
        <?php
         
          require_once("ASSETS/connect.php");
@@ -455,6 +451,6 @@
 //             }
 //         echo("</table>");
    -->
-
+   
     </body>
 </html>
