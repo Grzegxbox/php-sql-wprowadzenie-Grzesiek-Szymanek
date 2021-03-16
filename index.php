@@ -13,10 +13,6 @@
 <body>
    <div class="container">
      <div class="item colorRed">
-        echo("
-        $d = strtotime("now");
-            echo"<li>".date("Y-m-d h:i:sa", $d). "<br>";
-            ");
        <h1 class="tltle"><a class="mojlink0" href="https://github.com/SK-2019/php-sql-wprowadzenie-Grzesiek-Szymanek">WYŚWIETL KOD - GitHub</a></h1>
      </div>
      
@@ -37,6 +33,9 @@
         <h1 style="margin-left: 37%; color: #3cb300;">STRONA GŁÓWNA</h1>
        <?php
         
+            $d = strtotime("now");
+            echo"<li>".date("Y-m-d h:i:sa", $d). "<br>";
+       
          require_once("ASSETS/connect.php");
         
     echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>0. SELECT * FROM pracownicy</h3>");
