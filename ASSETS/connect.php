@@ -1,6 +1,6 @@
 <?php
 
-echo("<li>info z dockera,:) ")";
+echo("<li>info z dockera,:) ");
 
 $servername = "db";
 $username = "root";
