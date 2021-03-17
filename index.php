@@ -1,6 +1,6 @@
 <!DOCTYPE html>   
 <html>     
-  
+<!-- sadsasagegerg commit -->
 <head>
 <title>Grzesiek Szymanek 2TI gr2</title>
 <meta charset="utf-8">
