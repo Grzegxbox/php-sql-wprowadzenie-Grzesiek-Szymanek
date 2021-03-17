@@ -1,6 +1,6 @@
 <!DOCTYPE html>   
 <html>  
-<!-- commit podczas nagrywania -->
+
 <head>
 <title>Grzesiek Szymanek 2TI gr2</title>
 <meta charset="utf-8">
@@ -31,7 +31,7 @@
      <div class="item colorGreen">
         <h1 style="margin-left: 37%; color: #3cb300;">STRONA GŁÓWNA</h1>
        <?php
-        
+        echo("<h1>TEST</h1>");
          require_once("ASSETS/connect.php");
         
     echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>0. SELECT * FROM pracownicy</h3>");
