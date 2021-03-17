@@ -1,6 +1,6 @@
 ###
-# config.php
-# config_r.php
-# testy.php
-# dockerfile
-# docker-compose.yaml
+config.php
+config_r.php
+testy.php
+dockerfile
+docker-compose.yaml
