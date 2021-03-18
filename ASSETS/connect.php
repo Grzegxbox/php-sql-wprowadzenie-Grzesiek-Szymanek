@@ -1,16 +1,11 @@
 <?php
+$servername = $_SERVER['servername_r'];
+$username = $_SERVER['username_r'];
+$password = $_SERVER['password_r'];
+$dbname = $_SERVER['dbname_r']; 
 
-echo("<li>info z dockera,:) ");
-
-$servername = "db";
-$username = "root";
-$password = "root";
-$dbname = "tom";
-
-$conn= new mysqli($servername, $username, $password, $dbname);
+$conn= new mysqli($_SERVER['servername_r'],$_SERVER['username_r'],$_SERVER['password_r'],$_SERVER['dbname_r']);
 if ($conn->connect_error) {
-    die("<li>Connection failed: ". $conn->connect_error);
-}else{
-    echo("<li>Connection ok");
+    die("connection failed: ".mysqli_connect_error());
 }
 ?>
