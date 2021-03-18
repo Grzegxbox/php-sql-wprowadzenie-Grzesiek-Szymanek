@@ -129,6 +129,9 @@
                 echo("</tr>");
             }
         echo("</table>");
+        
+        $d=strtotime("now");
+          echo "<h2>".date("Y-m-d h:i:sa", $d) . "</h2>";
 
 ?>
   
