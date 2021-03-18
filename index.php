@@ -30,9 +30,10 @@
      </div>
      <div class="item colorGreen">
         <h1 style="margin-left: 37%; color: #3cb300;">STRONA GŁÓWNA</h1>
-       <?php
-        echo("<h2>TESTUJEMY</h2>");
-         require_once("ASSETS/connect.php");
+        <?php
+
+echo("<h1>TESTUJEMY PODCZAS NAGRYWANIA</h1>");
+require_once("connect.php");
         
     echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>0. SELECT * FROM pracownicy</h3>");
     $result=$conn->query('SELECT * FROM pracownicy');
@@ -102,33 +103,33 @@
             }
         echo("</table>");
 
-    echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>5. SELECT Dzial, sum(zarobki) AS Całość, avg(zarobki) AS Średnia FROM pracownicy GROUP BY dzial</h3>");
-    $result = $conn -> query('SELECT Dzial, sum(zarobki) AS Całość, avg(zarobki) AS Średnia FROM pracownicy GROUP BY dzial');
-        echo("<table border=2 style=' margin-left: 5%;'>");
-        echo("<th>DZIAŁ</th>");
-        echo("<th>CAŁOŚĆ</th>");
-        echo("<th>ŚREDNIA</th>");
-            while($row = $result -> fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>" .$row["Dzial"]. "</td><td>" .$row["Całość"]. "</td><td>" .$row["Średnia"]. "</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
+    // echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>5. SELECT Dzial, sum(zarobki) AS Całość, avg(zarobki) AS Średnia FROM pracownicy GROUP BY dzial</h3>");
+    // $result = $conn -> query('SELECT Dzial, sum(zarobki) AS Całość, avg(zarobki) AS Średnia FROM pracownicy GROUP BY dzial');
+    //     echo("<table border=2 style=' margin-left: 5%;'>");
+    //     echo("<th>DZIAŁ</th>");
+    //     echo("<th>CAŁOŚĆ</th>");
+    //     echo("<th>ŚREDNIA</th>");
+    //         while($row = $result -> fetch_assoc()){
+    //             echo("<tr>");
+    //                 echo("<td>" .$row["Dzial"]. "</td><td>" .$row["Całość"]. "</td><td>" .$row["Średnia"]. "</td>");
+    //             echo("</tr>");
+    //         }
+    //     echo("</table>");
 
-    echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>6. SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Sum(zarobki) AS Calosc, Avg(zarobki) AS Srednia FROM pracownicy GROUP BY dzial</h3>");
-    $result = $conn -> query('SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Sum(zarobki) AS Calosc, Avg(zarobki) AS Srednia FROM pracownicy GROUP BY dzial');
-        echo("<table border=2 style=' margin-left: 5%;'>");
-        echo("<th>DZIAŁ</th>");
-        echo("<th>MAKSIMUM</th>");
-        echo("<th>MINIMUM</th>");
-        echo("<th>CAŁOŚĆ</th>");
-        echo("<th>ŚREDNIA</th>");
-            while($row = $result -> fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>" .$row["Dzial"]. "</td><td>" .$row["Maksimum"]. "</td><td>" .$row["Minimum"]. "</td><td>" .$row["Calosc"]. "</td><td>" .$row["Srednia"]. "</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
+    // echo("<h3 style='margin-top: 50px; margin-left: 5%; color: #3cb371;'>6. SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Sum(zarobki) AS Calosc, Avg(zarobki) AS Srednia FROM pracownicy GROUP BY dzial</h3>");
+    // $result = $conn -> query('SELECT Dzial, Max(zarobki) AS Maksimum, Min(zarobki) AS Minimum, Sum(zarobki) AS Calosc, Avg(zarobki) AS Srednia FROM pracownicy GROUP BY dzial');
+    //     echo("<table border=2 style=' margin-left: 5%;'>");
+    //     echo("<th>DZIAŁ</th>");
+    //     echo("<th>MAKSIMUM</th>");
+    //     echo("<th>MINIMUM</th>");
+    //     echo("<th>CAŁOŚĆ</th>");
+    //     echo("<th>ŚREDNIA</th>");
+    //         while($row = $result -> fetch_assoc()){
+    //             echo("<tr>");
+    //                 echo("<td>" .$row["Dzial"]. "</td><td>" .$row["Maksimum"]. "</td><td>" .$row["Minimum"]. "</td><td>" .$row["Calosc"]. "</td><td>" .$row["Srednia"]. "</td>");
+    //             echo("</tr>");
+    //         }
+    //     echo("</table>");
         
         $d=strtotime("now");
           echo "<h2 style='margin-left: 36%; color: red; margin-top: 11.5%;'>".date("Y-m-d h:i:sa", $d) . "</h2>";
