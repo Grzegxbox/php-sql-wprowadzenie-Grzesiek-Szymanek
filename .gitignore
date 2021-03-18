@@ -1,6 +1,5 @@
 ###
 config.php
-config_r.php
 docker-compose.yaml
 dockerfile
 
