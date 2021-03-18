@@ -1,6 +1,6 @@
 <?php
-    $_SERVER['servername'] = "db";
-    $_SERVER['username'] = "root";
-    $_SERVER['password'] = "root";
-    $_SERVER['dbname'] = "tom";
+    $_SERVER['servername'] = "remotemysql.com";
+    $_SERVER['username'] = "QcPKWLShOa";
+    $_SERVER['password'] = "KnxvVt5XqH";
+    $_SERVER['dbname'] = "QcPKWLShOa";
 ?>
