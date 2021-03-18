@@ -113,7 +113,7 @@
   
     echo("<h3 style='margin-top: 70px; margin-left: 5%;'>6. SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS dd, DATEDIFF(CURDATE(),data_urodzenia)*24 AS hh, DATEDIFF(CURDATE(),data_urodzenia)*24*60 AS mm FROM pracownicy WHERE (imie='Grzesiek)'</h3>");
     require("../ASSETS/connect.php");
-    $result=$conn->query('SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS dd, DATEDIFF(CURDATE(),data_urodzenia)*24 AS hh, DATEDIFF(CURDATE(),data_urodzenia)*24*60 AS mm FROM pracownicy WHERE (imie="GrzesiekSzymanek")');
+    $result=$conn->query('SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS dd, DATEDIFF(CURDATE(),data_urodzenia)*24 AS hh, DATEDIFF(CURDATE(),data_urodzenia)*24*60 AS mm FROM pracownicy WHERE (imie="GrzegorzSzymanek")');
         echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>IMIĘ</th>");
         echo("<th>DNI ŻYCIA</th>");
@@ -128,7 +128,7 @@
   
     echo("<h3 style='margin-top: 70px; margin-left: 5%;'>7. SELECT imie, DATE_FORMAT('2003-07-030', '%j') AS dzur FROM pracownicy WHERE (imie='GrzesiekSzymanek')</h3>");
     require("../ASSETS/connect.php");
-    $result=$conn->query('SELECT imie, DATE_FORMAT("2003-07-030", "%j") AS dzur FROM pracownicy WHERE (imie="Grzesiek")');
+    $result=$conn->query('SELECT imie, DATE_FORMAT("2003-07-030", "%j") AS dzur FROM pracownicy WHERE (imie="GrzegorzSzymanek")');
         echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>IMIĘ</th>");
         echo("<th>DZIEŃ NARODZIN W ROKU</th>");
