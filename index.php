@@ -131,7 +131,7 @@
         echo("</table>");
         
         $d=strtotime("now");
-          echo "<h2>".date("Y-m-d h:i:sa", $d) . "</h2>";
+          echo "<h2 style='margin-left: 36%; color: red; margin-top: 11.5%;'>".date("Y-m-d h:i:sa", $d) . "</h2>";
 
 ?>
   
