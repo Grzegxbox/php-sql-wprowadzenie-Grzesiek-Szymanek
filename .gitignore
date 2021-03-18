@@ -1,6 +1,3 @@
 ###
 config.php
-config_r.php
-dockerfile
-docker-compose.yaml
-testy.php
+
