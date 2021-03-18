@@ -1,6 +1,6 @@
 <!DOCTYPE html>   
 <html>  
-<!-- commit podczas nagrywania -->
+   
 <head>
 <title>Grzesiek Szymanek 2TI gr2</title>
 <meta charset="utf-8">
