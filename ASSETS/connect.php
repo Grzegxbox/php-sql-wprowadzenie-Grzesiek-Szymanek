@@ -1,6 +1,4 @@
 <?php
-require_once('config.php');
-
 $servername = $_SERVER['servername'];
 $username = $_SERVER['username'];
 $password = $_SERVER['password'];
