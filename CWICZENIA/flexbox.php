@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../ASSETS/style.css">
   </head>
   <body>
-    <h1>FLEXBOX - pozycjonowanie</h1>
+  <h1 style="justify-content: center; display:  flex;">FLEXBOX - pozycjonowanie</h1>
     
     <div class="all">
         <h2>Zadanie 1a</h2>   
