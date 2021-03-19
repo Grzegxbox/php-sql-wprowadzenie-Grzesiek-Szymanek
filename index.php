@@ -20,6 +20,7 @@
           <div class="nav">
            <a class="navigation_link1" href="https://wprowadzenie.herokuapp.com/">Strona Główna</a>
            <a class="navigation_link1" href="/CWICZENIA/function.php">Funkcja</a>
+           <a class="navigation_link1" href="/CWICZENIA/flexbox.php">Flexbox</a>
            <a class="navigation_link1" href="formularze.php">Formularze</a>
            <a class="navigation_link1" href="/PRACOWNICY/pracownicy.php">Pracownicy</a>
            <a class="navigation_link1" href="/CWICZENIA/funkcjeAgregujace.php">Funkcje Agregujące</a>
